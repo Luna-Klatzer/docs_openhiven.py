@@ -24,6 +24,8 @@ extensions = ['sphinx-rtd-theme',
             'sphinx.ext.todo',
             'sphinx.ext.githubpages']
 
+import sphinx_rtd_theme
+
 html_theme = 'sphinx-rtd-theme'
 
 html_static_path = ['_static']
