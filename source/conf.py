@@ -6,17 +6,14 @@ author = 'Nicolas Klatzer'
 
 # The full version, including alpha/beta/rc tags
 release = 'v.0.1b'
+version = 'v.0.0.7'
 
 # -- General configuration ---------------------------------------------------
 
 master_doc = 'index'
-
-# Add any paths that contain templates here, relative to this directory.
+source_suffix = '.rst'
+exclude_patterns = []
 templates_path = ['_templates']
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
 extensions = ['sphinx_rtd_theme',
@@ -24,11 +21,18 @@ extensions = ['sphinx_rtd_theme',
             'sphinx.ext.todo',
             'sphinx.ext.githubpages']
 
+pygments_style = 'default'
+
 import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
-
 html_static_path = ['_static']
+html_context = {}
+
+html_theme_options = {
+    'logo_only': True,
+    'navigation_depth': 5,
+}
 
 html_theme_options = {
     'canonical_url': 'https://openhivenpy.readthedocs.io',
@@ -36,12 +40,11 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'vcs_pageview_mode': '',
     'style_nav_header_background': 'white',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'navigation_depth': -1,
+    'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False
 }
