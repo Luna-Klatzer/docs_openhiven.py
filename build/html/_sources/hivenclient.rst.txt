@@ -17,7 +17,6 @@ HivenClient
       Inherited by :ref:`Bot Client<BotClient>` and :ref:`User Client<UserClient>`
 
       **Parameter:**
-
          :param str token: Token for the interaction with Hiven. 
 
                               Raises Exception InvalidToken if None, empty String or length not 128
@@ -32,9 +31,8 @@ HivenClient
                                  Defaults to False
 
          :param str client_type: Type of the HivenClient. Can only be either "user", "bot" or None.
-         .. note::   
-                  Will be automatically set if :ref:`Bot Client<Bot Client>` or :ref:`User Client<User Client>` is used!
-
+         
+         .. note:: Will be automatically set if :ref:`Bot Client<BotClient>` or :ref:`User Client<UserClient>` is used!
                   If the HivenClient: :ref:`HivenClient` is directly used as an object, it is recommended to set it to None!
 
       .. py:method:: deactivate_print_output() -> None

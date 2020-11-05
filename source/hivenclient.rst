@@ -31,9 +31,8 @@ HivenClient
                                  Defaults to False
 
          :param str client_type: Type of the HivenClient. Can only be either "user", "bot" or None.
-         .. note::   
-                  Will be automatically set if :ref:`Bot Client<BotClient>` or :ref:`User Client<UserClient>` is used!
-
+         
+         .. note:: Will be automatically set if :ref:`Bot Client<BotClient>` or :ref:`User Client<UserClient>` is used!
                   If the HivenClient: :ref:`HivenClient` is directly used as an object, it is recommended to set it to None!
 
       .. py:method:: deactivate_print_output() -> None

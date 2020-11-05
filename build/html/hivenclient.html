@@ -53,9 +53,12 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> OpenHiven.py
+            <a href="index.html">
           
 
+          
+            
+            <img src="_static/openhivenpy.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -90,7 +93,7 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">OpenHiven.py documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">A small Intro to OpenHiven.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 </ul>
@@ -182,9 +185,8 @@
 <em class="property">class </em><code class="sig-prename descclassname">openhivenpy.Client.</code><code class="sig-name descname">HivenClient</code><span class="sig-paren">(</span><em class="sig-param">args*</em>, <em class="sig-param">kwargs**</em><span class="sig-paren">)</span><a class="headerlink" href="#openhivenpy.Client.HivenClient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Main Class used to interact with the Websocket and the Hiven API.
 Inherited by <a class="reference internal" href="#botclient"><span class="std std-ref">Bot Client</span></a> and <a class="reference internal" href="#userclient"><span class="std std-ref">User Client</span></a></p>
-<p><strong>Parameter:</strong></p>
-<blockquote>
-<div><dl class="field-list">
+<dl>
+<dt><strong>Parameter:</strong></dt><dd><dl class="field-list">
 <dt class="field-odd">param str token</dt>
 <dd class="field-odd"><p>Token for the interaction with Hiven.</p>
 <p>Raises Exception InvalidToken if None, empty String or length not 128</p>
@@ -209,10 +211,11 @@ Defaults to False</p>
 </dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Will be automatically set if <span class="xref std std-ref">Bot Client</span> or <span class="xref std std-ref">User Client</span> is used!</p>
-<p>If the HivenClient: <a class="reference internal" href="#hivenclient"><span class="std std-ref">HivenClient</span></a> is directly used as an object, it is recommended to set it to None!</p>
+<p>Will be automatically set if <a class="reference internal" href="#botclient"><span class="std std-ref">Bot Client</span></a> or <a class="reference internal" href="#userclient"><span class="std std-ref">User Client</span></a> is used!
+If the HivenClient: <a class="reference internal" href="#hivenclient"><span class="std std-ref">HivenClient</span></a> is directly used as an object, it is recommended to set it to None!</p>
 </div>
-</div></blockquote>
+</dd>
+</dl>
 <dl class="py method">
 <dt id="openhivenpy.Client.HivenClient.deactivate_print_output">
 <code class="sig-name descname">deactivate_print_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#openhivenpy.Client.HivenClient.deactivate_print_output" title="Permalink to this definition">¶</a></dt>
