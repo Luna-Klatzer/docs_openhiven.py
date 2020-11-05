@@ -38,7 +38,7 @@ html_theme_options = {
 
 html_theme_options = {
     'canonical_url': 'https://openhivenpy.readthedocs.io',
-    'logo_only': True,
+    'logo_only': False,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
