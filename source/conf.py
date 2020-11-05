@@ -1,20 +1,3 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
-
 # -- Project information -----------------------------------------------------
 
 project = 'OpenHiven.py'
@@ -23,7 +6,6 @@ author = 'Nicolas Klatzer'
 
 # The full version, including alpha/beta/rc tags
 release = 'v.0.1b'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -37,11 +19,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
 
 import edx_theme
 import os
@@ -57,9 +35,6 @@ html_favicon = os.path.join(html_theme_path[0], 'edx_theme', 'static', 'css', 'f
 
 html_theme = 'edx_theme'
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
 html_theme_options = {
