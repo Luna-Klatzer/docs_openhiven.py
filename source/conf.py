@@ -19,14 +19,14 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-extensions = ['sphinx-rtd-theme',
+extensions = ['sphinx_rtd_theme',
             'sphinx.ext.autosectionlabel',
             'sphinx.ext.todo',
             'sphinx.ext.githubpages']
 
 import sphinx_rtd_theme
 
-html_theme = 'sphinx-rtd-theme'
+html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
