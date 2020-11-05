@@ -19,21 +19,12 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-# -- Options for HTML output -------------------------------------------------
-
-import edx_theme
-import os
-
-extensions = ['edx_theme',
+extensions = ['sphinx-rtd-theme',
             'sphinx.ext.autosectionlabel',
             'sphinx.ext.todo',
             'sphinx.ext.githubpages']
 
-html_theme = 'edx_theme'
-html_theme_path = [edx_theme.get_html_theme_path()]
-html_favicon = os.path.join(html_theme_path[0], 'edx_theme', 'static', 'css', 'favicon.ico')
-
-html_theme = 'edx_theme'
+html_theme = 'sphinx-rtd-theme'
 
 html_static_path = ['_static']
 
