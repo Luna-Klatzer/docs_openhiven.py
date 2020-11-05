@@ -9,26 +9,31 @@
 
 .. _Start:
 
-======================================
-OpenHiven.py API wrapper documentation
-======================================
+==========================
+OpenHiven.py documentation
+==========================
 
-The Unofficial Python API wrapper for interactin with the `Hiven`_ API and websocket. 
-
-Sourcode avaible in the `github repository`_.
+The Unofficial Python API wrapper for Hiven.
 
 .. _Hiven: https://hiven.io/
-.. _github repository: https://github.com/FrostbyteSpace/openhiven.py
+
+.. toctree::
+   :caption: Table of Contents
+   :name: openhiven.py
+   HivenClient
+   Websocket
+   BotClient
+   UserClient
 
 HivenClient
 ===========
 
-   .. py:class:: openhivenpy.Client.**HivenClient**(args*, kwargs**)
+   .. py:class:: openhivenpy.Client.HivenClient(args*, kwargs**)
 
          Main Class used to interact with the Websocket and the Hiven API.
          Inherited by BotClient: :ref:`Bot Client` and UserClient: :ref:`User Client`
 
-         **Parameter**
+         **Parameter:**
 
             :param str token: Token for the interaction with Hiven. 
 
