@@ -33,6 +33,7 @@ release = 'v.0.1b'
 extensions = ['sphinx.ext.autosectionlabel',
             'sphinx.ext.todo',
             'sphinx.ext.githubpages',
+            'edx_theme'
 ]
 
 master_doc = 'index'
