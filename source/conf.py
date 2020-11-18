@@ -1,8 +1,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OpenHiven.py'
-copyright = '2020, Nicolas Klatzer'
-author = 'Nicolas Klatzer'
+copyright = '2020, FrostbyteSpace'
+author = 'FrostbyteSpace' #Could use Nicolas Klatzer & Robyn Brittain, but..
 
 # The full version, including alpha/beta/rc tags
 release = 'v.0.1b'
