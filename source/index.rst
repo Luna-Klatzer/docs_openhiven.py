@@ -24,4 +24,5 @@ The Unofficial Python API wrapper for Hiven.
     :maxdepth: 2
 
     house
+    user
    
