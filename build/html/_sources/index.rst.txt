@@ -25,4 +25,4 @@ The Unofficial Python API wrapper for Hiven.
 
     house
     user
-   
+    room
