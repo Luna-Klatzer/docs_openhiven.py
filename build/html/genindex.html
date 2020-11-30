@@ -103,9 +103,16 @@
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="attatchment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="house.html">House</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privategroup.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privateroom.html">Private Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
 </ul>
 
             
@@ -173,10 +180,12 @@
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
- <a href="#B"><strong>B</strong></a>
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
  | <a href="#C"><strong>C</strong></a>
  | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
  | <a href="#G"><strong>G</strong></a>
  | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
@@ -188,10 +197,23 @@
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
  | <a href="#W"><strong>W</strong></a>
  
 </div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="message.html#attatchment">attatchment</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="message.html#author">author</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -205,13 +227,17 @@
 </li>
         <li><a href="house.html#create_room">create_room()</a>
 </li>
-        <li><a href="house.html#edit">edit()</a>, <a href="room.html#edit">[1]</a>
+        <li><a href="message.html#delete">delete()</a>
+</li>
+        <li><a href="house.html#edit">edit()</a>, <a href="message.html#edit">[1]</a>, <a href="room.html#edit">[2]</a>
 </li>
         <li><a href="house.html#get_member">get_member()</a>
 </li>
         <li><a href="house.html#leave">leave()</a>
 </li>
-        <li><a href="room.html#send">send()</a>
+        <li><a href="message.html#mark_message_as_read">mark_message_as_read()</a>
+</li>
+        <li><a href="privategroup.html#send">send()</a>, <a href="privateroom.html#send">[1]</a>, <a href="room.html#send">[2]</a>
 </li>
       </ul></li>
   </ul></td>
@@ -220,6 +246,10 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="invite.html#code">code</a>
+</li>
+      <li><a href="message.html#content">content</a>
+</li>
       <li>
     create_invite()
 
@@ -236,6 +266,8 @@
         <li><a href="house.html#create_room">built-in function</a>
 </li>
       </ul></li>
+      <li><a href="message.html#created_at">created_at</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -244,9 +276,16 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="hivenclient.html#openhivenpy.Client.HivenClient.deactivate_print_output">deactivate_print_output() (openhivenpy.Client.HivenClient method)</a>
 </li>
+      <li>
+    delete()
+
+      <ul>
+        <li><a href="message.html#delete">built-in function</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="room.html#description">description</a>
+      <li><a href="embed.html#description">description</a>, <a href="room.html#description">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -258,12 +297,24 @@
     edit()
 
       <ul>
-        <li><a href="house.html#edit">built-in function</a>, <a href="room.html#edit">[1]</a>
+        <li><a href="house.html#edit">built-in function</a>, <a href="message.html#edit">[1]</a>, <a href="room.html#edit">[2]</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="message.html#edited_at">edited_at</a>
+</li>
+      <li><a href="message.html#embed">embed</a>
+</li>
       <li><a href="room.html#emoji">emoji</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="attatchment.html#filename">filename</a>
 </li>
   </ul></td>
 </tr></table>
@@ -286,9 +337,13 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="user.html#header">header</a>
 </li>
+      <li><a href="invite.html#house">house</a>, <a href="message.html#house">[1]</a>, <a href="room.html#house">[2]</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="room.html#house">house</a>
+      <li><a href="deletedmessage.html#house_id">house_id</a>
+</li>
+      <li><a href="invite.html#house_members">house_members</a>
 </li>
   </ul></td>
 </tr></table>
@@ -300,7 +355,9 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="house.html#id">id</a>, <a href="room.html#id">[1]</a>, <a href="user.html#id">[2]</a>
+      <li><a href="house.html#id">id</a>, <a href="message.html#id">[1]</a>, <a href="privategroup.html#id">[2]</a>, <a href="privateroom.html#id">[3]</a>, <a href="room.html#id">[4]</a>, <a href="user.html#id">[5]</a>
+</li>
+      <li><a href="embed.html#image">image</a>
 </li>
   </ul></td>
 </tr></table>
@@ -316,6 +373,8 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="privategroup.html#last_message_id">last_message_id</a>, <a href="privateroom.html#last_message_id">[1]</a>
+</li>
       <li>
     leave()
 
@@ -333,7 +392,26 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    mark_message_as_read()
+
+      <ul>
+        <li><a href="message.html#mark_message_as_read">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="invite.html#max_age">max_age</a>
+</li>
+      <li><a href="invite.html#max_uses">max_uses</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="attatchment.html#media_url">media_url</a>
+</li>
       <li><a href="house.html#members">members</a>
+</li>
+      <li><a href="message.html#mentions">mentions</a>
+</li>
+      <li><a href="deletedmessage.html#message_id">message_id</a>
 </li>
   </ul></td>
 </tr></table>
@@ -341,7 +419,7 @@
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="house.html#name">name</a>, <a href="room.html#name">[1]</a>, <a href="user.html#name">[2]</a>
+      <li><a href="house.html#name">name</a>, <a href="privategroup.html#name">[1]</a>, <a href="privateroom.html#name">[2]</a>, <a href="room.html#name">[3]</a>, <a href="user.html#name">[4]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -373,7 +451,17 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="attatchment.html#raw">raw</a>
+</li>
+      <li><a href="privategroup.html#recipient">recipient</a>, <a href="privateroom.html#recipient">[1]</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="house.html#roles">roles</a>
+</li>
+      <li><a href="message.html#room">room</a>
+</li>
+      <li><a href="deletedmessage.html#room_id">room_id</a>
 </li>
   </ul></td>
 </tr></table>
@@ -385,19 +473,35 @@
     send()
 
       <ul>
-        <li><a href="room.html#send">built-in function</a>
+        <li><a href="privategroup.html#send">built-in function</a>, <a href="privateroom.html#send">[1]</a>, <a href="room.html#send">[2]</a>
 </li>
       </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="embed.html#title">title</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="embed.html#type">type</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="user.html#username">username</a>
+      <li><a href="embed.html#url">url</a>, <a href="invite.html#url">[1]</a>
+</li>
+      <li><a href="privategroup.html#user">user</a>, <a href="privateroom.html#user">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="user.html#username">username</a>
+</li>
       <li><a href="house.html#users">users</a>
 </li>
   </ul></td>

@@ -23,7 +23,13 @@ The Unofficial Python API wrapper for Hiven.
     :caption: Data Models
     :maxdepth: 2
 
+    attatchment
+    deletedmessage
+    embed
     house
+    invite
     message
+    privategroup
+    privateroom
     room
     user
