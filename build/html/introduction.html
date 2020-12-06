@@ -58,9 +58,6 @@
           
 
           
-            
-            <img src="_static/openhivenpy.png" class="logo" alt="Logo"/>
-          
           </a>
 
           
@@ -189,60 +186,62 @@
   <div class="section" id="a-small-intro-to-openhiven-py">
 <h1>A small Intro to openhiven.py<a class="headerlink" href="#a-small-intro-to-openhiven-py" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to the Documentation of openhiven.py!</p>
-<p>openhiven.py is an easy, open-source and async API wrapper written in Python
+<p>Openhiven.py is an easy, open-source and async API wrapper written in Python
 that provides basic functionality for the Hiven Swarm and API.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The openhiven.py Library is therefore written entirely async and can
-only be used with asyncio programs!</p>
-<p>For more info about asyncio look into the <a class="reference external" href="https://docs.python.org/3/library/asyncio.html">Asyncio docs</a></p>
+<p>The openhiven.py Library is written entirely async and needs
+to be run in an asyncio-environment!</p>
+<p>For more info about asyncio: <a class="reference external" href="https://docs.python.org/3/library/asyncio.html">Asyncio documentation</a></p>
 </div>
 <div class="section" id="environment">
 <h2>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>To use openhiven.py Python &gt;= 3.7 currently is recommended, but not needed!</p>
+<div><p>To use openhiven.py Python &gt;= 3.7 currently is recommended, but version 3.6 and lower can be used but stable performance cannot be guaranteed!
+Python 2 is entirely not supported, and currently, there is no plan to make openhiven.py available for Python 2 since many features are dependent on Python 3 and the modern async module of Python 3!</p>
 </div></blockquote>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><dl class="simple">
-<dt><strong>PyPi Installation:</strong>::</dt><dd><p>python3 -m pip install -U openhivenpy</p>
-</dd>
-</dl>
+<div><p><strong>PyPi Installation:</strong>
+.. code-block:: none</p>
+<blockquote>
+<div><p>python3 -m pip install -U openhivenpy</p>
+</div></blockquote>
 <p><strong>Github Build:</strong></p>
-<dl class="simple">
-<dt><cite>Not recommended since the build can be unstable</cite>::</dt><dd><p>python -m pip install -U <a class="reference external" href="https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip">https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip</a></p>
-</dd>
-</dl>
+<p><cite>Not recommended since the build can be unstable</cite>
+.. code-block:: none</p>
+<blockquote>
+<div><p>python -m pip install -U <a class="reference external" href="https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip">https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip</a></p>
+</div></blockquote>
 </div></blockquote>
 </div>
 <div class="section" id="basic-concept">
 <h2>Basic Concept<a class="headerlink" href="#basic-concept" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it.
-The basic concept therefore is based on a event listener system that can register events and executes them when a Websocket event
-gets triggered!</p>
-<p>That process gets handled over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class
-which triggers and executes the events if they are found in the client.</p>
+<div><p>The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it. Therefore, the
+basic concept is based on an event listener system that can register events and executes them when a Hiven Swarm Event is received.
+That process gets handled over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Default Event Handler can theoretically get customized and modified to handle events
-with even better performance. See <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> for more information</p>
+<p>The Default Event Handler can get modified by passing a custom class to the HivenClient.
+For more information see <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a></p>
 </div>
 </div></blockquote>
 </div>
 <div class="section" id="logging-and-debugging">
 <h2>Logging and Debugging<a class="headerlink" href="#logging-and-debugging" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>openhiven.py uses to detect issues and problems the built-in <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> module of Python.
+<div><p>Openhiven.py uses to detect issues and problems the built-in <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> module of Python.
 That module can provide easy logging features and customization of program logging.</p>
 <p>In the case of openhiven.py it is used to print out events, errors and show what is executed in the program.</p>
-<dl>
-<dt><strong>Simple Example of logging:</strong>::</dt><dd><p>import logging</p>
+<p><strong>Simple Example of logging:</strong>
+.. code-block:: python</p>
+<blockquote>
+<div><p>import logging</p>
 <p>logging.basicConfig(level=logging.INFO)</p>
-</dd>
-</dl>
+</div></blockquote>
 <p>That code snippet appended at the beginning of the file will print out basic info about the program as well as errors.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -255,17 +254,18 @@ based on the user-specified logging level they are going to be printed out on th
 in a <cite>.log</cite> file.</p>
 <p>For more advanced usage of logging and also debugging it is recommended to use the <code class="code docutils literal notranslate"><span class="pre">logging.getLogger(&quot;openhivenpy&quot;)</span></code> and
 specify the way the log should be handled! That can be extended to the basic logging to print out logs and save them to a file!</p>
-<dl>
-<dt><strong>Extended Example of loggign for debugging:</strong>::</dt><dd><p>import logging
+<p><strong>Extended Example of logging for debugging:</strong>
+.. code-block:: python</p>
+<blockquote>
+<div><p>import logging
 import openhivenpy</p>
 <p>logger = logging.getLogger(“openhivenpy”)
 logger.setLevel(logging.INFO)
 handler = logging.FileHandler(filename=’openhiven.log’, encoding=’utf-8’, mode=’w’)
 handler.setFormatter(logging.Formatter(‘%(asctime)s:%(levelname)s:%(name)s: %(message)s’))
 logger.addHandler(handler)</p>
-</dd>
-</dl>
-<p>For more customization for the <code class="code docutils literal notranslate"><span class="pre">logging.Formatter</span></code> and <code class="code docutils literal notranslate"><span class="pre">logging.FileHandler</span></code> class visit the <a class="reference external" href="https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial">logging</a> documentation!</p>
+</div></blockquote>
+<p>For more customization for the <a href="#id2"><span class="problematic" id="id3">:code:`logging.Formatter &lt;https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial&gt;`_</span></a> and <a href="#id4"><span class="problematic" id="id5">:code:`logging.FileHandler &lt;https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial&gt;`_</span></a> class visit the <a class="reference external" href="https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial">logging</a> documentation!</p>
 </div></blockquote>
 </div>
 </div>
