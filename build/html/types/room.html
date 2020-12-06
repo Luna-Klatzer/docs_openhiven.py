@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Room &mdash; OpenHiven.py v.0.1b documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/stylize.css" type="text/css" />
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://openhivenpy.readthedocs.iotypes/room.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="User" href="user.html" />
+    <link rel="prev" title="Private Room" href="privateroom.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: dark_grey" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> OpenHiven.py
+          
+
+          
+            
+            <img src="../_static/openhivenpy.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v.0.0.7
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Core Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../websocket.html">Websocket</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Data Models</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="house.html">House</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privategroup.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privateroom.html">Private Room</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenHiven.py</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Room</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/types/room.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="room">
+<h1>Room<a class="headerlink" href="#room" title="Permalink to this headline">¶</a></h1>
+<dl class="py attribute">
+<dt id="id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the room ID</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the rooms name</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="house">
+<code class="sig-name descname">house</code><a class="headerlink" href="#house" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the house the room belongs in</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="position">
+<code class="sig-name descname">position</code><a class="headerlink" href="#position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the position of the room in the category</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="emoji">
+<code class="sig-name descname">emoji</code><a class="headerlink" href="#emoji" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the room’s emoji</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="description">
+<code class="sig-name descname">description</code><a class="headerlink" href="#description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the room’s description</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="send">
+<code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#send" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a message in the Room. Returns the message if successful.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>content</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The content of the message</p></li>
+<li><p><strong>delay</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – The delay before sending the message. Defaults to 0.</p></li>
+<li><p><strong>attatchment</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">file</span></code>) – The attatchment to send with the message. Defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="edit">
+<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edits the Room. The client needs permissions to do this. Returns True if successful.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room name</p></li>
+<li><p><strong>emoji</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room’s emoji</p></li>
+<li><p><strong>description</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room’s description</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="user.html" class="btn btn-neutral float-right" title="User" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="privateroom.html" class="btn btn-neutral float-left" title="Private Room" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, FrostbyteSpace
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

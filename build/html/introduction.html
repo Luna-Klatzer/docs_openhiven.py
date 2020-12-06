@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>A small Intro to OpenHiven.py &mdash; OpenHiven.py v.0.1b documentation</title>
+  <title>A small Intro to openhiven.py &mdash; OpenHiven.py v.0.1b documentation</title>
   
 
   
@@ -94,7 +94,13 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">A small Intro to OpenHiven.py</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">A small Intro to openhiven.py</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#environment">Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-concept">Basic Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logging-and-debugging">Logging and Debugging</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 </ul>
@@ -105,7 +111,16 @@
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="house.html">House</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/house.html">House</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/privategroup.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/privateroom.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
 </ul>
 
             
@@ -152,7 +167,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>A small Intro to OpenHiven.py</li>
+      <li>A small Intro to openhiven.py</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,8 +187,87 @@
            <div itemprop="articleBody">
             
   <div class="section" id="a-small-intro-to-openhiven-py">
-<h1>A small Intro to OpenHiven.py<a class="headerlink" href="#a-small-intro-to-openhiven-py" title="Permalink to this headline">¶</a></h1>
-<p>The Unofficial Python API wrapper for Hiven.</p>
+<h1>A small Intro to openhiven.py<a class="headerlink" href="#a-small-intro-to-openhiven-py" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the Documentation of openhiven.py!</p>
+<p>openhiven.py is an easy, open-source and async API wrapper written in Python
+that provides basic functionality for the Hiven Swarm and API.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The openhiven.py Library is therefore written entirely async and can
+only be used with asyncio programs!</p>
+<p>For more info about asyncio look into the <a class="reference external" href="https://docs.python.org/3/library/asyncio.html">Asyncio docs</a></p>
+</div>
+<div class="section" id="environment">
+<h2>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>To use openhiven.py Python &gt;= 3.7 currently is recommended, but not needed!</p>
+</div></blockquote>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="simple">
+<dt><strong>PyPi Installation:</strong>::</dt><dd><p>python3 -m pip install -U openhivenpy</p>
+</dd>
+</dl>
+<p><strong>Github Build:</strong></p>
+<dl class="simple">
+<dt><cite>Not recommended since the build can be unstable</cite>::</dt><dd><p>python -m pip install -U <a class="reference external" href="https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip">https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip</a></p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="basic-concept">
+<h2>Basic Concept<a class="headerlink" href="#basic-concept" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it.
+The basic concept therefore is based on a event listener system that can register events and executes them when a Websocket event
+gets triggered!</p>
+<p>That process gets handled over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class
+which triggers and executes the events if they are found in the client.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Default Event Handler can theoretically get customized and modified to handle events
+with even better performance. See <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> for more information</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="logging-and-debugging">
+<h2>Logging and Debugging<a class="headerlink" href="#logging-and-debugging" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>openhiven.py uses to detect issues and problems the built-in <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> module of Python.
+That module can provide easy logging features and customization of program logging.</p>
+<p>In the case of openhiven.py it is used to print out events, errors and show what is executed in the program.</p>
+<dl>
+<dt><strong>Simple Example of logging:</strong>::</dt><dd><p>import logging</p>
+<p>logging.basicConfig(level=logging.INFO)</p>
+</dd>
+</dl>
+<p>That code snippet appended at the beginning of the file will print out basic info about the program as well as errors.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This code snippet will activate logging for all modules available!
+If other modules with logging are important this will also active their logging output!</p>
+</div>
+<p>The available options for logging options are <code class="code docutils literal notranslate"><span class="pre">CRITICAL</span></code>, <code class="code docutils literal notranslate"><span class="pre">ERROR</span></code>, <code class="code docutils literal notranslate"><span class="pre">WARNING</span></code>, <code class="code docutils literal notranslate"><span class="pre">INFO</span></code>, and <code class="code docutils literal notranslate"><span class="pre">DEBUG</span></code>.</p>
+<p>The base concept of logging is that certain events have different importance levels and
+based on the user-specified logging level they are going to be printed out on the Console or stored
+in a <cite>.log</cite> file.</p>
+<p>For more advanced usage of logging and also debugging it is recommended to use the <code class="code docutils literal notranslate"><span class="pre">logging.getLogger(&quot;openhivenpy&quot;)</span></code> and
+specify the way the log should be handled! That can be extended to the basic logging to print out logs and save them to a file!</p>
+<dl>
+<dt><strong>Extended Example of loggign for debugging:</strong>::</dt><dd><p>import logging
+import openhivenpy</p>
+<p>logger = logging.getLogger(“openhivenpy”)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler(filename=’openhiven.log’, encoding=’utf-8’, mode=’w’)
+handler.setFormatter(logging.Formatter(‘%(asctime)s:%(levelname)s:%(name)s: %(message)s’))
+logger.addHandler(handler)</p>
+</dd>
+</dl>
+<p>For more customization for the <code class="code docutils literal notranslate"><span class="pre">logging.Formatter</span></code> and <code class="code docutils literal notranslate"><span class="pre">logging.FileHandler</span></code> class visit the <a class="reference external" href="https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial">logging</a> documentation!</p>
+</div></blockquote>
+</div>
 </div>
 
 

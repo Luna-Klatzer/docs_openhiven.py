@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class HivenClient &mdash; OpenHiven.py v.0.1b documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/stylize.css" type="text/css" />
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://openhivenpy.readthedocs.iotypes/hivenclient.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: dark_grey" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> OpenHiven.py
+          
+
+          
+            
+            <img src="../_static/openhivenpy.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v.0.0.7
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Core Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../websocket.html">Websocket</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Data Models</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="house.html">House</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privategroup.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privateroom.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenHiven.py</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Class HivenClient</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/types/hivenclient.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-hivenclient">
+<h1>Class HivenClient<a class="headerlink" href="#class-hivenclient" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="hivenclient">
+<span id="start"></span><h2>HivenClient<a class="headerlink" href="#hivenclient" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="py class">
+<dt id="openhivenpy.Client.HivenClient">
+<em class="property">class </em><code class="sig-prename descclassname">openhivenpy.Client.</code><code class="sig-name descname">HivenClient</code><span class="sig-paren">(</span><em class="sig-param">args*</em>, <em class="sig-param">kwargs**</em><span class="sig-paren">)</span><a class="headerlink" href="#openhivenpy.Client.HivenClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main Class used to interact with the Websocket and the Hiven API.
+Inherited by <a class="reference internal" href="#botclient"><span class="std std-ref">Bot Client</span></a> and <a class="reference internal" href="#userclient"><span class="std std-ref">User Client</span></a></p>
+<dl>
+<dt><strong>Parameter:</strong></dt><dd><dl class="field-list">
+<dt class="field-odd">param str token</dt>
+<dd class="field-odd"><p>Token for the interaction with Hiven.</p>
+<p>Raises Exception InvalidToken if None, empty String or length not 128</p>
+</dd>
+<dt class="field-even">param int heartbeat</dt>
+<dd class="field-even"><p>Hearbeat interval for sending messages to the Hiven Websocket</p>
+</dd>
+<dt class="field-odd">param bool print_output</dt>
+<dd class="field-odd"><p>If set to True the raw messages that were received on the Websocket will be printed out! Defaults to False</p>
+</dd>
+<dt class="field-even">param bool debug_mode</dt>
+<dd class="field-even"><p>If set to True the following will be printed out:
+* Data is sent to Hiven
+* Data is received from Hiven
+* An event was triggered
+* A command was used
+Defaults to False</p>
+</dd>
+<dt class="field-odd">param str client_type</dt>
+<dd class="field-odd"><p>Type of the HivenClient. Can only be either “user”, “bot” or None.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Will be automatically set if <a class="reference internal" href="#botclient"><span class="std std-ref">Bot Client</span></a> or <a class="reference internal" href="#userclient"><span class="std std-ref">User Client</span></a> is used!
+If the HivenClient: <a class="reference internal" href="#hivenclient"><span class="std std-ref">HivenClient</span></a> is directly used as an object, it is recommended to set it to None!</p>
+</div>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="openhivenpy.Client.HivenClient.deactivate_print_output">
+<code class="sig-name descname">deactivate_print_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#openhivenpy.Client.HivenClient.deactivate_print_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="botclient">
+<h2>BotClient<a class="headerlink" href="#botclient" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="userclient">
+<h2>UserClient<a class="headerlink" href="#userclient" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, FrostbyteSpace
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

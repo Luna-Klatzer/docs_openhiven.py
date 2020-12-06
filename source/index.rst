@@ -2,7 +2,13 @@
 OpenHiven.py documentation
 **************************
 
-The Unofficial Python API wrapper for Hiven.
+
+
+
+
+
+Openhiven.py is an easy, open-source and async API wrapper written in Python
+that provides basic functionality for the Hiven Swarm and API.
 
 .. toctree::
     :caption: Introduction
@@ -23,13 +29,13 @@ The Unofficial Python API wrapper for Hiven.
     :caption: Data Models
     :maxdepth: 2
 
-    attatchment
-    deletedmessage
-    embed
-    house
-    invite
-    message
-    privategroup
-    privateroom
-    room
-    user
+    types/attatchment
+    types/deletedmessage
+    types/embed
+    types/house
+    types/invite
+    types/message
+    types/privategroup
+    types/privateroom
+    types/room
+    types/user
