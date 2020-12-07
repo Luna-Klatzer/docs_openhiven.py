@@ -38,7 +38,9 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Relationship" href="relationship.html" />
+    <link rel="prev" title="Private Room" href="private_room.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -57,7 +59,7 @@
 
           
             
-            <img src="../_static/openhivenpy.png" class="logo" alt="Logo"/>
+            <img src="../_static/openhivenpy_white_200x200.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -98,11 +100,11 @@
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">Class HivenClient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">HivenClient</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../websocket.html">Websocket</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="attatchment.html">Attatchment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
@@ -110,10 +112,16 @@
 <li class="toctree-l1"><a class="reference internal" href="feed.html">Feed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="house.html">House</a></li>
 <li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="member.html">Member</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mention.html">Mention</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="presence.html">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="private_room.html">Private Room</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
 </ul>
 
@@ -219,7 +227,8 @@
 <dl class="py function">
 <dt id="send">
 <code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">delay</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#send" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sends a message in the group</p>
+<dd><p>This function is a coroutine!</p>
+<p>Sends a message in the room</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -231,6 +240,9 @@
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
 </dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
+</dd>
 </dl>
 </dd></dl>
 
@@ -241,6 +253,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="relationship.html" class="btn btn-neutral float-right" title="Relationship" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="private_room.html" class="btn btn-neutral float-left" title="Private Room" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

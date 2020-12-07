@@ -28,7 +28,7 @@ import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_context = {}
-html_logo = "./_static/openhivenpy.png"
+html_logo = "./_static/openhivenpy_white_200x200.png"
 
 html_theme_options = {
     'logo_only': True,

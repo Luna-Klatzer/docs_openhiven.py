@@ -59,7 +59,7 @@
 
           
             
-            <img src="../_static/openhivenpy.png" class="logo" alt="Logo"/>
+            <img src="../_static/openhivenpy_white_200x200.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -100,7 +100,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">Class HivenClient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">HivenClient</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../websocket.html">Websocket</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
@@ -227,22 +227,21 @@
 <dl class="py function">
 <dt id="send">
 <code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">delay</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#send" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sends a message in the room</p>
+<dd><p>This function is a coroutine!</p>
+<p>Sends a message in the room</p>
 <dl class="field-list simple">
-<dt class="field-odd">Async</dt>
-<dd class="field-odd"><p></p></dd>
-<dt class="field-even">Parameters</dt>
-<dd class="field-even"><ul class="simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
 <li><p><strong>content</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The message’s content</p></li>
 <li><p><strong>attatchment</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">binary</span></code>) – The message’s attatchment</p></li>
 <li><p><strong>delay</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – Delay until execution</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
-</dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
 </dd>
 </dl>
 </dd></dl>

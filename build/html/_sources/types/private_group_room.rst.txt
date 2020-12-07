@@ -4,29 +4,31 @@ Private Group Room
 
 .. note:: This is not to be confused with PrivateRoom! PrivateRoom is for private non-group rooms, whilst PrivateGroupRoom is private group rooms. 
 
-.. attribute :: user
+.. attribute:: user
 
     The users in the Group Room
 
-.. attribute :: recipient
+.. attribute:: recipient
 
     Aliases of :attr:`user`
 
-.. attribute :: id
+.. attribute:: id
 
     The ID of the Group
     
-.. attribute :: last_message_id
+.. attribute:: last_message_id
 
     The last message's ID
 
-.. attribute :: name
+.. attribute:: name
 
     The name of the Group
 
-.. function :: send(content,delay = 0)
+.. py:function:: send(content, delay = 0)
 
-    Sends a message in the group
+    This function is a coroutine!
+
+    Sends a message in the room
 
     :param content: The message's content
     :type content: :class:`str`
@@ -35,3 +37,4 @@ Private Group Room
     :param delay: Delay until execution
     :type delay: :class:`float`
     :returns: :class:`Message`
+    :rtype: :class:`Message`

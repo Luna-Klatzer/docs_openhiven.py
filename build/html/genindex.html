@@ -57,7 +57,7 @@
 
           
             
-            <img src="_static/openhivenpy.png" class="logo" alt="Logo"/>
+            <img src="_static/openhivenpy_white_200x200.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -98,7 +98,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Class HivenClient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">Websocket</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
@@ -241,6 +241,12 @@
 </li>
         <li><a href="types/house.html#get_member">get_member()</a>
 </li>
+        <li><a href="hivenclient.html#HivenClient.connect">HivenClient.connect()</a>
+</li>
+        <li><a href="hivenclient.html#HivenClient.run">HivenClient.run()</a>
+</li>
+        <li><a href="hivenclient.html#HivenClient.stop">HivenClient.stop()</a>
+</li>
         <li><a href="types/house.html#leave">leave()</a>
 </li>
         <li><a href="types/message.html#mark_message_as_read">mark_message_as_read()</a>
@@ -254,10 +260,18 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="hivenclient.html#HivenClient.client_type">client_type (HivenClient attribute)</a>
+</li>
+      <li><a href="hivenclient.html#HivenClient.closed">closed (HivenClient attribute)</a>
+</li>
       <li><a href="types/invite.html#code">code</a>
+</li>
+      <li><a href="hivenclient.html#HivenClient.connection_status">connection_status (HivenClient attribute)</a>
 </li>
       <li><a href="types/message.html#content">content</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     create_invite()
 
@@ -265,8 +279,6 @@
         <li><a href="types/house.html#create_invite">built-in function</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     create_room()
 
@@ -343,13 +355,40 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/user.html#header">header</a>
 </li>
-      <li><a href="types/invite.html#house">house</a>, <a href="types/message.html#house">[1]</a>, <a href="types/room.html#house">[2]</a>
+      <li><a href="hivenclient.html#HivenClient.heartbeat">heartbeat (HivenClient attribute)</a>
 </li>
+      <li><a href="hivenclient.html#HivenClient">HivenClient (built-in class)</a>
+</li>
+      <li>
+    HivenClient.connect()
+
+      <ul>
+        <li><a href="hivenclient.html#HivenClient.connect">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    HivenClient.run()
+
+      <ul>
+        <li><a href="hivenclient.html#HivenClient.run">built-in function</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    HivenClient.stop()
+
+      <ul>
+        <li><a href="hivenclient.html#HivenClient.stop">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="types/invite.html#house">house</a>, <a href="types/message.html#house">[1]</a>, <a href="types/room.html#house">[2]</a>
+</li>
       <li><a href="types/deletedmessage.html#house_id">house_id</a>
 </li>
       <li><a href="types/invite.html#house_members">house_members</a>
+</li>
+      <li><a href="hivenclient.html#HivenClient.http_client">http_client (HivenClient attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -359,11 +398,13 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/house.html#icon">icon</a>, <a href="types/user.html#icon">[1]</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/house.html#id">id</a>, <a href="types/message.html#id">[1]</a>, <a href="types/private_group_room.html#id">[2]</a>, <a href="types/private_room.html#id">[3]</a>, <a href="types/room.html#id">[4]</a>, <a href="types/user.html#id">[5]</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/embed.html#image">image</a>
+</li>
+      <li><a href="hivenclient.html#HivenClient.initialized">initialized (HivenClient attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -433,7 +474,7 @@
 <h2 id="O">O</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#openhivenpy.Client.HivenClient">openhivenpy.Client.HivenClient (built-in class)</a>
+      <li><a href="hivenclient.html#HivenClient.open">open (HivenClient attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -459,6 +500,8 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/attatchment.html#raw">raw</a>
 </li>
+      <li><a href="hivenclient.html#HivenClient.ready">ready (HivenClient attribute)</a>
+</li>
       <li><a href="types/private_group_room.html#recipient">recipient</a>, <a href="types/private_room.html#recipient">[1]</a>
 </li>
   </ul></td>
@@ -483,6 +526,10 @@
 </li>
       </ul></li>
   </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="hivenclient.html#HivenClient.startup_time">startup_time (HivenClient attribute)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="T">T</h2>
@@ -492,6 +539,8 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="hivenclient.html#HivenClient.token">token (HivenClient attribute)</a>
+</li>
       <li><a href="types/embed.html#type">type</a>
 </li>
   </ul></td>
@@ -517,6 +566,10 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/user.html#website">website</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="hivenclient.html#HivenClient.websocket">websocket (HivenClient attribute)</a>
 </li>
   </ul></td>
 </tr></table>

@@ -26,9 +26,10 @@ Private Room
 
 .. py:function:: send(content, delay = 0)
 
+    This function is a coroutine!
+
     Sends a message in the room
 
-    :async:
     :param content: The message's content
     :type content: :class:`str`
     :param attatchment: The message's attatchment
