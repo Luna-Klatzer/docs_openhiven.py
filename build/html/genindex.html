@@ -104,14 +104,22 @@
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/feed.html">Feed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/house.html">House</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/member.html">Member</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/mention.html">Mention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/message.html">Message</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/privategroup.html">Private Group Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/privateroom.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/presence.html">Presence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_room.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
 </ul>
 
@@ -237,7 +245,7 @@
 </li>
         <li><a href="types/message.html#mark_message_as_read">mark_message_as_read()</a>
 </li>
-        <li><a href="types/privategroup.html#send">send()</a>, <a href="types/privateroom.html#send">[1]</a>, <a href="types/room.html#send">[2]</a>
+        <li><a href="types/private_group_room.html#send">send()</a>, <a href="types/private_room.html#send">[1]</a>, <a href="types/room.html#send">[2]</a>
 </li>
       </ul></li>
   </ul></td>
@@ -274,8 +282,6 @@
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#openhivenpy.Client.HivenClient.deactivate_print_output">deactivate_print_output() (openhivenpy.Client.HivenClient method)</a>
-</li>
       <li>
     delete()
 
@@ -355,7 +361,7 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/house.html#id">id</a>, <a href="types/message.html#id">[1]</a>, <a href="types/privategroup.html#id">[2]</a>, <a href="types/privateroom.html#id">[3]</a>, <a href="types/room.html#id">[4]</a>, <a href="types/user.html#id">[5]</a>
+      <li><a href="types/house.html#id">id</a>, <a href="types/message.html#id">[1]</a>, <a href="types/private_group_room.html#id">[2]</a>, <a href="types/private_room.html#id">[3]</a>, <a href="types/room.html#id">[4]</a>, <a href="types/user.html#id">[5]</a>
 </li>
       <li><a href="types/embed.html#image">image</a>
 </li>
@@ -373,7 +379,7 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/privategroup.html#last_message_id">last_message_id</a>, <a href="types/privateroom.html#last_message_id">[1]</a>
+      <li><a href="types/private_group_room.html#last_message_id">last_message_id</a>, <a href="types/private_room.html#last_message_id">[1]</a>
 </li>
       <li>
     leave()
@@ -419,7 +425,7 @@
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/house.html#name">name</a>, <a href="types/privategroup.html#name">[1]</a>, <a href="types/privateroom.html#name">[2]</a>, <a href="types/room.html#name">[3]</a>, <a href="types/user.html#name">[4]</a>
+      <li><a href="types/house.html#name">name</a>, <a href="types/private_group_room.html#name">[1]</a>, <a href="types/private_room.html#name">[2]</a>, <a href="types/room.html#name">[3]</a>, <a href="types/user.html#name">[4]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -453,7 +459,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/attatchment.html#raw">raw</a>
 </li>
-      <li><a href="types/privategroup.html#recipient">recipient</a>, <a href="types/privateroom.html#recipient">[1]</a>
+      <li><a href="types/private_group_room.html#recipient">recipient</a>, <a href="types/private_room.html#recipient">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -473,7 +479,7 @@
     send()
 
       <ul>
-        <li><a href="types/privategroup.html#send">built-in function</a>, <a href="types/privateroom.html#send">[1]</a>, <a href="types/room.html#send">[2]</a>
+        <li><a href="types/private_group_room.html#send">built-in function</a>, <a href="types/private_room.html#send">[1]</a>, <a href="types/room.html#send">[2]</a>
 </li>
       </ul></li>
   </ul></td>
@@ -496,7 +502,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="types/embed.html#url">url</a>, <a href="types/invite.html#url">[1]</a>
 </li>
-      <li><a href="types/privategroup.html#user">user</a>, <a href="types/privateroom.html#user">[1]</a>
+      <li><a href="types/private_group_room.html#user">user</a>, <a href="types/private_room.html#user">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>

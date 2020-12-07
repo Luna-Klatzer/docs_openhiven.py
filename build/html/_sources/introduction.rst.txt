@@ -26,6 +26,7 @@ Installation
 ~~~~~~~~~~~~
 
     **PyPi Installation:**
+
     .. code-block:: none
 
         python3 -m pip install -U openhivenpy
@@ -33,6 +34,7 @@ Installation
     **Github Build:**
 
     `Not recommended since the build can be unstable`
+
     .. code-block:: none
 
         python -m pip install -U https://github.com/FrostbyteSpace/openhiven.py/archive/main.zip
@@ -44,12 +46,21 @@ Basic Concept
     The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it. Therefore, the 
     basic concept is based on an event listener system that can register events and executes them when a Hiven Swarm Event is received. 
 
-    Example:
+    An event in this context is a addition, change or removal of data on Hiven. 
+
+    Example to show a basic Hiven Event Listener that listens for messages and prints out their cotent
+    
     .. code-block:: python
 
+        import openhivenpy
+
+        client = UserClient("Insert token")
+
         @client.event()
-            async def on_message_create(message):
-            print(message.room.id)
+            async def on_message_create(msg):
+                print(msg.content)
+
+        client.run()
 
 
     That process gets handled over the integrated `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ class.
@@ -70,6 +81,7 @@ Logging and Debugging
     The available options for logging options are :code:`CRITICAL`, :code:`ERROR`, :code:`WARNING`, :code:`INFO`, and :code:`DEBUG`.
 
     **Simple Example of logging:**
+    
     .. code-block:: python
 
         import logging
@@ -87,6 +99,7 @@ Logging and Debugging
     in a `.log` file.
 
     For more advanced usage of logging and also debugging it is recommended to use:
+    
     .. code-block:: python
 
         import logging

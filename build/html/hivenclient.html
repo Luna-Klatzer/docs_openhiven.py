@@ -111,14 +111,22 @@
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/feed.html">Feed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/house.html">House</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/member.html">Member</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/mention.html">Mention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/message.html">Message</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/privategroup.html">Private Group Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/privateroom.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/presence.html">Presence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_room.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
 </ul>
 
@@ -195,42 +203,21 @@
 <em class="property">class </em><code class="sig-prename descclassname">openhivenpy.Client.</code><code class="sig-name descname">HivenClient</code><span class="sig-paren">(</span><em class="sig-param">args*</em>, <em class="sig-param">kwargs**</em><span class="sig-paren">)</span><a class="headerlink" href="#openhivenpy.Client.HivenClient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Main Class used to interact with the Websocket and the Hiven API.
 Inherited by <a class="reference internal" href="#botclient"><span class="std std-ref">Bot Client</span></a> and <a class="reference internal" href="#userclient"><span class="std std-ref">User Client</span></a></p>
-<dl>
-<dt><strong>Parameter:</strong></dt><dd><dl class="field-list">
-<dt class="field-odd">param str token</dt>
-<dd class="field-odd"><p>Token for the interaction with Hiven.</p>
-<p>Raises Exception InvalidToken if None, empty String or length not 128</p>
-</dd>
-<dt class="field-even">param int heartbeat</dt>
-<dd class="field-even"><p>Hearbeat interval for sending messages to the Hiven Websocket</p>
-</dd>
-<dt class="field-odd">param bool print_output</dt>
-<dd class="field-odd"><p>If set to True the raw messages that were received on the Websocket will be printed out! Defaults to False</p>
-</dd>
-<dt class="field-even">param bool debug_mode</dt>
-<dd class="field-even"><p>If set to True the following will be printed out:
-* Data is sent to Hiven
-* Data is received from Hiven
-* An event was triggered
-* A command was used
-Defaults to False</p>
-</dd>
-<dt class="field-odd">param str client_type</dt>
-<dd class="field-odd"><p>Type of the HivenClient. Can only be either “user”, “bot” or None.</p>
-</dd>
-</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>token</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – Token for the interaction with Hiven.</p></li>
+<li><p><strong>heartbeat</strong> – Hearbeat interval for sending messages to the Hiven Websocket</p></li>
+<li><p><strong>client_type</strong> (<em>str</em>) – <p>Type of the HivenClient. Can only be either “user”, “bot” or None.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Will be automatically set if <a class="reference internal" href="#botclient"><span class="std std-ref">Bot Client</span></a> or <a class="reference internal" href="#userclient"><span class="std std-ref">User Client</span></a> is used!
 If the HivenClient: <a class="reference internal" href="#hivenclient"><span class="std std-ref">HivenClient</span></a> is directly used as an object, it is recommended to set it to None!</p>
 </div>
+</p></li>
+</ul>
 </dd>
 </dl>
-<dl class="py method">
-<dt id="openhivenpy.Client.HivenClient.deactivate_print_output">
-<code class="sig-name descname">deactivate_print_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#openhivenpy.Client.HivenClient.deactivate_print_output" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 </div></blockquote>
