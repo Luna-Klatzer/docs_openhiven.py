@@ -2,6 +2,8 @@
 Client
 ******
 
+Main objects used to connect to Hiven and wrap the Swarm and API
+
 .. role:: raw-html(raw)
     :format: html
 
@@ -17,14 +19,14 @@ HivenClient
       Inherited by :ref:`BotClient<BotClient>` and :ref:`UserClient<UserClient>`
 
       :param str token: Token for the interaction with Hiven. 
-      :param bool restart: If set to True will automatically restar the websocket once if
-                     an error occured while running. Defaults to :class:`False`
+      :param bool restart: If set to True will automatically restart the websocket once if
+                     an error occurred while running. Defaults to :class:`False`
       :param str client_type:  Automatically set if UserClient or BotClient is used.
                            Defaults to `BotClient` and will be automatically set if using BotClient or UserClient
       :param event_handler: Event Handler Class that will be used to trigger events!
                            Creates a new EventHandler on Default
       :type event_handler: :class:`openhivenpy.events.EventHandler`
-      :param int heartbeat: Hearbeat interval for sending a lifesignal to Hiven. 
+      :param int heartbeat: Heartbeat interval for sending a lifesignal to Hiven.
                            Defaults to :class:`30000` (in milliseconds)
       :param bool log_ws_output: If set to :class:`True`, the websocket will log automatically
                                  all incoming json data. Can provide even more insight to the
@@ -35,9 +37,9 @@ HivenClient
                                  didn't complete successfully. Defaults to :class:`20`
       :param int ping_interval: Interval for sending pings to the server. Defaults to :class:`None` 
 
-      .. Note::
-         Changing the Ping Interval can cause the WebSocket connection to break, since currently
-         when pinging Hiven, no response will be received and so the Connection would timeout itself!
+         .. Note::
+            Changing the Ping Interval can cause the WebSocket connection to break, since currently
+            when pinging Hiven, no response will be received and so the Connection would timeout itself!
 
       :param event_loop: Event Loop that will be used for running the client and it's methods
       :type event_loop: :class:`asyncio.AbstractEventLoop`
@@ -68,15 +70,15 @@ HivenClient
 
       .. attribute:: token
 
-         Token used to connct to Hiven
+         Token used to connect to Hiven
 
-         :type: `str`
+         :type: :class:`str`
 
       .. attribute:: open
 
          If :class: `True` connection is open
 
-         :type: `bool`
+         :type: :class:`bool`
 
       .. attribute:: closed
 
@@ -84,32 +86,33 @@ HivenClient
 
          If :class: `True` connection is closed
 
-         :type: `bool`
+         :type: :class:`bool`
 
       .. attribute:: ready
 
          If :class:`True` the client has received all data from Hiven and is ready for use
 
-         :type: `bool`
+         :type: :class:`bool`
 
       .. attribute:: initialized
 
          If :class:`True` the Websocket and HTTPClient are connected and running
 
          .. Note::
-            initialized is not the same as :attr:`ready`! 
-            initialized only means the connection has started and is active but does not mean it has received any data!
+            :class:`initialized` is not the same as :attr:`ready`! 
+            
+            :class:`initialized` only means the connection has started and is active but does not mean it has received any data!
             Trying to use Hiven Data will likely throw Errors or return :class:`None`!
 
-         :type: `bool`
+         :type: :class:`bool`
 
       .. attribute:: http_client
 
          HTTP-Client used for requests to Hiven. 
          
-         Can be used to execute manual requests. See `HTTPClient <https://docs.python.org/3/library/logging.html#module-logging>`_ for more info 
+         Can be used to execute manual requests. See `HTTPClient <https://openhivenpy.readthedocs.io/en/stable/advanced_usage/http_client.html>`_ for more info 
 
-         :type: `openhivenpy.gateway.HTTPClient`
+         :type: :class:`openhivenpy.gateway.HTTPClient`
 
       .. attribute:: client_type
 
@@ -117,13 +120,13 @@ HivenClient
 
          Can be either :class:`HivenClient.BotClient`, :class:`bot`, :class:`HivenClient.UserClient` or :class:`user`
 
-         :type: `str`
+         :type: :class:`str`
 
       .. attribute:: heartbeat
 
          Heartbeat of the Websocket
 
-         :type: `int`
+         :type: :class:`int`
 
       .. attribute:: connection_status
 
@@ -131,7 +134,7 @@ HivenClient
 
          Can be either :class:`OPENING`, :class:`OPEN`, :class:`CLOSING` or :class:`CLOSED`
 
-         :type: `str`
+         :type: :class:`str`
 
       .. attribute:: websocket
 
@@ -139,16 +142,16 @@ HivenClient
 
          .. Note::
             Currently not working and will throw an error!
-            Will be fixed in 0.1.1
+            Will be fixed in :math:`0.1.1`
 
 
-         :type: `openhivenpy.gateway.Websocket`
+         :type: :class:`openhivenpy.gateway.Websocket`
 
       .. attribute:: startup_time
 
          Time that it took the client to started
 
-         :type: `int`
+         :type: :class:`int`
 
 
 =========

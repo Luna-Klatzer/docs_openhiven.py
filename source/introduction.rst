@@ -48,7 +48,7 @@ Basic Concept
 
     An event in this context is a addition, change or removal of data on Hiven. 
 
-    Example to show a basic Hiven Event Listener that listens for messages and prints out their cotent
+    Here an example to show a basic Hiven Event Listener that listens for messages and prints out their content:
     
     .. code-block:: python
 
@@ -63,7 +63,7 @@ Basic Concept
         client.run()
 
 
-    That process gets handled over the integrated `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ class.
+    The event system and handling is done over the integrated `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ class.
 
     .. note:: 
         The Default Event Handler can get modified by passing a custom class to the HivenClient.

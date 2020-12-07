@@ -7,8 +7,8 @@ OpenHiven.py documentation
     :alt: Openhiven.py
     :align: center
 
-Openhiven.py is an easy, open-source and async API wrapper written in Python
-that provides basic functionality for the Hiven Swarm and API.
+**Openhiven.py is an easy, open-source and async API wrapper written in Python
+that provides basic functionality for the Hiven Swarm and Hiven API.**
 
 .. toctree::
     :caption: Introduction
@@ -29,7 +29,7 @@ that provides basic functionality for the Hiven Swarm and API.
     :caption: Data Models
     :maxdepth: 2
 
-    types/attatchment
+    types/attachment
     types/category
     types/context
     types/embed
@@ -47,3 +47,8 @@ that provides basic functionality for the Hiven Swarm and API.
     types/room
     types/typing
     types/user
+
+.. toctree::
+    :caption: Advanced Usage
+    :maxdepth: 2
+    advanced_usag/http_client
