@@ -58,6 +58,9 @@
           
 
           
+            
+            <img src="_static/openhivenpy.png" class="logo" alt="Logo"/>
+          
           </a>
 
           
@@ -190,15 +193,15 @@
 that provides basic functionality for the Hiven Swarm and API.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The openhiven.py Library is written entirely async and needs
-to be run in an asyncio-environment!</p>
-<p>For more info about asyncio: <a class="reference external" href="https://docs.python.org/3/library/asyncio.html">Asyncio documentation</a></p>
+<p>The openhiven.py module is entirely written in async and needs
+to be run in an asyncio-environment!
+For more info about asyncio look into the <a class="reference external" href="https://docs.python.org/3/library/asyncio.html">Asyncio documentation</a></p>
 </div>
 <div class="section" id="environment">
 <h2>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>To use openhiven.py Python &gt;= 3.7 currently is recommended, but version 3.6 and lower can be used but stable performance cannot be guaranteed!
-Python 2 is entirely not supported, and currently, there is no plan to make openhiven.py available for Python 2 since many features are dependent on Python 3 and the modern async module of Python 3!</p>
+<div><p>To use openhiven.py Python &gt;= 3.7 currently is recommended, but version 3.6 and lower can be used but stable performance cannot be guaranteed!</p>
+<p>Python 2 is entirely not supported, and currently, there is no plan to make openhiven.py available for Python 2 since many features are dependent on Python 3 and the modern async module of Python 3!</p>
 </div></blockquote>
 </div>
 <div class="section" id="installation">
@@ -221,8 +224,17 @@ Python 2 is entirely not supported, and currently, there is no plan to make open
 <h2>Basic Concept<a class="headerlink" href="#basic-concept" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it. Therefore, the
-basic concept is based on an event listener system that can register events and executes them when a Hiven Swarm Event is received.
-That process gets handled over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class.</p>
+basic concept is based on an event listener system that can register events and executes them when a Hiven Swarm Event is received.</p>
+<p>Example:
+.. code-block:: python</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&#64;client.event()</dt><dd><p>async def on_message_create(message):
+print(message.room.id)</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>That process gets handled over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Default Event Handler can get modified by passing a custom class to the HivenClient.
@@ -236,6 +248,7 @@ For more information see <a class="reference external" href="https://openhivenpy
 <div><p>Openhiven.py uses to detect issues and problems the built-in <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> module of Python.
 That module can provide easy logging features and customization of program logging.</p>
 <p>In the case of openhiven.py it is used to print out events, errors and show what is executed in the program.</p>
+<p>The available options for logging options are <code class="code docutils literal notranslate"><span class="pre">CRITICAL</span></code>, <code class="code docutils literal notranslate"><span class="pre">ERROR</span></code>, <code class="code docutils literal notranslate"><span class="pre">WARNING</span></code>, <code class="code docutils literal notranslate"><span class="pre">INFO</span></code>, and <code class="code docutils literal notranslate"><span class="pre">DEBUG</span></code>.</p>
 <p><strong>Simple Example of logging:</strong>
 .. code-block:: python</p>
 <blockquote>
@@ -245,16 +258,12 @@ That module can provide easy logging features and customization of program loggi
 <p>That code snippet appended at the beginning of the file will print out basic info about the program as well as errors.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This code snippet will activate logging for all modules available!
-If other modules with logging are important this will also active their logging output!</p>
+<p>The code snippet will activate logging for all modules available in the scope!</p>
 </div>
-<p>The available options for logging options are <code class="code docutils literal notranslate"><span class="pre">CRITICAL</span></code>, <code class="code docutils literal notranslate"><span class="pre">ERROR</span></code>, <code class="code docutils literal notranslate"><span class="pre">WARNING</span></code>, <code class="code docutils literal notranslate"><span class="pre">INFO</span></code>, and <code class="code docutils literal notranslate"><span class="pre">DEBUG</span></code>.</p>
 <p>The base concept of logging is that certain events have different importance levels and
 based on the user-specified logging level they are going to be printed out on the Console or stored
 in a <cite>.log</cite> file.</p>
-<p>For more advanced usage of logging and also debugging it is recommended to use the <code class="code docutils literal notranslate"><span class="pre">logging.getLogger(&quot;openhivenpy&quot;)</span></code> and
-specify the way the log should be handled! That can be extended to the basic logging to print out logs and save them to a file!</p>
-<p><strong>Extended Example of logging for debugging:</strong>
+<p>For more advanced usage of logging and also debugging it is recommended to use:
 .. code-block:: python</p>
 <blockquote>
 <div><p>import logging
@@ -265,7 +274,7 @@ handler = logging.FileHandler(filename=’openhiven.log’, encoding=’utf-8’
 handler.setFormatter(logging.Formatter(‘%(asctime)s:%(levelname)s:%(name)s: %(message)s’))
 logger.addHandler(handler)</p>
 </div></blockquote>
-<p>For more customization for the <a href="#id2"><span class="problematic" id="id3">:code:`logging.Formatter &lt;https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial&gt;`_</span></a> and <a href="#id4"><span class="problematic" id="id5">:code:`logging.FileHandler &lt;https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial&gt;`_</span></a> class visit the <a class="reference external" href="https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial">logging</a> documentation!</p>
+<p>For more customization for the <code class="code docutils literal notranslate"><span class="pre">logging.Formatter</span></code> and <code class="code docutils literal notranslate"><span class="pre">logging.FileHandler</span></code> classes visit the <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> documentation!</p>
 </div></blockquote>
 </div>
 </div>

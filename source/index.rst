@@ -3,7 +3,7 @@ OpenHiven.py documentation
 **************************
 
 .. image:: _static/openhivenpy_with_py.png
-  :width: 600
+  :width: 300
   :alt: Openhiven.py
 
 Openhiven.py is an easy, open-source and async API wrapper written in Python
