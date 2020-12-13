@@ -50,8 +50,10 @@ A simple Bot
     Using the event listeners you can build a simple bot that can listen to commands using :class:`on_message_create()`.
 
     In this case a simple Self-Bot or User-Bot is used. That means a account on Hiven will be overtaken and the
-    program will be able to interact as such user. To use a bot account please notice that in the current version v0.1
-    Bot account are only partially supported, but they can be used using the :ref:`BotClient` class.
+    program will be able to interact as such user. To use a bot-account please notice that in the current version v0.1,
+    bot-accounts are only partially supported, but they can be used using the :ref:`BotClient` class.
+
+    Example for a simple `!ping` command
 
     .. code-block:: python
 
