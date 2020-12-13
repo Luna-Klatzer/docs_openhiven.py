@@ -33,6 +33,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -106,12 +107,13 @@
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Class HivenClient</a></li>
-<li class="toctree-l1"><a class="reference internal" href="websocket.html">Websocket</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -129,6 +131,11 @@
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
 </ul>
 
             
@@ -195,7 +202,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="a-small-intro-to-openhiven-py">
-<h1>A small Intro to openhiven.py<a class="headerlink" href="#a-small-intro-to-openhiven-py" title="Permalink to this headline">¶</a></h1>
+<span id="introduction"></span><h1>A small Intro to openhiven.py<a class="headerlink" href="#a-small-intro-to-openhiven-py" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to the Documentation of openhiven.py!</p>
 <p>Openhiven.py is an easy, open-source and async API wrapper written in Python
 that provides basic functionality for the Hiven Swarm and API.</p>
@@ -232,19 +239,19 @@ For more info about asyncio look into the <a class="reference external" href="ht
 <div><p>The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it. Therefore, the
 basic concept is based on an event listener system that can register events and executes them when a Hiven Swarm Event is received.</p>
 <p>An event in this context is a addition, change or removal of data on Hiven.</p>
-<p>Example to show a basic Hiven Event Listener that listens for messages and prints out their cotent</p>
+<p>Here an example to show a basic Hiven Event Listener that listens for messages and prints out their content:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">openhivenpy</span>
 
-<span class="n">client</span> <span class="o">=</span> <span class="n">UserClient</span><span class="p">(</span><span class="s2">&quot;Insert token&quot;</span><span class="p">)</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">openhivenpy</span><span class="o">.</span><span class="n">UserClient</span><span class="p">(</span><span class="s2">&quot;Insert token&quot;</span><span class="p">)</span>
 
 <span class="nd">@client</span><span class="o">.</span><span class="n">event</span><span class="p">()</span>
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_message_create</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">on_message_create</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>That process gets handled over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class.</p>
+<p>The event system and handling is done over the integrated <a class="reference external" href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a> class.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Default Event Handler can get modified by passing a custom class to the HivenClient.
@@ -284,7 +291,8 @@ in a <cite>.log</cite> file.</p>
 <span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For more customization for the <code class="code docutils literal notranslate"><span class="pre">logging.Formatter</span></code> and <code class="code docutils literal notranslate"><span class="pre">logging.FileHandler</span></code> classes visit the <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> documentation!</p>
+<p>For more customization for the <code class="code docutils literal notranslate"><span class="pre">logging.Formatter</span></code> and <code class="code docutils literal notranslate"><span class="pre">logging.FileHandler</span></code> classes
+visit the <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">logging</a> documentation!</p>
 </div></blockquote>
 </div>
 </div>

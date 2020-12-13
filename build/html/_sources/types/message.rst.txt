@@ -52,7 +52,7 @@ Message
 
 .. function :: delete(delay = 0)
 
-    Deletes the message. Raises :exception:`Forbidden` if not allowed.
+    Deletes the message. Raises :class:`Forbidden` if not allowed.
 
     :param delay: Delay until execution
     :type delay: :class:`float`

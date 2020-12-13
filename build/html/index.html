@@ -33,6 +33,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -100,11 +101,12 @@
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="websocket.html">Websocket</a></li>
+<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -122,6 +124,11 @@
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
 </ul>
 
             
@@ -188,10 +195,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="openhiven-py-documentation">
-<h1>OpenHiven.py documentation<a class="headerlink" href="#openhiven-py-documentation" title="Permalink to this headline">¶</a></h1>
+<span id="index"></span><h1>OpenHiven.py documentation<a class="headerlink" href="#openhiven-py-documentation" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="_images/openhivenpy_with_py.png"><img alt="Openhiven.py" class="align-center" src="_images/openhivenpy_with_py.png" style="width: 400px;" /></a>
-<p>Openhiven.py is an easy, open-source and async API wrapper written in Python
-that provides basic functionality for the Hiven Swarm and API.</p>
+<p><strong>Openhiven.py is an easy, open-source and async API wrapper written in Python
+that provides basic functionality for the Hiven Swarm and Hiven API.</strong></p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
@@ -202,7 +209,11 @@ that provides basic functionality for the Hiven Swarm and API.</p>
 <li class="toctree-l2"><a class="reference internal" href="introduction.html#logging-and-debugging">Logging and Debugging</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#event-system">Event System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#a-simple-bot">A simple Bot</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 </ul>
 </div>
@@ -215,13 +226,14 @@ that provides basic functionality for the Hiven Swarm and API.</p>
 <li class="toctree-l2"><a class="reference internal" href="hivenclient.html#userclient">UserClient</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="websocket.html">Websocket</a></li>
+<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -239,6 +251,13 @@ that provides basic functionality for the Hiven Swarm and API.</p>
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
 </ul>
 </div>
 </div>

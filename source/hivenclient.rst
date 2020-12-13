@@ -99,10 +99,9 @@ HivenClient
          If :class:`True` the Websocket and HTTPClient are connected and running
 
          .. Note::
-            :class:`initialized` is not the same as :attr:`ready`! 
+            The attribute:class:`initialized` is not the same as :attr:`ready`!
             
-            :class:`initialized` only means the connection has started and is active but does not mean it has received any data!
-            Trying to use Hiven Data will likely throw Errors or return :class:`None`!
+            It only represents an active connection to Hiven and should not be used to trigger interaction with Hiven!
 
          :type: :class:`bool`
 
@@ -153,11 +152,9 @@ HivenClient
 
          :type: :class:`int`
 
-
 =========
 BotClient
 =========
-
 
 ==========
 UserClient

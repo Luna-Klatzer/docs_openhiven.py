@@ -33,13 +33,14 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Websocket" href="websocket.html" />
+    <link rel="next" title="Event Handling" href="event_handling.html" />
     <link rel="prev" title="Contributing" href="contributing.html" /> 
 </head>
 
@@ -106,11 +107,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#userclient">UserClient</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="websocket.html">Websocket</a></li>
+<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attatchment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -128,6 +130,11 @@
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/user.html">User</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
 </ul>
 
             
@@ -195,6 +202,7 @@
             
   <div class="section" id="client">
 <h1>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h1>
+<p>Main objects used to connect to Hiven and wrap the Swarm and API</p>
 <div class="section" id="hivenclient">
 <span id="start"></span><h2>HivenClient<a class="headerlink" href="#hivenclient" title="Permalink to this headline">¶</a></h2>
 <blockquote>
@@ -207,13 +215,13 @@ Inherited by <a class="reference internal" href="#botclient"><span class="std st
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>token</strong> (<em>str</em>) – Token for the interaction with Hiven.</p></li>
-<li><p><strong>restart</strong> (<em>bool</em>) – If set to True will automatically restar the websocket once if
-an error occured while running. Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>restart</strong> (<em>bool</em>) – If set to True will automatically restart the websocket once if
+an error occurred while running. Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">False</span></code></p></li>
 <li><p><strong>client_type</strong> (<em>str</em>) – Automatically set if UserClient or BotClient is used.
 Defaults to <cite>BotClient</cite> and will be automatically set if using BotClient or UserClient</p></li>
 <li><p><strong>event_handler</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">openhivenpy.events.EventHandler</span></code>) – Event Handler Class that will be used to trigger events!
 Creates a new EventHandler on Default</p></li>
-<li><p><strong>heartbeat</strong> (<em>int</em>) – Hearbeat interval for sending a lifesignal to Hiven.
+<li><p><strong>heartbeat</strong> (<em>int</em>) – Heartbeat interval for sending a lifesignal to Hiven.
 Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">30000</span></code> (in milliseconds)</p></li>
 <li><p><strong>log_ws_output</strong> (<em>bool</em>) – If set to <code class="xref py py-class docutils literal notranslate"><span class="pre">True</span></code>, the websocket will log automatically
 all incoming json data. Can provide even more insight to the
@@ -222,18 +230,15 @@ Hiven Swarm. Defaults to <code class="xref py py-class docutils literal notransl
 More information on the websockets documentation. Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">100</span></code></p></li>
 <li><p><strong>close_timeout</strong> (<em>int</em>) – Seconds after the websocket will timeout after the handshake
 didn’t complete successfully. Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">20</span></code></p></li>
-<li><p><strong>ping_interval</strong> (<em>int</em>) – Interval for sending pings to the server. Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">None</span></code></p></li>
-</ul>
-</dd>
-</dl>
+<li><p><strong>ping_interval</strong> (<em>int</em>) – <p>Interval for sending pings to the server. Defaults to <code class="xref py py-class docutils literal notranslate"><span class="pre">None</span></code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Changing the Ping Interval can cause the WebSocket connection to break, since currently
 when pinging Hiven, no response will be received and so the Connection would timeout itself!</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>event_loop</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">asyncio.AbstractEventLoop</span></code>) – Event Loop that will be used for running the client and it’s methods</p>
+</p></li>
+<li><p><strong>event_loop</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">asyncio.AbstractEventLoop</span></code>) – Event Loop that will be used for running the client and it’s methods</p></li>
+</ul>
 </dd>
 <dt class="field-even">Raises</dt>
 <dd class="field-even"><ul class="simple">
@@ -267,10 +272,10 @@ when pinging Hiven, no response will be received and so the Connection would tim
 <dl class="py attribute">
 <dt id="HivenClient.token">
 <code class="sig-name descname">token</code><a class="headerlink" href="#HivenClient.token" title="Permalink to this definition">¶</a></dt>
-<dd><p>Token used to connct to Hiven</p>
+<dd><p>Token used to connect to Hiven</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>str</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -281,7 +286,7 @@ when pinging Hiven, no response will be received and so the Connection would tim
 <dd><p>If :class: <cite>True</cite> connection is open</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>bool</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -293,7 +298,7 @@ when pinging Hiven, no response will be received and so the Connection would tim
 <p>If :class: <cite>True</cite> connection is closed</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>bool</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -304,7 +309,7 @@ when pinging Hiven, no response will be received and so the Connection would tim
 <dd><p>If <code class="xref py py-class docutils literal notranslate"><span class="pre">True</span></code> the client has received all data from Hiven and is ready for use</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>bool</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -315,13 +320,12 @@ when pinging Hiven, no response will be received and so the Connection would tim
 <dd><p>If <code class="xref py py-class docutils literal notranslate"><span class="pre">True</span></code> the Websocket and HTTPClient are connected and running</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>initialized is not the same as <a class="reference internal" href="#HivenClient.ready" title="HivenClient.ready"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ready</span></code></a>!
-initialized only means the connection has started and is active but does not mean it has received any data!
-Trying to use Hiven Data will likely throw Errors or return <code class="xref py py-class docutils literal notranslate"><span class="pre">None</span></code>!</p>
+<p>The attribute:class:<cite>initialized</cite> is not the same as <a class="reference internal" href="#HivenClient.ready" title="HivenClient.ready"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ready</span></code></a>!</p>
+<p>It only represents an active connection to Hiven and should not be used to trigger interaction with Hiven!</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>bool</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -330,10 +334,10 @@ Trying to use Hiven Data will likely throw Errors or return <code class="xref py
 <dt id="HivenClient.http_client">
 <code class="sig-name descname">http_client</code><a class="headerlink" href="#HivenClient.http_client" title="Permalink to this definition">¶</a></dt>
 <dd><p>HTTP-Client used for requests to Hiven.</p>
-<p>Can be used to execute manual requests. See <a class="reference external" href="https://docs.python.org/3/library/logging.html#module-logging">HTTPClient</a> for more info</p>
+<p>Can be used to execute manual requests. See <a class="reference external" href="https://openhivenpy.readthedocs.io/en/stable/advanced_usage/http_client.html">HTTPClient</a> for more info</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>openhivenpy.gateway.HTTPClient</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">openhivenpy.gateway.HTTPClient</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -345,7 +349,7 @@ Trying to use Hiven Data will likely throw Errors or return <code class="xref py
 <p>Can be either <code class="xref py py-class docutils literal notranslate"><span class="pre">HivenClient.BotClient</span></code>, <a class="reference internal" href="types/user.html#bot" title="bot"><code class="xref py py-class docutils literal notranslate"><span class="pre">bot</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">HivenClient.UserClient</span></code> or <a class="reference internal" href="types/private_room.html#user" title="user"><code class="xref py py-class docutils literal notranslate"><span class="pre">user</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>str</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -356,7 +360,7 @@ Trying to use Hiven Data will likely throw Errors or return <code class="xref py
 <dd><p>Heartbeat of the Websocket</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>int</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -368,7 +372,7 @@ Trying to use Hiven Data will likely throw Errors or return <code class="xref py
 <p>Can be either <code class="xref py py-class docutils literal notranslate"><span class="pre">OPENING</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">OPEN</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">CLOSING</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">CLOSED</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>str</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -380,11 +384,11 @@ Trying to use Hiven Data will likely throw Errors or return <code class="xref py
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Currently not working and will throw an error!
-Will be fixed in 0.1.1</p>
+Will be fixed in <span class="math notranslate nohighlight">\(0.1.1\)</span></p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>openhivenpy.gateway.Websocket</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">openhivenpy.gateway.Websocket</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -395,7 +399,7 @@ Will be fixed in 0.1.1</p>
 <dd><p>Time that it took the client to started</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><cite>int</cite></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -420,7 +424,7 @@ Will be fixed in 0.1.1</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="websocket.html" class="btn btn-neutral float-right" title="Websocket" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="event_handling.html" class="btn btn-neutral float-right" title="Event Handling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="contributing.html" class="btn btn-neutral float-left" title="Contributing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

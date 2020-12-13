@@ -1,3 +1,5 @@
+.. _introduction:
+
 *****************************
 A small Intro to openhiven.py
 *****************************
@@ -54,11 +56,11 @@ Basic Concept
 
         import openhivenpy
 
-        client = UserClient("Insert token")
+        client = openhivenpy.UserClient("Insert token")
 
         @client.event()
-            async def on_message_create(msg):
-                print(msg.content)
+        async def on_message_create(msg):
+            print(msg.content)
 
         client.run()
 
@@ -111,4 +113,5 @@ Logging and Debugging
         handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
         logger.addHandler(handler)
 
-    For more customization for the :code:`logging.Formatter` and :code:`logging.FileHandler` classes visit the `logging <https://docs.python.org/3/library/logging.html#module-logging>`_ documentation!
+    For more customization for the :code:`logging.Formatter` and :code:`logging.FileHandler` classes
+    visit the `logging <https://docs.python.org/3/library/logging.html#module-logging>`_ documentation!

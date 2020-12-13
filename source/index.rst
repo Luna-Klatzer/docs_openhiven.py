@@ -1,3 +1,5 @@
+.. _index:
+
 **************************
 OpenHiven.py documentation
 **************************
@@ -23,7 +25,8 @@ that provides basic functionality for the Hiven Swarm and Hiven API.**
     :maxdepth: 2
 
     hivenclient
-    websocket
+    event_handling
+    connection
 
 .. toctree::
     :caption: Data Models
@@ -51,4 +54,6 @@ that provides basic functionality for the Hiven Swarm and Hiven API.**
 .. toctree::
     :caption: Advanced Usage
     :maxdepth: 2
-    advanced_usag/http_client
+
+    advanced_usage/http_client
+    advanced_usage/event_handler
