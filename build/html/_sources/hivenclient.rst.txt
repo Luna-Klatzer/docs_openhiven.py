@@ -88,6 +88,12 @@ HivenClient
 
          :type: :class:`bool`
 
+      .. attribute:: user
+
+         The user of the connect client
+
+         :type: :class:`openhivenpy.types.Client`
+
       .. attribute:: ready
 
          If :class:`True` the client has received all data from Hiven and is ready for use
@@ -105,7 +111,7 @@ HivenClient
 
          :type: :class:`bool`
 
-      .. attribute:: http_client
+      .. attribute:: http
 
          HTTP-Client used for requests to Hiven. 
          

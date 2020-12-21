@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Room &mdash; OpenHiven.py v.0.1b documentation</title>
+  <title>Attatchment &mdash; OpenHiven.py v.0.1b documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://openhivenpy.readthedocs.iotypes/room.html"/>
+    <link rel="canonical" href="https://openhivenpy.readthedocs.iotypes/attachment.html"/>
   
 
   
@@ -42,8 +42,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Typing" href="typing.html" />
-    <link rel="prev" title="Relationship" href="relationship.html" /> 
+    <link rel="next" title="Category" href="category.html" />
+    <link rel="prev" title="Connection" href="../connection.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -108,7 +108,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attatchment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Attatchment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
@@ -123,7 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="private_room.html">Private Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="private_group_room.html">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relationship.html">Relationship</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
 </ul>
@@ -177,13 +177,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Room</li>
+      <li>Attatchment</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/types/room.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/types/attachment.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -196,75 +196,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="room">
-<h1>Room<a class="headerlink" href="#room" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="attatchment">
+<h1>Attatchment<a class="headerlink" href="#attatchment" title="Permalink to this headline">¶</a></h1>
 <dl class="py attribute">
-<dt id="id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#id" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the room ID</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the rooms name</p>
+<dt id="filename">
+<code class="sig-name descname">filename</code><a class="headerlink" href="#filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the file’s filename.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="house">
-<code class="sig-name descname">house</code><a class="headerlink" href="#house" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the house the room belongs in</p>
+<dt id="media_url">
+<code class="sig-name descname">media_url</code><a class="headerlink" href="#media_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the file’s URL in Hiven’s CDN.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="position">
-<code class="sig-name descname">position</code><a class="headerlink" href="#position" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the position of the room in the category</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="emoji">
-<code class="sig-name descname">emoji</code><a class="headerlink" href="#emoji" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the room’s emoji</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="description">
-<code class="sig-name descname">description</code><a class="headerlink" href="#description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the room’s description</p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="send">
-<code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#send" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sends a message in the Room. Returns the message if successful.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>content</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The content of the message</p></li>
-<li><p><strong>delay</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – The delay before sending the message. Defaults to 0.</p></li>
-<li><p><strong>attatchment</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">file</span></code>) – The attatchment to send with the message. Defaults to None</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt id="edit">
-<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#edit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Edits the Room. The client needs permissions to do this. Returns True if successful.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room name</p></li>
-<li><p><strong>emoji</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room’s emoji</p></li>
-<li><p><strong>description</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room’s description</p></li>
-</ul>
-</dd>
-</dl>
+<dt id="raw">
+<code class="sig-name descname">raw</code><a class="headerlink" href="#raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the raw data sent from Hiven. Useful for image sizes</p>
 </dd></dl>
 
 </div>
@@ -277,10 +226,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="typing.html" class="btn btn-neutral float-right" title="Typing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="category.html" class="btn btn-neutral float-right" title="Category" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="relationship.html" class="btn btn-neutral float-left" title="Relationship" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../connection.html" class="btn btn-neutral float-left" title="Connection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

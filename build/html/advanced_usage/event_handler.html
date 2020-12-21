@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Mention &mdash; OpenHiven.py v.0.1b documentation</title>
+  <title>Event Handler &mdash; OpenHiven.py v.0.1b documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://openhivenpy.readthedocs.iotypes/mention.html"/>
+    <link rel="canonical" href="https://openhivenpy.readthedocs.ioadvanced_usage/event_handler.html"/>
   
 
   
@@ -42,8 +42,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Deleted Message" href="deletedmessage.html" />
-    <link rel="prev" title="Member" href="member.html" /> 
+    <link rel="prev" title="HTTP Client" href="http_client.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -107,30 +106,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../connection.html">Connection</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attatchment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="category.html">Category</a></li>
-<li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
-<li class="toctree-l1"><a class="reference internal" href="feed.html">Feed</a></li>
-<li class="toctree-l1"><a class="reference internal" href="house.html">House</a></li>
-<li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="member.html">Member</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
-<li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
-<li class="toctree-l1"><a class="reference internal" href="presence.html">Presence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="private_group_room.html">Private Group Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="relationship.html">Relationship</a></li>
-<li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user.html">User</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../types/attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/category.html">Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/embed.html">Embed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/feed.html">Feed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/house.html">House</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/invite.html">Invite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/member.html">Member</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/mention.html">Mention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/deletedmessage.html">Deleted Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/presence.html">Presence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/private_room.html">Private Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/relationship.html">Relationship</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/room.html">Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/typing.html">Typing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../types/user.html">User</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Advanced Usage</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_usage/http_client.html">HTTP Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_usage/event_handler.html">Event Handler</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="http_client.html">HTTP Client</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Event Handler</a></li>
 </ul>
 
             
@@ -177,13 +176,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Mention</li>
+      <li>Event Handler</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/types/mention.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/advanced_usage/event_handler.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -196,8 +195,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="mention">
-<h1>Mention<a class="headerlink" href="#mention" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="event-handler">
+<span id="id1"></span><h1>Event Handler<a class="headerlink" href="#event-handler" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
@@ -208,10 +207,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="deletedmessage.html" class="btn btn-neutral float-right" title="Deleted Message" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="member.html" class="btn btn-neutral float-left" title="Member" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="http_client.html" class="btn btn-neutral float-left" title="HTTP Client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

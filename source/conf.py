@@ -28,6 +28,7 @@ import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_context = {}
+html_favicon = "./_static/openhivenpy.ico"
 html_logo = "./_static/openhivenpy_white_200x200.png"
 
 html_theme_options = {
@@ -54,3 +55,5 @@ html_theme_options = {
 html_css_files = [
     "stylize.css"
 ]
+
+html_js_files = []

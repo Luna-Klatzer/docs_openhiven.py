@@ -7,8 +7,3 @@ share your work and ideas and maybe even implement functionality into Openhiven.
 
 Since Openhiven.py is an open-source "free time" project of Developers, it is heavily dependent on user-feedback,
 bug reports and also contributions of other users and we want to support that to make Openhiven.py the best it can be.
-
-.. image:: _static/issue_page_openhiven.py.png
-    :width: 400
-    :alt: Openhiven.py
-    :align: center
