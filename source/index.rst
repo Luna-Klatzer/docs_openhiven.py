@@ -9,8 +9,8 @@ OpenHiven.py documentation
     :alt: Openhiven.py
     :align: center
 
-**Openhiven.py is an easy, open-source and async API wrapper written in Python
-that provides basic functionality for the Hiven Swarm and Hiven API.**
+**Openhiven.py is an easy, fast and async API wrapper written in Python
+that provides extensive functionality for the Hiven Swarm and Hiven API.**
 
 .. toctree::
     :caption: Introduction

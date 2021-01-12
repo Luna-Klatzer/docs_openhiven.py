@@ -2,12 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/_static/issue_page_openhiven.py.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/docs_openhiven.py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docs_openhiven.py.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/contributing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/contributing.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/quick_start.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/quick_start.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/presence.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/presence.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/introduction.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/pygments.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/pygments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/advanced_usage/event_handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/advanced_usage/event_handler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/advanced_usage/http_client.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/advanced_usage/http_client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/connection.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/connection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/contributing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/event_handling.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/event_handling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/hivenclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/hivenclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/quick_start.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/quick_start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/attachment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/context.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/deletedmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/deletedmessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/embed.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/embed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/house.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/invite.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/invite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/member.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/mention.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/mention.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/presence.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/presence.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/private_group_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/private_group_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/private_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/private_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/relationship.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/relationship.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/typing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/typing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/types/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +104,9 @@
       <updated>1607869481035</updated>
       <workItem from="1607869484183" duration="9042000" />
       <workItem from="1607895068665" duration="32000" />
+      <workItem from="1610438681522" duration="1519000" />
+      <workItem from="1610440230370" duration="1249000" />
+      <workItem from="1610441567633" duration="2098000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
