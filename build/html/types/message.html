@@ -37,8 +37,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -46,7 +44,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Presence" href="presence.html" />
-    <link rel="prev" title="Deleted Message" href="deletedmessage.html" /> 
+    <link rel="prev" title="Mention" href="mention.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,19 +98,22 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../introduction.html">A small Intro to openhiven.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/bug_report.html">Bug-Report</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../event_handling.html">Event Handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/hivenclient.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/event_handling.html">Events and Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/exceptions.html">Exceptions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_models.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
@@ -121,11 +122,11 @@
 <li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="member.html">Member</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mention.html">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#deleted-message">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="presence.html">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="private_room.html#private-group-room">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a></li>
@@ -135,6 +136,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../advanced_usage/http_client.html">HTTP Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced_usage/event_handler.html">Event Handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced_usage/utils.html">Openhiven.py Utils</a></li>
 </ul>
 
             
@@ -204,106 +206,148 @@
             
   <div class="section" id="message">
 <h1>Message<a class="headerlink" href="#message" title="Permalink to this headline">¶</a></h1>
-<dl class="py attribute">
-<dt id="id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#id" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the ID of the message.</p>
+<dl class="py class">
+<dt id="Message">
+<em class="property">class </em><code class="sig-name descname">Message</code><a class="headerlink" href="#Message" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt id="Message.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#Message.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the ID of the message.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="author">
-<code class="sig-name descname">author</code><a class="headerlink" href="#author" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the author of the message.</p>
+<dt id="Message.author">
+<code class="sig-name descname">author</code><a class="headerlink" href="#Message.author" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the author of the message.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="created_at">
-<code class="sig-name descname">created_at</code><a class="headerlink" href="#created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the time the message was sent.</p>
+<dt id="Message.created_at">
+<code class="sig-name descname">created_at</code><a class="headerlink" href="#Message.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the time the message was sent.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="edited_at">
-<code class="sig-name descname">edited_at</code><a class="headerlink" href="#edited_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the time the message was edited. Will return None if it hasn’t been edited.</p>
+<dt id="Message.edited_at">
+<code class="sig-name descname">edited_at</code><a class="headerlink" href="#Message.edited_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the time the message was edited. Will return None if it hasn’t been edited.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="room">
-<code class="sig-name descname">room</code><a class="headerlink" href="#room" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the <code class="xref py py-class docutils literal notranslate"><span class="pre">Room</span></code> the message belongs to</p>
+<dt id="Message.room">
+<code class="sig-name descname">room</code><a class="headerlink" href="#Message.room" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <a class="reference internal" href="room.html#Room" title="Room"><code class="xref py py-class docutils literal notranslate"><span class="pre">Room</span></code></a> the message belongs to</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="house">
-<code class="sig-name descname">house</code><a class="headerlink" href="#house" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the <code class="xref py py-class docutils literal notranslate"><span class="pre">House</span></code> the message belongs to. May return None in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Private</span> <span class="pre">Room</span></code></p>
+<dt id="Message.house">
+<code class="sig-name descname">house</code><a class="headerlink" href="#Message.house" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <a class="reference internal" href="house.html#House" title="House"><code class="xref py py-class docutils literal notranslate"><span class="pre">House</span></code></a> the message belongs to. May return None in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Private</span> <span class="pre">Room</span></code></p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="attatchment">
-<code class="sig-name descname">attatchment</code><a class="headerlink" href="#attatchment" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the <code class="xref py py-class docutils literal notranslate"><span class="pre">Attatchment</span></code> of the message. May return None.</p>
+<dt id="Message.attachment">
+<code class="sig-name descname">attachment</code><a class="headerlink" href="#Message.attachment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <a class="reference internal" href="attachment.html#Attachment" title="Attachment"><code class="xref py py-class docutils literal notranslate"><span class="pre">Attachment</span></code></a> of the message. May return None.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="content">
-<code class="sig-name descname">content</code><a class="headerlink" href="#content" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the message’s content.</p>
+<dt id="Message.content">
+<code class="sig-name descname">content</code><a class="headerlink" href="#Message.content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the message’s content.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="mentions">
-<code class="sig-name descname">mentions</code><a class="headerlink" href="#mentions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs a list of mentions in the message. May return None.</p>
+<dt id="Message.mentions">
+<code class="sig-name descname">mentions</code><a class="headerlink" href="#Message.mentions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of mentions in the message. May return None.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="embed">
-<code class="sig-name descname">embed</code><a class="headerlink" href="#embed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Grabs the embed in the message.</p>
+<dt id="Message.embed">
+<code class="sig-name descname">embed</code><a class="headerlink" href="#Message.embed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the embed in the message.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="mark_message_as_read">
-<code class="sig-name descname">mark_message_as_read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">delay</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mark_message_as_read" title="Permalink to this definition">¶</a></dt>
+<dt id="Message.mark_message_as_read">
+<code class="sig-name descname">mark_message_as_read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">delay</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Message.mark_message_as_read" title="Permalink to this definition">¶</a></dt>
 <dd><p>Marks the message as read. Bot clients do not need to use this.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>delay</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – Delay until execution</p>
+<dt class="field-odd">Async</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>delay</strong> (<em>float</em>) – Delay until execution</p>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><cite>True</cite> if successful else <cite>False</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="delete">
-<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">delay</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#delete" title="Permalink to this definition">¶</a></dt>
+<dt id="Message.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">delay</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Message.delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deletes the message. Raises <code class="xref py py-class docutils literal notranslate"><span class="pre">Forbidden</span></code> if not allowed.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>delay</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – Delay until execution</p>
+<dt class="field-odd">Async</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>delay</strong> (<em>float</em>) – Delay until execution</p>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DeletedMessage</span></code></p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The <cite>DeletedMessage</cite> object if successful else <cite>False</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#DeletedMessage" title="DeletedMessage"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeletedMessage</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="edit">
-<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">content</span></em><span class="sig-paren">)</span><a class="headerlink" href="#edit" title="Permalink to this definition">¶</a></dt>
+<dt id="Message.edit">
+<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">content</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Message.edit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Edits the message. Returns True if successful.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>content</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The message’s content.</p>
+<dd class="field-odd"><p><strong>content</strong> (<em>str</em>) – The message’s content.</p>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
 </dd>
 </dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="deleted-message">
+<h1>Deleted Message<a class="headerlink" href="#deleted-message" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="DeletedMessage">
+<em class="property">class </em><code class="sig-name descname">DeletedMessage</code><a class="headerlink" href="#DeletedMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a deleted Message in a room</p>
+<dl class="py attribute">
+<dt id="DeletedMessage.house_id">
+<code class="sig-name descname">house_id</code><a class="headerlink" href="#DeletedMessage.house_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the house id of the message</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DeletedMessage.message_id">
+<code class="sig-name descname">message_id</code><a class="headerlink" href="#DeletedMessage.message_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the message id of the message</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DeletedMessage.room_id">
+<code class="sig-name descname">room_id</code><a class="headerlink" href="#DeletedMessage.room_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the room id of the message</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -315,7 +359,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="presence.html" class="btn btn-neutral float-right" title="Presence" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="deletedmessage.html" class="btn btn-neutral float-left" title="Deleted Message" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mention.html" class="btn btn-neutral float-left" title="Mention" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

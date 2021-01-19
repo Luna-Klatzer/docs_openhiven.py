@@ -37,8 +37,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -100,19 +98,22 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../introduction.html">A small Intro to openhiven.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/bug_report.html">Bug-Report</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../event_handling.html">Event Handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/hivenclient.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/event_handling.html">Events and Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/exceptions.html">Exceptions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_models.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
@@ -121,11 +122,11 @@
 <li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="member.html">Member</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mention.html">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message.html#deleted-message">Deleted Message</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="private_room.html#private-group-room">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a></li>
@@ -135,6 +136,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../advanced_usage/http_client.html">HTTP Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced_usage/event_handler.html">Event Handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced_usage/utils.html">Openhiven.py Utils</a></li>
 </ul>
 
             
@@ -203,7 +205,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="presence">
-<span id="id1"></span><h1>Presence<a class="headerlink" href="#presence" title="Permalink to this headline">¶</a></h1>
+<h1>Presence<a class="headerlink" href="#presence" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="Presence">
+<em class="property">class </em><code class="sig-name descname">Presence</code><a class="headerlink" href="#Presence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a user’s current visible presence</p>
+</dd></dl>
+
 </div>
 
 

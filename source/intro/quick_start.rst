@@ -80,4 +80,3 @@ A simple Bot
         :class:`on_init` only means the init event from Hiven was received but no data is initialized. As such it
         cannot be used to interact with Hiven yet but execute startup methods that should as soon as possible
         be executed and available for use.
-

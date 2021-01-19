@@ -37,7 +37,7 @@ HivenClient
                                  didn't complete successfully. Defaults to :class:`20`
       :param int ping_interval: Interval for sending pings to the server. Defaults to :class:`None` 
 
-         .. Note::
+         .. note::
             Changing the Ping Interval can cause the WebSocket connection to break, since currently
             when pinging Hiven, no response will be received and so the Connection would timeout itself!
 
@@ -72,13 +72,13 @@ HivenClient
 
          Token used to connect to Hiven
 
-         :type: :class:`str`
+         :type: str
 
       .. attribute:: open
 
          If :class: `True` connection is open
 
-         :type: :class:`bool`
+         :type: bool
 
       .. attribute:: closed
 
@@ -86,7 +86,7 @@ HivenClient
 
          If :class: `True` connection is closed
 
-         :type: :class:`bool`
+         :type: bool
 
       .. attribute:: user
 
@@ -98,24 +98,25 @@ HivenClient
 
          If :class:`True` the client has received all data from Hiven and is ready for use
 
-         :type: :class:`bool`
+         :type: bool
 
       .. attribute:: initialized
 
          If :class:`True` the Websocket and HTTPClient are connected and running
 
-         .. Note::
+         .. note::
             The attribute:class:`initialized` is not the same as :attr:`ready`!
             
             It only represents an active connection to Hiven and should not be used to trigger interaction with Hiven!
 
-         :type: :class:`bool`
+         :type: bool
 
       .. attribute:: http
 
          HTTP-Client used for requests to Hiven. 
          
-         Can be used to execute manual requests. See `HTTPClient <https://openhivenpy.readthedocs.io/en/stable/advanced_usage/http_client.html>`_ for more info 
+         Can be used to execute manual requests. See
+         `HTTPClient <https://openhivenpy.readthedocs.io/en/stable/http_client.html>`_ for more info
 
          :type: :class:`openhivenpy.gateway.HTTPClient`
 
@@ -125,13 +126,13 @@ HivenClient
 
          Can be either :class:`HivenClient.BotClient`, :class:`bot`, :class:`HivenClient.UserClient` or :class:`user`
 
-         :type: :class:`str`
+         :type: str
 
       .. attribute:: heartbeat
 
          Heartbeat of the Websocket
 
-         :type: :class:`int`
+         :type: int
 
       .. attribute:: connection_status
 
@@ -139,13 +140,13 @@ HivenClient
 
          Can be either :class:`OPENING`, :class:`OPEN`, :class:`CLOSING` or :class:`CLOSED`
 
-         :type: :class:`str`
+         :type: str
 
       .. attribute:: websocket
 
          Websocket object that is used connecting to Hiven
 
-         .. Note::
+         .. note::
             Currently not working and will throw an error!
             Will be fixed in :math:`0.1.1`
 
@@ -156,7 +157,7 @@ HivenClient
 
          Time that it took the client to started
 
-         :type: :class:`int`
+         :type: int
 
 =========
 BotClient

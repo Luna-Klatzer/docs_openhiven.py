@@ -37,8 +37,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -98,19 +96,22 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">A small Intro to openhiven.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/bug_report.html">Bug-Report</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/hivenclient.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/event_handling.html">Events and Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/exceptions.html">Exceptions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/data_models.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -119,11 +120,11 @@
 <li class="toctree-l1"><a class="reference internal" href="types/invite.html">Invite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/member.html">Member</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/mention.html">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/message.html#deleted-message">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/presence.html">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_room.html#private-group-room">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
@@ -133,6 +134,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/utils.html">Openhiven.py Utils</a></li>
 </ul>
 
             
@@ -208,7 +210,6 @@
  | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
- | <a href="#G"><strong>G</strong></a>
  | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
  | <a href="#J"><strong>J</strong></a>
@@ -227,11 +228,13 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/message.html#attatchment">attatchment</a>
+      <li><a href="types/attachment.html#Attachment">Attachment (built-in class)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/message.html#author">author</a>
+      <li><a href="types/message.html#Message.attachment">attachment (Message attribute)</a>
+</li>
+      <li><a href="types/message.html#Message.author">author (Message attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -239,33 +242,55 @@
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#bot">bot</a>
+      <li><a href="types/house.html#House.banner">banner (House attribute)</a>
+</li>
+      <li><a href="types/user.html#User.bot">bot (User attribute)</a>
+</li>
+      <li><a href="core/hivenclient.html#BotClient">BotClient (built-in class)</a>
 </li>
       <li>
     built-in function
 
       <ul>
-        <li><a href="types/house.html#create_invite">create_invite()</a>
+        <li><a href="core/hivenclient.html#HivenClient.connect">HivenClient.connect()</a>
 </li>
-        <li><a href="types/house.html#create_room">create_room()</a>
+        <li><a href="core/hivenclient.html#HivenClient.run">HivenClient.run()</a>
 </li>
-        <li><a href="types/message.html#delete">delete()</a>
+        <li><a href="core/hivenclient.html#HivenClient.stop">HivenClient.stop()</a>
 </li>
-        <li><a href="types/house.html#edit">edit()</a>, <a href="types/message.html#edit">[1]</a>, <a href="types/room.html#edit">[2]</a>
+        <li><a href="types/house.html#House.create_invite">House.create_invite()</a>
 </li>
-        <li><a href="types/house.html#get_member">get_member()</a>
+        <li><a href="types/house.html#House.create_room">House.create_room()</a>
 </li>
-        <li><a href="hivenclient.html#HivenClient.connect">HivenClient.connect()</a>
+        <li><a href="types/house.html#House.edit">House.edit()</a>
 </li>
-        <li><a href="hivenclient.html#HivenClient.run">HivenClient.run()</a>
+        <li><a href="types/house.html#House.get_member">House.get_member()</a>
 </li>
-        <li><a href="hivenclient.html#HivenClient.stop">HivenClient.stop()</a>
+        <li><a href="types/house.html#House.leave">House.leave()</a>
 </li>
-        <li><a href="types/house.html#leave">leave()</a>
+        <li><a href="types/message.html#Message.delete">Message.delete()</a>
 </li>
-        <li><a href="types/message.html#mark_message_as_read">mark_message_as_read()</a>
+        <li><a href="types/message.html#Message.edit">Message.edit()</a>
 </li>
-        <li><a href="types/private_group_room.html#send">send()</a>, <a href="types/private_room.html#send">[1]</a>, <a href="types/room.html#send">[2]</a>
+        <li><a href="types/message.html#Message.mark_message_as_read">Message.mark_message_as_read()</a>
+</li>
+        <li><a href="types/private_room.html#PrivateGroupRoom.send">PrivateGroupRoom.send()</a>
+</li>
+        <li><a href="types/private_room.html#PrivateRoom.send">PrivateRoom.send()</a>
+</li>
+        <li><a href="types/room.html#Room.edit">Room.edit()</a>
+</li>
+        <li><a href="types/room.html#Room.send">Room.send()</a>
+</li>
+        <li><a href="core/hivenclient.html#UserClient.block_user">UserClient.block_user()</a>
+</li>
+        <li><a href="core/hivenclient.html#UserClient.cancel_friend_request">UserClient.cancel_friend_request()</a>
+</li>
+        <li><a href="core/hivenclient.html#UserClient.fetch_current_friend_requests">UserClient.fetch_current_friend_requests()</a>
+</li>
+        <li><a href="core/hivenclient.html#UserClient.send_friend_request">UserClient.send_friend_request()</a>
+</li>
+        <li><a href="core/hivenclient.html#UserClient.unblock_user">UserClient.unblock_user()</a>
 </li>
       </ul></li>
   </ul></td>
@@ -274,33 +299,23 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#HivenClient.client_type">client_type (HivenClient attribute)</a>
+      <li><a href="types/category.html#Category">Category (built-in class)</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient.closed">closed (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.client_type">client_type (HivenClient attribute)</a>
 </li>
-      <li><a href="types/invite.html#code">code</a>
+      <li><a href="core/hivenclient.html#HivenClient.closed">closed (HivenClient attribute)</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient.connection_status">connection_status (HivenClient attribute)</a>
-</li>
-      <li><a href="types/message.html#content">content</a>
+      <li><a href="types/invite.html#Invite.code">code (Invite attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    create_invite()
-
-      <ul>
-        <li><a href="types/house.html#create_invite">built-in function</a>
+      <li><a href="core/hivenclient.html#HivenClient.connection_status">connection_status (HivenClient attribute)</a>
 </li>
-      </ul></li>
-      <li>
-    create_room()
-
-      <ul>
-        <li><a href="types/house.html#create_room">built-in function</a>
+      <li><a href="types/message.html#Message.content">content (Message attribute)</a>
 </li>
-      </ul></li>
-      <li><a href="types/message.html#created_at">created_at</a>
+      <li><a href="types/context.html#Context">Context (built-in class)</a>
+</li>
+      <li><a href="types/message.html#Message.created_at">created_at (Message attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -308,37 +323,31 @@
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    delete()
-
-      <ul>
-        <li><a href="types/message.html#delete">built-in function</a>
+      <li><a href="types/message.html#DeletedMessage">DeletedMessage (built-in class)</a>
 </li>
-      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/embed.html#description">description</a>, <a href="types/room.html#description">[1]</a>
+      <li><a href="types/embed.html#Embed.description">description (Embed attribute)</a>
+
+      <ul>
+        <li><a href="types/room.html#Room.description">(Room attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    edit()
-
-      <ul>
-        <li><a href="types/house.html#edit">built-in function</a>, <a href="types/message.html#edit">[1]</a>, <a href="types/room.html#edit">[2]</a>
+      <li><a href="types/message.html#Message.edited_at">edited_at (Message attribute)</a>
 </li>
-      </ul></li>
+      <li><a href="types/embed.html#Embed">Embed (built-in class)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/message.html#edited_at">edited_at</a>
+      <li><a href="types/message.html#Message.embed">embed (Message attribute)</a>
 </li>
-      <li><a href="types/message.html#embed">embed</a>
-</li>
-      <li><a href="types/room.html#emoji">emoji</a>
+      <li><a href="types/room.html#Room.emoji">emoji (Room attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -346,63 +355,97 @@
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/attachment.html#filename">filename</a>
+      <li><a href="types/feed.html#Feed">Feed (built-in class)</a>
 </li>
   </ul></td>
-</tr></table>
-
-<h2 id="G">G</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    get_member()
-
-      <ul>
-        <li><a href="types/house.html#get_member">built-in function</a>
+      <li><a href="types/attachment.html#Attachment.filename">filename (Attachment attribute)</a>
 </li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#header">header</a>
+      <li><a href="types/user.html#User.header">header (User attribute)</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient.heartbeat">heartbeat (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.heartbeat">heartbeat (HivenClient attribute)</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient">HivenClient (built-in class)</a>
+      <li><a href="core/hivenclient.html#HivenClient">HivenClient (built-in class)</a>
 </li>
       <li>
     HivenClient.connect()
 
       <ul>
-        <li><a href="hivenclient.html#HivenClient.connect">built-in function</a>
+        <li><a href="core/hivenclient.html#HivenClient.connect">built-in function</a>
 </li>
       </ul></li>
       <li>
     HivenClient.run()
 
       <ul>
-        <li><a href="hivenclient.html#HivenClient.run">built-in function</a>
+        <li><a href="core/hivenclient.html#HivenClient.run">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    HivenClient.stop()
+
+      <ul>
+        <li><a href="core/hivenclient.html#HivenClient.stop">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="types/house.html#House">House (built-in class)</a>
+</li>
+      <li><a href="types/invite.html#Invite.house">house (Invite attribute)</a>
+
+      <ul>
+        <li><a href="types/message.html#Message.house">(Message attribute)</a>
+</li>
+        <li><a href="types/room.html#Room.house">(Room attribute)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
-    HivenClient.stop()
+    House.create_invite()
 
       <ul>
-        <li><a href="hivenclient.html#HivenClient.stop">built-in function</a>
+        <li><a href="types/house.html#House.create_invite">built-in function</a>
 </li>
       </ul></li>
-      <li><a href="types/invite.html#house">house</a>, <a href="types/message.html#house">[1]</a>, <a href="types/room.html#house">[2]</a>
+      <li>
+    House.create_room()
+
+      <ul>
+        <li><a href="types/house.html#House.create_room">built-in function</a>
 </li>
-      <li><a href="types/deletedmessage.html#house_id">house_id</a>
+      </ul></li>
+      <li>
+    House.edit()
+
+      <ul>
+        <li><a href="types/house.html#House.edit">built-in function</a>
 </li>
-      <li><a href="types/invite.html#house_members">house_members</a>
+      </ul></li>
+      <li>
+    House.get_member()
+
+      <ul>
+        <li><a href="types/house.html#House.get_member">built-in function</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient.http">http (HivenClient attribute)</a>
+      </ul></li>
+      <li>
+    House.leave()
+
+      <ul>
+        <li><a href="types/house.html#House.leave">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="types/message.html#DeletedMessage.house_id">house_id (DeletedMessage attribute)</a>
+</li>
+      <li><a href="types/invite.html#Invite.house_members">house_members (Invite attribute)</a>
+</li>
+      <li><a href="core/hivenclient.html#HivenClient.http">http (HivenClient attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -410,15 +453,33 @@
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/house.html#icon">icon</a>, <a href="types/user.html#icon">[1]</a>
+      <li><a href="types/house.html#House.icon">icon (House attribute)</a>
+
+      <ul>
+        <li><a href="types/user.html#User.icon">(User attribute)</a>
 </li>
-      <li><a href="types/house.html#id">id</a>, <a href="types/message.html#id">[1]</a>, <a href="types/private_group_room.html#id">[2]</a>, <a href="types/private_room.html#id">[3]</a>, <a href="types/room.html#id">[4]</a>, <a href="types/user.html#id">[5]</a>
+      </ul></li>
+      <li><a href="types/house.html#House.id">id (House attribute)</a>
+
+      <ul>
+        <li><a href="types/message.html#Message.id">(Message attribute)</a>
 </li>
+        <li><a href="types/private_room.html#PrivateGroupRoom.id">(PrivateGroupRoom attribute)</a>
+</li>
+        <li><a href="types/private_room.html#PrivateRoom.id">(PrivateRoom attribute)</a>
+</li>
+        <li><a href="types/room.html#Room.id">(Room attribute)</a>
+</li>
+        <li><a href="types/user.html#User.id">(User attribute)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/embed.html#image">image</a>
+      <li><a href="types/embed.html#Embed.image">image (Embed attribute)</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient.initialized">initialized (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.initialized">initialized (HivenClient attribute)</a>
+</li>
+      <li><a href="types/invite.html#Invite">Invite (built-in class)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -426,7 +487,7 @@
 <h2 id="J">J</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#joined_at">joined_at</a>
+      <li><a href="types/user.html#User.joined_at">joined_at (User attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -434,18 +495,15 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/private_group_room.html#last_message_id">last_message_id</a>, <a href="types/private_room.html#last_message_id">[1]</a>
-</li>
-      <li>
-    leave()
+      <li><a href="types/private_room.html#PrivateGroupRoom.last_message_id">last_message_id (PrivateGroupRoom attribute)</a>
 
       <ul>
-        <li><a href="types/house.html#leave">built-in function</a>
+        <li><a href="types/private_room.html#PrivateRoom.last_message_id">(PrivateRoom attribute)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#location">location</a>
+      <li><a href="types/user.html#User.location">location (User attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -453,26 +511,46 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    mark_message_as_read()
-
-      <ul>
-        <li><a href="types/message.html#mark_message_as_read">built-in function</a>
+      <li><a href="types/invite.html#Invite.max_age">max_age (Invite attribute)</a>
 </li>
-      </ul></li>
-      <li><a href="types/invite.html#max_age">max_age</a>
+      <li><a href="types/invite.html#Invite.max_uses">max_uses (Invite attribute)</a>
 </li>
-      <li><a href="types/invite.html#max_uses">max_uses</a>
+      <li><a href="types/attachment.html#Attachment.media_url">media_url (Attachment attribute)</a>
+</li>
+      <li><a href="types/member.html#Member">Member (built-in class)</a>
+</li>
+      <li><a href="types/house.html#House.members">members (House attribute)</a>
+</li>
+      <li><a href="types/mention.html#Mention">Mention (built-in class)</a>
+</li>
+      <li><a href="types/message.html#Message.mentions">mentions (Message attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/attachment.html#media_url">media_url</a>
+      <li><a href="types/message.html#Message">Message (built-in class)</a>
 </li>
-      <li><a href="types/house.html#members">members</a>
+      <li>
+    Message.delete()
+
+      <ul>
+        <li><a href="types/message.html#Message.delete">built-in function</a>
 </li>
-      <li><a href="types/message.html#mentions">mentions</a>
+      </ul></li>
+      <li>
+    Message.edit()
+
+      <ul>
+        <li><a href="types/message.html#Message.edit">built-in function</a>
 </li>
-      <li><a href="types/deletedmessage.html#message_id">message_id</a>
+      </ul></li>
+      <li>
+    Message.mark_message_as_read()
+
+      <ul>
+        <li><a href="types/message.html#Message.mark_message_as_read">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="types/message.html#DeletedMessage.message_id">message_id (DeletedMessage attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -480,19 +558,29 @@
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/house.html#name">name</a>, <a href="types/private_group_room.html#name">[1]</a>, <a href="types/private_room.html#name">[2]</a>, <a href="types/room.html#name">[3]</a>, <a href="types/user.html#name">[4]</a>
+      <li><a href="types/house.html#House.name">name (House attribute)</a>
+
+      <ul>
+        <li><a href="types/private_room.html#PrivateGroupRoom.name">(PrivateGroupRoom attribute)</a>
 </li>
+        <li><a href="types/private_room.html#PrivateRoom.name">(PrivateRoom attribute)</a>
+</li>
+        <li><a href="types/room.html#Room.name">(Room attribute)</a>
+</li>
+        <li><a href="types/user.html#User.name">(User attribute)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="O">O</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#HivenClient.open">open (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.open">open (HivenClient attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/house.html#owner_id">owner_id</a>
+      <li><a href="types/house.html#House.owner_id">owner_id (House attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -500,31 +588,71 @@
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/room.html#position">position</a>
+      <li><a href="types/room.html#Room.position">position (Room attribute)</a>
+</li>
+      <li><a href="types/presence.html#Presence">Presence (built-in class)</a>
+</li>
+      <li><a href="types/user.html#User.presence">presence (User attribute)</a>
+</li>
+      <li><a href="types/private_room.html#PrivateGroupRoom">PrivateGroupRoom (built-in class)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#presence">presence</a>
+      <li>
+    PrivateGroupRoom.send()
+
+      <ul>
+        <li><a href="types/private_room.html#PrivateGroupRoom.send">built-in function</a>
 </li>
+      </ul></li>
+      <li><a href="types/private_room.html#PrivateRoom">PrivateRoom (built-in class)</a>
+</li>
+      <li>
+    PrivateRoom.send()
+
+      <ul>
+        <li><a href="types/private_room.html#PrivateRoom.send">built-in function</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/attachment.html#raw">raw</a>
+      <li><a href="types/attachment.html#Attachment.raw">raw (Attachment attribute)</a>
 </li>
-      <li><a href="hivenclient.html#HivenClient.ready">ready (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.ready">ready (HivenClient attribute)</a>
 </li>
-      <li><a href="types/private_group_room.html#recipient">recipient</a>, <a href="types/private_room.html#recipient">[1]</a>
+      <li><a href="types/private_room.html#PrivateGroupRoom.recipient">recipient (PrivateGroupRoom attribute)</a>
+
+      <ul>
+        <li><a href="types/private_room.html#PrivateRoom.recipient">(PrivateRoom attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="types/house.html#House.roles">roles (House attribute)</a>
+</li>
+      <li><a href="types/room.html#Room">Room (built-in class)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/house.html#roles">roles</a>
+      <li><a href="types/message.html#Message.room">room (Message attribute)</a>
 </li>
-      <li><a href="types/message.html#room">room</a>
+      <li>
+    Room.edit()
+
+      <ul>
+        <li><a href="types/room.html#Room.edit">built-in function</a>
 </li>
-      <li><a href="types/deletedmessage.html#room_id">room_id</a>
+      </ul></li>
+      <li>
+    Room.send()
+
+      <ul>
+        <li><a href="types/room.html#Room.send">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="types/message.html#DeletedMessage.room_id">room_id (DeletedMessage attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -532,16 +660,7 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    send()
-
-      <ul>
-        <li><a href="types/private_group_room.html#send">built-in function</a>, <a href="types/private_room.html#send">[1]</a>, <a href="types/room.html#send">[2]</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#HivenClient.startup_time">startup_time (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.startup_time">startup_time (HivenClient attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -549,13 +668,15 @@
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/embed.html#title">title</a>
+      <li><a href="types/embed.html#Embed.title">title (Embed attribute)</a>
+</li>
+      <li><a href="core/hivenclient.html#HivenClient.token">token (HivenClient attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#HivenClient.token">token (HivenClient attribute)</a>
+      <li><a href="types/embed.html#Embed.type">type (Embed attribute)</a>
 </li>
-      <li><a href="types/embed.html#type">type</a>
+      <li><a href="types/typing.html#Typing">Typing (built-in class)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -563,19 +684,64 @@
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/embed.html#url">url</a>, <a href="types/invite.html#url">[1]</a>
-</li>
-      <li><a href="types/private_group_room.html#user">user</a>, <a href="types/private_room.html#user">[1]</a>
+      <li><a href="types/embed.html#Embed.url">url (Embed attribute)</a>
 
       <ul>
-        <li><a href="hivenclient.html#HivenClient.user">(HivenClient attribute)</a>
+        <li><a href="types/invite.html#Invite.url">(Invite attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="types/user.html#User">User (built-in class)</a>
+</li>
+      <li><a href="core/hivenclient.html#HivenClient.user">user (HivenClient attribute)</a>
+
+      <ul>
+        <li><a href="types/private_room.html#PrivateGroupRoom.user">(PrivateGroupRoom attribute)</a>
+</li>
+        <li><a href="types/private_room.html#PrivateRoom.user">(PrivateRoom attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="core/hivenclient.html#UserClient">UserClient (built-in class)</a>
+</li>
+      <li>
+    UserClient.block_user()
+
+      <ul>
+        <li><a href="core/hivenclient.html#UserClient.block_user">built-in function</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#username">username</a>
+      <li>
+    UserClient.cancel_friend_request()
+
+      <ul>
+        <li><a href="core/hivenclient.html#UserClient.cancel_friend_request">built-in function</a>
 </li>
-      <li><a href="types/house.html#users">users</a>
+      </ul></li>
+      <li>
+    UserClient.fetch_current_friend_requests()
+
+      <ul>
+        <li><a href="core/hivenclient.html#UserClient.fetch_current_friend_requests">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    UserClient.send_friend_request()
+
+      <ul>
+        <li><a href="core/hivenclient.html#UserClient.send_friend_request">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    UserClient.unblock_user()
+
+      <ul>
+        <li><a href="core/hivenclient.html#UserClient.unblock_user">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="types/user.html#User.username">username (User attribute)</a>
+</li>
+      <li><a href="types/house.html#House.users">users (House attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -583,11 +749,11 @@
 <h2 id="W">W</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="types/user.html#website">website</a>
+      <li><a href="types/user.html#User.website">website (User attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="hivenclient.html#HivenClient.websocket">websocket (HivenClient attribute)</a>
+      <li><a href="core/hivenclient.html#HivenClient.websocket">websocket (HivenClient attribute)</a>
 </li>
   </ul></td>
 </tr></table>

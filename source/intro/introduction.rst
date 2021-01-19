@@ -19,10 +19,10 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.
 Environment
 ~~~~~~~~~~~
 
-    To use openhiven.py Python >= 3.6 currently is required because of the package aiohttp which needs Python
-    functionality available only in >= 3.6!
+    To use openhiven.py Python >= 3.6 is required since the package aiohttp needs Python
+    functionality which is only available in Python >= 3.6!
     Python 2 is entirely not supported, and currently, there is no plan to make openhiven.py available for Python 2,
-    since many features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp(>=3.6)!
+    since many features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp!
 
 
 Installation
@@ -52,19 +52,22 @@ Installation
 Basic Concept
 ~~~~~~~~~~~~~
 
-    The system of openhiven.py is very closely related to the discord.py module and was structured to be similar to it.
-    Therefore, the basic concept is based on an event listener system that can register events and executes them when a
-    Hiven Swarm Event is received, meaning reactions can be customized and also used outside of the event system!
+    The system of openhiven.py is very closely related to the discord.py(Discord Python Wrapper) module and
+    was structured to be similar to it. Therefore, the basic concept is based on an event listener system where events
+    are mapped to user-specified functions and methods. These will be executed when a Hiven Swarm Event is received,
+    enabling the user to customise the handling of the event!
 
-    An event in this context is a addition, change or removal of data on Hiven. 
+    An Hiven event in this context is a addition, change or removal of data on Hiven. The data which is changed will
+    then be passed as arguments to the functions which can then be accessed and used for further interaction with
+    the Hiven API.
 
-    Here an example to show a basic Hiven Event Listener that listens for messages and prints out their content:
+    Basic Hiven Event Listener that listens for messages and prints out their content:
     
     .. code-block:: python
 
-        import openhivenpy
+        import openhivenpy as hiven
 
-        client = openhivenpy.UserClient("Insert token")
+        client = hiven.UserClient("Insert token")
 
         @client.event()
         async def on_message_create(msg):
@@ -78,13 +81,49 @@ Basic Concept
     Async Functions that are tagged with the `@client.event()` decorator will automatically be saved in the EventHandler
     and then called whenever an Event is triggered.
 
+    Class methods can also be registered for event listening but it is recommended to use a Class which inherits the
+    HivenClient, making the Event listener directly find the methods when needed without needing the methods to be registered.
+
+    Example of a inherited HivenClient:
+
+    .. code-block:: python
+
+        import openhivenpy as hiven
+        import logging
+
+        logging.basicConfig(level=logging.INFO)
+
+
+        class Bot(hiven.UserClient):
+            def __init__(self, token):
+                self._token = token
+                super().__init__(token)
+
+            # Not directly needed but protects the token from ever being changed!
+            @property
+            def token(self):
+                return self._token
+
+            # Methods can be defined directly in the class without the need of the decorator
+            async def on_ready(self):
+                print("Bot is ready!")
+
+
+        if __name__ == '__main__':
+            client = Bot(token="Insert token")
+            client.run()
+
+
     .. note:: 
         The Default Event Handler can get modified by passing a custom one to the HivenClient.
         For more information see `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ 
 
-    With the event system there is also the type system of openhiven.py. This system is a structure of many objects
-    representing a Hiven object, such as a House or User. These types can be directly modified and used for example.
-    sending a message as long as the permissions are sufficient.
+    With the event system there is also the data model system of openhiven.py. This system is a structure of many
+    objects representing a Hiven object, such as a House or User which implement the data received from Hiven making
+    them available in easy type form for users. These data models can be directly modified and used to interact directly
+    with the corresponding Hiven Object on Hiven and the overall Hiven API.
+
+    For documentation see `Data Models <https://openhivenpy.readthedocs.io/en/latest/>`_
 
 
 Logging and Debugging
@@ -96,6 +135,7 @@ Logging and Debugging
 
     The module logging is based on multiple levels of importance that specified on the user input will
     log issues lower that level.
+
     The available levels for logging are:
 
     * :code:`DEBUG`
@@ -112,11 +152,10 @@ Logging and Debugging
 
         logging.basicConfig(level=logging.INFO)
 
-    .. Note::
-        The code snippet will activate logging for all modules available in the scope!
+    .. note::
+        The code snippet will activate logging for all modules available in the running scope!
 
-    That code snippet appended at the beginning of the file will print out basic info
-    about the program as well as errors.
+    The resulting log of the
 
     **Example Log Output:**
 

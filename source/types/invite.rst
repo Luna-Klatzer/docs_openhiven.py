@@ -2,26 +2,30 @@
 Invite
 ******
 
-.. attribute :: code
+.. py:class:: Invite
 
-    Grabs the invite's code
+    Represents a Hiven Invite to a House
 
-.. attribute :: url
+    .. attribute:: code
 
-    Alias for :attr:`code`, except following Hiven's invite URL format
+        Returns the invite code itself
 
-.. attribute :: house
+    .. attribute:: url
 
-    Grabs the house of the invite
+        Returns the :attr:`code` in correct usage format
 
-.. attribute :: max_age
+    .. attribute:: house
 
-    Grabs the max age for the invite
+        Returns the house of the invite
 
-.. attribute :: max_uses
+    .. attribute:: max_age
 
-    Grabs the max uses for the invite
+        Returns the max age of the invite
 
-.. attribute :: house_members
+    .. attribute:: max_uses
 
-    Grabs the members of the house the invite is linked to
+        Returns the maximum usage of the invite
+
+    .. attribute:: house_members
+
+        Returns the amount of members of the house the invite is linked to

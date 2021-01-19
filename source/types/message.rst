@@ -2,66 +2,93 @@
 Message
 *******
 
-.. attribute :: id
+.. py:class:: Message
 
-    Grabs the ID of the message.
+    .. attribute:: id
+    
+        Returns the ID of the message.
+    
+    .. attribute:: author
+    
+        Returns the author of the message.
+    
+    .. attribute:: created_at
+    
+        Returns the time the message was sent.
+    
+    .. attribute:: edited_at
+    
+        Returns the time the message was edited. Will return None if it hasn't been edited.
+    
+    .. attribute:: room
+    
+        Returns the :class:`Room` the message belongs to
+    
+    .. attribute:: house
+    
+        Returns the :class:`House` the message belongs to. May return None in a :class:`Private Room`
+    
+    .. attribute:: attachment
+    
+        Returns the :class:`Attachment` of the message. May return None.
+    
+    .. attribute:: content
+    
+        Returns the message's content.
+    
+    .. attribute:: mentions
+    
+        Returns the list of mentions in the message. May return None.
+    
+    .. attribute:: embed
+    
+        Returns the embed in the message.
+    
+    .. function:: mark_message_as_read(delay)
+    
+        Marks the message as read. Bot clients do not need to use this. 
 
-.. attribute :: author
+        :async:
+        :param delay: Delay until execution
+        :type delay: float
+        :return: `True` if successful else `False`
+        :rtype: bool
+    
+    .. function:: delete(delay = 0)
+    
+        Deletes the message. Raises :class:`Forbidden` if not allowed.
 
-    Grabs the author of the message.
+        :async:
+        :param delay: Delay until execution
+        :type delay: float
+        :return: The `DeletedMessage` object if successful else `False`
+        :rtype: :class:`DeletedMessage`
+    
+    .. function:: edit(content)
+    
+        Edits the message. Returns True if successful.
+    
+        :param content: The message's content.
+        :type content: str
+        :rtype: bool
 
-.. attribute :: created_at
+***************
+Deleted Message
+***************
 
-    Grabs the time the message was sent.
 
-.. attribute :: edited_at
+.. py:class:: DeletedMessage
 
-    Grabs the time the message was edited. Will return None if it hasn't been edited.
+    Represents a deleted Message in a room
 
-.. attribute :: room
+    .. attribute:: house_id
 
-    Grabs the :class:`Room` the message belongs to
+        Returns the house id of the message
 
-.. attribute :: house
+    .. attribute:: message_id
 
-    Grabs the :class:`House` the message belongs to. May return None in a :class:`Private Room`
+        Returns the message id of the message
 
-.. attribute :: attatchment
+    .. attribute:: room_id
 
-    Grabs the :class:`Attatchment` of the message. May return None.
-
-.. attribute :: content
-
-    Grabs the message's content.
-
-.. attribute :: mentions
-
-    Grabs a list of mentions in the message. May return None.
-
-.. attribute :: embed
-
-    Grabs the embed in the message.
-
-.. function :: mark_message_as_read(delay = 0)
-
-    Marks the message as read. Bot clients do not need to use this. 
-
-    :param delay: Delay until execution
-    :type delay: :class:`float`
-    :returns: :class:`bool`
-
-.. function :: delete(delay = 0)
-
-    Deletes the message. Raises :class:`Forbidden` if not allowed.
-
-    :param delay: Delay until execution
-    :type delay: :class:`float`
-    :returns: :class:`DeletedMessage`
-
-.. function :: edit(content)
-
-    Edits the message. Returns True if successful.
-
-    :param content: The message's content.
-    :type content: :class:`string`
-    :returns: :class:`bool`
+        Returns the room id of the message

@@ -2,11 +2,11 @@
 House
 *****
 
-.. attribute :: id
+.. attribute:: id
 
     The ID relating to the house.
 
-.. attribute :: name
+.. attribute:: name
 
     The house's name
 
@@ -14,35 +14,36 @@ House
 
     The house's banner.
 
-.. attribute :: icon
+.. attribute:: icon
 
     The house's icon. Returns Hiven's cdn link
 
-.. attribute :: owner_id
+.. attribute:: owner_id
 
     Returns the house owner's ID
 
-.. attribute :: roles
+.. attribute:: roles
 
     Returns the house's roles
 
-.. attribute :: members
+.. attribute:: members
 
     Returns the house's members
 
-.. attribute :: users
+.. attribute:: users
 
     Alias for :attr:`members`
 
-.. function :: get_member(member_id)
+.. function:: get_member(member_id)
 
     Grabs a member via id. Returns :class:`Member` if successful.
 
     :param member_id: The ID of the member.
     :type member_id: :class:`int`
-    :returns: :class:`Member`
+    :returns:
+    :rtype: :class:`Member`
 
-.. function :: create_room(name)
+.. function:: create_room(name)
 
     Creates a room in the current house. Requires permissions to execute. Returns the created :class:`Room`.
 
@@ -50,13 +51,13 @@ House
     :type name: :class:`str`
     :returns: :class:`Room`
 
-.. function :: leave()
+.. function:: leave()
 
     Leaves the current house. Returns `True` if successful.
 
     :returns: :class:`bool`
 
-.. function :: edit(kwargs)
+.. function:: edit(**kwargs)
 
     Edits the current house. Requires the user to have permissions. Returns True if successful.
 
@@ -66,7 +67,7 @@ House
     :type icon: :class:`base64`
     :returns: :class:`bool`
 
-.. function :: create_invite()
+.. function:: create_invite()
 
     Creates an invite for the current house. Returns the invite if successful.
 

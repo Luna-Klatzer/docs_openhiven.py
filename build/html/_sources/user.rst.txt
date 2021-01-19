@@ -2,43 +2,43 @@
 User
 ****
 
-.. attribute :: id
+.. attribute:: id
 
     The user's ID
 
-.. attribute :: username
+.. attribute:: username
 
     The user's username. Not to be confused with :attr:`name`.
 
-.. attribute :: name
+.. attribute:: name
 
     The user's name. Not to be confused with :attr:`username`.
 
-.. attribute :: icon
+.. attribute:: icon
 
     The user's icon. 
 
-.. attribute :: header
+.. attribute:: header
 
     The user's header. This is called a banner in Hiven's UI.
 
-.. attribute :: bot
+.. attribute:: bot
 
     Returns if the user is a bot
 
-.. attribute :: location
+.. attribute:: location
 
     Returns the user's location. Returns None if they don't have one set.
 
-.. attribute :: website
+.. attribute:: website
 
     Returns the user's website. Returns None if they don't have one set.
 
-.. attribute :: presence
+.. attribute:: presence
 
     Returns the user's presence. Normally "online" or "offline".
 
-.. attribute :: joined_at
+.. attribute:: joined_at
 
     Returns the date and time the user joined Hiven.
 

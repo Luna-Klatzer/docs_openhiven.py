@@ -16,22 +16,25 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.**
     :caption: Introduction
     :maxdepth: 2
 
-    introduction
-    quick_start
-    contributing
+    intro/introduction
+    intro/quick_start
+    intro/contributing
+    intro/bug_report
 
 .. toctree::
     :caption: Core Functionality
     :maxdepth: 2
 
-    hivenclient
-    event_handling
-    connection
+    core/hivenclient
+    core/event_handling
+    core/connection
+    core/exceptions
 
 .. toctree::
     :caption: Data Models
     :maxdepth: 2
 
+    types/data_models
     types/attachment
     types/category
     types/context
@@ -41,11 +44,9 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.**
     types/invite
     types/member
     types/mention
-    types/deletedmessage
     types/message
     types/presence
     types/private_room
-    types/private_group_room
     types/relationship
     types/room
     types/typing
@@ -57,3 +58,4 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.**
 
     advanced_usage/http_client
     advanced_usage/event_handler
+    advanced_usage/utils

@@ -2,39 +2,87 @@
 Private Room
 ************
 
-.. note:: This is not to be confused with PrivateGroupRoom! PrivateGroupRoom is for private non-group rooms, whilst PrivateRoom is private non-group rooms. 
+.. py:class:: PrivateRoom
 
-.. attribute:: user
+    Represents a private message room with another user or bot
 
-    The user in the room
+    .. note::
 
-.. attribute:: recipient
+        This is not to be confused with PrivateGroupRoom!
+        PrivateGroupRoom is for private non-group rooms, whilst PrivateRoom is private non-group rooms.
 
-    Aliases of :attr:`user`
+    .. attribute:: user
 
-.. attribute:: id
+        The user in the room
 
-    The ID of the room
-    
-.. attribute:: last_message_id
+    .. attribute:: recipient
 
-    The last message's ID
+        Aliases of :attr:`user`
 
-.. attribute:: name
+    .. attribute:: id
 
-    The name of the room
+        The ID of the room
 
-.. py:function:: send(content, delay = 0)
+    .. attribute:: last_message_id
 
-    This function is a coroutine!
+        The last message's ID
 
-    Sends a message in the room
+    .. attribute:: name
 
-    :param content: The message's content
-    :type content: :class:`str`
-    :param attatchment: The message's attatchment
-    :type attatchment: :class:`binary`
-    :param delay: Delay until execution
-    :type delay: :class:`float`
-    :returns: :class:`Message`
-    :rtype: :class:`Message`
+        The name of the room
+
+    .. py:function:: send(content, delay)
+
+        This function is a coroutine!
+
+        Sends a message in the room
+
+        :param content: The message's content
+        :type content: str
+        :param attatchment: The message's attachment
+        :type attatchment: :class:`binary`
+        :param delay: Delay until execution
+        :type delay: float
+        :return: The `Message` object if successful else `None`
+        :rtype: :class:`Message`
+
+******************
+Private Group Room
+******************
+
+.. py:class:: PrivateGroupRoom
+
+    Represents a private group room with other users
+
+    .. attribute:: user
+
+        The users in the Group Room
+
+    .. attribute:: recipient
+
+        Aliases of :attr:`user`
+
+    .. attribute:: id
+
+        The ID of the Group
+
+    .. attribute:: last_message_id
+
+        The last message's ID
+
+    .. attribute:: name
+
+        The name of the Group
+
+    .. py:function:: send(content, delay)
+
+        This function is a coroutine!
+
+        Sends a message in the room
+
+        :param content: The message's content
+        :type content: str
+        :param delay: Delay until execution. Defaults to 0
+        :type delay: float
+        :return: The `Message` object if successful else `None`
+        :rtype: :class:`Message`

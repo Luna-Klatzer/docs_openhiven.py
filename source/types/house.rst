@@ -2,72 +2,86 @@
 House
 *****
 
-.. attribute :: id
+.. py:class:: House
 
-    The ID relating to the house.
+    Represents a Hiven House Object
 
-.. attribute :: name
+    .. attribute:: id
 
-    The house's name
+        Returns the ID relating to the house.
 
-.. attribute  :: banner
+    .. attribute:: name
 
-    The house's banner.
+        Returns the house's name
 
-.. attribute :: icon
+    .. attribute:: banner
 
-    The house's icon. Returns Hiven's cdn link
+        Returns the house's banner.
 
-.. attribute :: owner_id
+    .. attribute:: icon
 
-    Returns the house owner's ID
+        Returns the house's icon in the correct link format
 
-.. attribute :: roles
+    .. attribute:: owner_id
 
-    Returns the house's roles
+        Returns the house owner's ID
 
-.. attribute :: members
+    .. attribute:: roles
 
-    Returns the house's members
+        Returns the house's roles
 
-.. attribute :: users
+    .. attribute:: members
 
-    Alias for :attr:`members`
+        Returns the house's members
 
-.. function :: get_member(member_id)
+    .. attribute:: users
 
-    Grabs a member via id. Returns :class:`Member` if successful.
+        Alias for :attr:`members`
 
-    :param member_id: The ID of the member.
-    :type member_id: :class:`int`
-    :returns: :class:`Member`
+    .. function:: get_member(member_id)
 
-.. function :: create_room(name)
+        Fetches a member based on their id.
 
-    Creates a room in the current house. Requires permissions to execute. Returns the created :class:`Room`.
+        :param member_id: The ID of the member.
+        :type member_id: int
+        :return: The user if found else None
+        :rtype: :class:`Member`
 
-    :param name: The house name
-    :type name: :class:`str`
-    :returns: :class:`Room`
+    .. function:: create_room(name)
 
-.. function :: leave()
+        Creates a room in the current house.
 
-    Leaves the current house. Returns `True` if successful.
+        Requires permissions to execute. Will automatically fail if not sufficient!
 
-    :returns: :class:`bool`
+        :param name: The house name
+        :type name: str
+        :return: The generated room if successful else None
+        :rtype: :class:`Room`
 
-.. function :: edit(kwargs)
+    .. function:: leave()
 
-    Edits the current house. Requires the user to have permissions. Returns True if successful.
+        Leaves the current house.
 
-    :param name: House name
-    :type name: :class:`str`
-    :param icon: House icon
-    :type icon: :class:`base64`
-    :returns: :class:`bool`
+        :async:
+        :return: True if successful else False
+        :rtype: bool
 
-.. function :: create_invite()
+    .. function:: edit(**kwargs)
 
-    Creates an invite for the current house. Returns the invite if successful.
+        Edits the current house. Requires the user to have permissions.
 
-    :returns: :class:`str`
+        :async:
+        :param name: House name
+        :type name: str
+        :param icon: House icon
+        :type icon: :class:`base64`
+        :return: True if successful else False
+        :rtype: bool
+
+    .. function:: create_invite()
+
+        Creates an invite for the current house.
+
+        :async:
+        :return: The new generated invite link of the House if the request was successful else None
+        :rtype: str or None

@@ -2,43 +2,46 @@
 User
 ****
 
-.. attribute :: id
+.. py:class:: User
 
-    The user's ID
+    Represents a global User on Hiven
 
-.. attribute :: username
+    .. attribute:: id
 
-    The user's username. Not to be confused with :attr:`name`.
+        Returns the user's ID
 
-.. attribute :: name
+    .. attribute:: username
 
-    The user's name. Not to be confused with :attr:`username`.
+        Returns the user's username. Not to be confused with :attr:`name`.
 
-.. attribute :: icon
+    .. attribute:: name
 
-    The user's icon. 
+        Returns the user's name.
 
-.. attribute :: header
+    .. attribute:: icon
 
-    The user's header. This is called a banner in Hiven's UI.
+        Returns the user's icon.
 
-.. attribute :: bot
+    .. attribute:: header
 
-    Returns if the user is a bot
+        Returns the user's header. This is called a banner in Hiven's UI.
 
-.. attribute :: location
+    .. attribute:: bot
 
-    Returns the user's location. Returns None if they don't have one set.
+        Returns `True` if the user is a bot
 
-.. attribute :: website
+    .. attribute:: location
 
-    Returns the user's website. Returns None if they don't have one set.
+        Returns the user's location. Returns `None` if they don't have one set.
 
-.. attribute :: presence
+    .. attribute:: website
 
-    Returns the user's presence. Normally "online" or "offline".
+        Returns the user's website. Returns `None` if they don't have one set.
 
-.. attribute :: joined_at
+    .. attribute:: presence
 
-    Returns the date and time the user joined Hiven.
+        Returns the user's :class:`Presence`
 
+    .. attribute:: joined_at
+
+        Returns the date and time the user joined Hiven.

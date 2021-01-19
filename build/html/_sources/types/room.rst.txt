@@ -2,49 +2,56 @@
 Room
 ****
 
-.. attribute :: id
+.. py:class:: Room
 
-    Returns the room ID
+    Represents a Hiven Room in a House
 
-.. attribute :: name
+    .. attribute:: id
 
-    Returns the rooms name
+        Returns the room ID
 
-.. attribute :: house
+    .. attribute:: name
 
-    Returns the house the room belongs in
+        Returns the rooms name
 
-.. attribute :: position
+    .. attribute:: house
 
-    Returns the position of the room in the category
+        Returns the house the room belongs in
 
-.. attribute :: emoji
+    .. attribute:: position
 
-    Returns the room's emoji
+        Returns the position of the room in the category
 
-.. attribute :: description
+    .. attribute:: emoji
 
-    Returns the room's description
+        Returns the room's emoji
 
-.. function :: send(kwargs)
+    .. attribute:: description
 
-    Sends a message in the Room. Returns the message if successful.
+        Returns the room's description
 
-    :param content: The content of the message
-    :type content: :class:`string`
-    :param delay: The delay before sending the message. Defaults to 0.
-    :type delay: :class:`float`
-    :param attatchment: The attatchment to send with the message. Defaults to None
-    :type attatchment: :class:`file`
-    :returns: :class:`Message`
+    .. function:: send(kwargs)
 
-.. function :: edit(kwargs)
+        Sends a message in the Room. Returns the message if successful.
 
-    Edits the Room. The client needs permissions to do this. Returns True if successful.
+        :async:
+        :param content: The message's content
+        :type content: str
+        :param delay: Delay until execution. Defaults to 0
+        :type delay: float
+        :return: The message object if successful else `None`
+        :rtype: :class:`Message`
 
-    :param name: The room name
-    :type name: :class:`string`
-    :param emoji: The room's emoji
-    :type emoji: :class:`string`
-    :param description: The room's description
-    :type description: :class:`string`
+    .. function:: edit(**kwargs)
+
+        Edits the Room. The client needs permissions to do this.
+
+        :async:
+        :param name: The room name
+        :type name: str
+        :param emoji: The room's emoji
+        :type emoji: str
+        :param description: The room's description
+        :type description: str
+        :return: `True` if successful else `False`
+        :rtype: bool

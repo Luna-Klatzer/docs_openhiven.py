@@ -37,15 +37,13 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A small Intro to openhiven.py" href="introduction.html" /> 
+    <link rel="next" title="A small Intro to openhiven.py" href="intro/introduction.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -99,19 +97,22 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">A small Intro to openhiven.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/bug_report.html">Bug-Report</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/hivenclient.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/event_handling.html">Events and Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/exceptions.html">Exceptions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/data_models.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -120,11 +121,11 @@
 <li class="toctree-l1"><a class="reference internal" href="types/invite.html">Invite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/member.html">Member</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/mention.html">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/message.html#deleted-message">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/presence.html">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_room.html#private-group-room">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
@@ -134,6 +135,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/utils.html">Openhiven.py Utils</a></li>
 </ul>
 
             
@@ -209,38 +211,41 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.</strong
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">A small Intro to openhiven.py</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#environment">Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#basic-concept">Basic Concept</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#logging-and-debugging">Logging and Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/introduction.html">A small Intro to openhiven.py</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro/introduction.html#environment">Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/introduction.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/introduction.html#basic-concept">Basic Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/introduction.html#logging-and-debugging">Logging and Debugging</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quick_start.html#event-system">Event System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quick_start.html#a-simple-bot">A simple Bot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/quick_start.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro/quick_start.html#event-system">Event System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/quick_start.html#a-simple-bot">A simple Bot</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/bug_report.html">Bug-Report</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="hivenclient.html">Client</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hivenclient.html#hivenclient">HivenClient</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hivenclient.html#botclient">BotClient</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hivenclient.html#userclient">UserClient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/hivenclient.html">Client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="core/hivenclient.html#hivenclient">HivenClient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core/hivenclient.html#botclient">BotClient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core/hivenclient.html#userclient">UserClient</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="event_handling.html">Event Handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/event_handling.html">Events and Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/exceptions.html">Exceptions</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/data_models.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/attachment.html">Attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/embed.html">Embed</a></li>
@@ -249,11 +254,11 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.</strong
 <li class="toctree-l1"><a class="reference internal" href="types/invite.html">Invite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/member.html">Member</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/mention.html">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/message.html#deleted-message">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/presence.html">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="types/private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/private_room.html#private-group-room">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/relationship.html">Relationship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/room.html">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="types/typing.html">Typing</a></li>
@@ -265,6 +270,7 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.</strong
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="advanced_usage/http_client.html">HTTP Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_usage/event_handler.html">Event Handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage/utils.html">Openhiven.py Utils</a></li>
 </ul>
 </div>
 </div>
@@ -275,7 +281,7 @@ that provides extensive functionality for the Hiven Swarm and Hiven API.</strong
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="introduction.html" class="btn btn-neutral float-right" title="A small Intro to openhiven.py" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="intro/introduction.html" class="btn btn-neutral float-right" title="A small Intro to openhiven.py" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

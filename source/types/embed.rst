@@ -2,24 +2,30 @@
 Embed
 *****
 
+.. py:class:: Embed
 
+    Represents a Command Context for a triggered command in the CommandListener
 
-.. attribute :: url
+    .. note::
 
-    Returns the URL the embed is linked to.
+        Currently not accessible since no CommandListener was implemented yet
 
-.. attribute :: type
+    .. attribute:: url
 
-    Returns the type (in :class:`int`) for the embed.
+        Returns the URL the embed is linked to.
 
-.. attribute :: title
+    .. attribute:: type
 
-    Returns the title for the embed.
+        Returns the type (in :class:`int`) for the embed.
 
-.. attribute :: image
+    .. attribute:: title
 
-    Returns the image for the embed.
+        Returns the title for the embed.
 
-.. attribute :: description
+    .. attribute:: image
 
-    Returns the description for the embed.
+        Returns the image for the embed.
+
+    .. attribute:: description
+
+        Returns the description for the embed.

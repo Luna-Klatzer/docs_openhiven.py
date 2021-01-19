@@ -2,14 +2,14 @@
 Deleted Message
 ***************
 
-.. attribute :: house_id
+.. attribute:: house_id
 
-    Grabs the house id of the message
+    The house id of the message
 
-.. attribute :: message_id
+.. attribute:: message_id
 
-    Grabs the message id
+    The message id
 
-.. attribute :: room_id
+.. attribute:: room_id
 
-    Grabs the room id
+    The room id

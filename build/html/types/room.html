@@ -37,8 +37,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -100,19 +98,22 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../introduction.html">A small Intro to openhiven.py</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/introduction.html">A small Intro to openhiven.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/bug_report.html">Bug-Report</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Core Functionality</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hivenclient.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../event_handling.html">Event Handling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/hivenclient.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/event_handling.html">Events and Event Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/connection.html">Connection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/exceptions.html">Exceptions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Data Models</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attatchment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_models.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attachment.html">Attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="category.html">Category</a></li>
 <li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="embed.html">Embed</a></li>
@@ -121,11 +122,11 @@
 <li class="toctree-l1"><a class="reference internal" href="invite.html">Invite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="member.html">Member</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mention.html">Mention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deletedmessage.html">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message.html#deleted-message">Deleted Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="presence.html">Presence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="private_room.html">Private Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="private_group_room.html">Private Group Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="private_room.html#private-group-room">Private Group Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="relationship.html">Relationship</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Room</a></li>
 <li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a></li>
@@ -135,6 +136,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../advanced_usage/http_client.html">HTTP Client</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced_usage/event_handler.html">Event Handler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced_usage/utils.html">Openhiven.py Utils</a></li>
 </ul>
 
             
@@ -204,73 +206,91 @@
             
   <div class="section" id="room">
 <h1>Room<a class="headerlink" href="#room" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="Room">
+<em class="property">class </em><code class="sig-name descname">Room</code><a class="headerlink" href="#Room" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a Hiven Room in a House</p>
 <dl class="py attribute">
-<dt id="id">
-<code class="sig-name descname">id</code><a class="headerlink" href="#id" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#Room.id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the room ID</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#name" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#Room.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the rooms name</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="house">
-<code class="sig-name descname">house</code><a class="headerlink" href="#house" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.house">
+<code class="sig-name descname">house</code><a class="headerlink" href="#Room.house" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the house the room belongs in</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="position">
-<code class="sig-name descname">position</code><a class="headerlink" href="#position" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.position">
+<code class="sig-name descname">position</code><a class="headerlink" href="#Room.position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the position of the room in the category</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="emoji">
-<code class="sig-name descname">emoji</code><a class="headerlink" href="#emoji" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.emoji">
+<code class="sig-name descname">emoji</code><a class="headerlink" href="#Room.emoji" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the room’s emoji</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="description">
-<code class="sig-name descname">description</code><a class="headerlink" href="#description" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.description">
+<code class="sig-name descname">description</code><a class="headerlink" href="#Room.description" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the room’s description</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="send">
-<code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#send" title="Permalink to this definition">¶</a></dt>
+<dt id="Room.send">
+<code class="sig-name descname">send</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Room.send" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sends a message in the Room. Returns the message if successful.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>content</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The content of the message</p></li>
-<li><p><strong>delay</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>) – The delay before sending the message. Defaults to 0.</p></li>
-<li><p><strong>attatchment</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">file</span></code>) – The attatchment to send with the message. Defaults to None</p></li>
+<dt class="field-odd">Async</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>content</strong> (<em>str</em>) – The message’s content</p></li>
+<li><p><strong>delay</strong> (<em>float</em>) – Delay until execution. Defaults to 0</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The message object if successful else <cite>None</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="message.html#Message" title="Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt id="edit">
-<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#edit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Edits the Room. The client needs permissions to do this. Returns True if successful.</p>
+<dt id="Room.edit">
+<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Room.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edits the Room. The client needs permissions to do this.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room name</p></li>
-<li><p><strong>emoji</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room’s emoji</p></li>
-<li><p><strong>description</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code>) – The room’s description</p></li>
+<dt class="field-odd">Async</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – The room name</p></li>
+<li><p><strong>emoji</strong> (<em>str</em>) – The room’s emoji</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – The room’s description</p></li>
 </ul>
 </dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><cite>True</cite> if successful else <cite>False</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
 </dl>
+</dd></dl>
+
 </dd></dl>
 
 </div>

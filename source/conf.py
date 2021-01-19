@@ -2,7 +2,7 @@
 
 project = 'OpenHiven.py'
 copyright = '2020, FrostbyteSpace'
-author = 'FrostbyteSpace' #Could use Nicolas Klatzer & Robyn Brittain, but..
+author = 'FrostbyteSpace'  # Could use Nicolas Klatzer & Robyn Brittain, but..
 
 # The full version, including alpha/beta/rc tags
 release = 'v.0.1b'
@@ -17,9 +17,9 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 extensions = ['sphinx_rtd_theme',
-            'sphinx.ext.autosectionlabel',
-            'sphinx.ext.todo',
-            'sphinx.ext.githubpages']
+              'sphinx.ext.autosectionlabel',
+              'sphinx.ext.todo',
+              'sphinx.ext.githubpages']
 
 pygments_style = 'default'
 
@@ -30,13 +30,6 @@ html_static_path = ['_static']
 html_context = {}
 html_favicon = "./_static/openhivenpy.ico"
 html_logo = "./_static/openhivenpy_white_200x200.png"
-
-html_theme_options = {
-    'logo_only': True,
-    'navigation_depth': 5,
-}
-
-
 html_theme_options = {
     'canonical_url': 'https://openhivenpy.readthedocs.io',
     'logo_only': False,

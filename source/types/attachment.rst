@@ -1,15 +1,19 @@
 ***********
-Attatchment
+Attachment
 ***********
 
-.. attribute :: filename
+.. py:class:: Attachment
 
-    Returns the file's filename. 
+    Represents a Hiven Attachment
 
-.. attribute :: media_url
+    .. attribute:: filename
 
-    Returns the file's URL in Hiven's CDN.
+        Returns the file's filename.
 
-.. attribute :: raw
+    .. attribute:: media_url
 
-    Returns the raw data sent from Hiven. Useful for image sizes
+        Returns the file's URL in Hiven's CDN.
+
+    .. attribute:: raw
+
+        Returns the raw data sent from Hiven. Useful for image sizes
