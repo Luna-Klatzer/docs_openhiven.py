@@ -45,20 +45,20 @@ Message
         Returns the embed in the message.
     
     .. function:: mark_message_as_read(delay)
-    
+        :async:
+
         Marks the message as read. Bot clients do not need to use this. 
 
-        :async:
         :param delay: Delay until execution
         :type delay: float
         :return: `True` if successful else `False`
         :rtype: bool
     
     .. function:: delete(delay = 0)
-    
+        :async:
+
         Deletes the message. Raises :class:`Forbidden` if not allowed.
 
-        :async:
         :param delay: Delay until execution
         :type delay: float
         :return: The `DeletedMessage` object if successful else `False`

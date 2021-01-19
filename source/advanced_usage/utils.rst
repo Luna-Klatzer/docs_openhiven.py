@@ -1,5 +1,5 @@
 .. _utils:
 
 ******************
-Openhiven.py Utils
+openhiven.py Utils
 ******************

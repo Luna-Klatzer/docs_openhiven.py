@@ -53,16 +53,15 @@ HivenClient
             .. _connect:
 
         .. py:function:: connect()
+            :async:
 
             Starts the HivenClient and the Websocket Connection to Hiven
 
-            :async:
 
         .. py:function:: stop()
+            :async:
 
             Stops the current session if an active connection exists
-
-            :async:
 
         .. attribute:: token
 
@@ -235,20 +234,20 @@ UserClient
         :raises ImportError: If an required module is missing and not installed!
 
         .. py:function:: fetch_current_friend_requests()
+            :async:
 
             Fetches all open friend requests on Hiven
 
-            :async:
             :return: A dict with all incoming and outgoing friend requests
             :rtype: dict
 
         .. py:function:: block_user(user_id, user)
+            :async:
 
             Blocks the user if the user exists.
 
             Only needs one parameter to work! Will default to user_id if both parameters are passed!
 
-            :async:
             :param user_id: User Object. Defaults to `None`
             :type user_id: int
             :param user: User Object. Defaults to `None`
@@ -257,12 +256,12 @@ UserClient
             :rtype: dict or None
 
         .. py:function:: unblock_user(user_id, user)
+            :async:
 
             Unblocks the user if the user exists and the user is blocked!
 
             Only needs one parameter to work! Will default to user_id if both parameters are passed!
 
-            :async:
             :param user_id: User Object. Defaults to `None`
             :type user_id: int
             :param user: User Object. Defaults to `None`
@@ -271,12 +270,12 @@ UserClient
             :rtype: dict or None
 
         .. py:function:: send_friend_request(user_id, user)
+            :async:
 
             Sends the user a friend request.
 
             Only needs one parameter to work! Will default to user_id if both parameters are passed!
 
-            :async:
             :param user_id: User Object. Defaults to `None`
             :type user_id: int
             :param user: User Object. Defaults to `None`
@@ -285,12 +284,12 @@ UserClient
             :rtype: bool
 
         .. py:function:: cancel_friend_request(user_id, user)
+            :async:
 
             Cancels a friend requests if it exists.
 
             Only needs one parameter to work! Will default to user_id if both parameters are passed!
 
-            :async:
             :param user_id: User Object. Defaults to `None`
             :type user_id: int
             :param user: User Object. Defaults to `None`

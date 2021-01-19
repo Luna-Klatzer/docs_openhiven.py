@@ -12,12 +12,10 @@ Quick Start
 Event System
 ============
 
-    To easily start programming with Openhiven.py the core system of Event Handling must be understood.
+    To quickly start programming with Openhiven.py, you must understand the core system of Event Handling.
     This system controls the core functionality and provides the ability to interact with Hiven
-    and reacting to Events that were triggered on Hiven. These events can be either that a message was sent,
-    a user changed their name or that a user joined a house.
-
-    Based on these events you can register Event Listeners that will react to these events:
+    and react to events triggered by Hiven. These events can be either triggered by a user sending a message,
+    changing their name, or joining a house.
 
     Example with on_message:
 
@@ -47,13 +45,13 @@ Event System
 A simple Bot
 ============
 
-    Using the event listeners you can build a simple bot that can listen to commands using :class:`on_message_create()`.
+    Using the event listeners, you can build a simple bot that can listen to commands using :class:`on_message_create()`.
 
-    In this case a simple Self-Bot or User-Bot is used. That means a account on Hiven will be overtaken and the
-    program will be able to interact as such user. To use a bot-account please notice that in the current version v0.1,
+    In this case, a simple Self-Bot or User-Bot is used. That means the Client will 'overtake' an account on Hiven, and
+    the program will be able to interact as such user. To use a bot-account please notice that in the current version,
     bot-accounts are only partially supported, but they can be used using the :ref:`BotClient` class.
 
-    Example for a simple `!ping` command
+    Example for a simple `!ping` command that was triggered in a channel visible to the Client.
 
     .. code-block:: python
 
@@ -72,11 +70,11 @@ A simple Bot
 
         client.run()
 
-    In this case the event listener :class:`on_ready` is also defined, which will be called when the Bot is ready for
-    use and all data was received. Similar to :class:`on_ready`, :class:`on_init` is also available which will be called
-    when the connection to Hiven was established.
+    In this case, the event listener :class:`on_ready` is also defined, which will be called when the Bot is ready for
+    use, and all data was received. Like class:`on_ready`, :class:`on_init` is also available, which will be called
+    when the HivenClient established the connection to Hiven.
 
     .. note::
-        :class:`on_init` only means the init event from Hiven was received but no data is initialized. As such it
-        cannot be used to interact with Hiven yet but execute startup methods that should as soon as possible
-        be executed and available for use.
+
+        :class:`on_init` only means the init event from Hiven was received but no data is initialized. Therefore it
+        should not be used for interaction with the Hiven API!

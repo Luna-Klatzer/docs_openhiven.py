@@ -8,7 +8,7 @@ A small Intro to openhiven.py
 
 Welcome to the Documentation of openhiven.py!
 
-Openhiven.py is an easy, fast and async API wrapper written in Python
+openhiven.py is an easy, fast and async API wrapper written in Python
 that provides extensive functionality for the Hiven Swarm and Hiven API.
 
 .. note::
@@ -55,9 +55,9 @@ Basic Concept
     The system of openhiven.py is very closely related to the discord.py(Discord Python Wrapper) module and
     was structured to be similar to it. Therefore, the basic concept is based on an event listener system where events
     are mapped to user-specified functions and methods. These will be executed when a Hiven Swarm Event is received,
-    enabling the user to customise the handling of the event!
+    enabling the user to customise the event's handling!
 
-    An Hiven event in this context is a addition, change or removal of data on Hiven. The data which is changed will
+    An Hiven event in this context is an addition, change or removal of data on Hiven. The data which is changed will
     then be passed as arguments to the functions which can then be accessed and used for further interaction with
     the Hiven API.
 
@@ -77,14 +77,14 @@ Basic Concept
 
 
     The event system and handling is done over the integrated
-    `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ class, which defaults to the Client itself.
+    `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ class, which defaults to the used HivenClient itself.
     Async Functions that are tagged with the `@client.event()` decorator will automatically be saved in the EventHandler
     and then called whenever an Event is triggered.
 
-    Class methods can also be registered for event listening but it is recommended to use a Class which inherits the
+    Class methods can also be registered for event listening, but it is recommended to use a class which inherits the
     HivenClient, making the Event listener directly find the methods when needed without needing the methods to be registered.
 
-    Example of a inherited HivenClient:
+    Example of an inherited HivenClient:
 
     .. code-block:: python
 
@@ -118,18 +118,18 @@ Basic Concept
         The Default Event Handler can get modified by passing a custom one to the HivenClient.
         For more information see `Event Handler <https://openhivenpy.readthedocs.io/en/latest/>`_ 
 
-    With the event system there is also the data model system of openhiven.py. This system is a structure of many
+    With the event system, there is also the data model system of openhiven.py. This system is a structure of many
     objects representing a Hiven object, such as a House or User which implement the data received from Hiven making
-    them available in easy type form for users. These data models can be directly modified and used to interact directly
-    with the corresponding Hiven Object on Hiven and the overall Hiven API.
+    them available in object/class form for users. These data models can directly modify and interact with the
+    corresponding Hiven Object on Hiven and the Hiven API.
 
-    For documentation see `Data Models <https://openhivenpy.readthedocs.io/en/latest/>`_
+    For detailed documentation see `Data Models <https://openhivenpy.readthedocs.io/en/latest/>`_
 
 
 Logging and Debugging
 ~~~~~~~~~~~~~~~~~~~~~
 
-    Openhiven.py uses to log and report issues and problems the built-in
+    openhiven.py uses to log and report issues and problems the built-in
     `logging <https://docs.python.org/3/library/logging.html#module-logging>`_ module of Python.
     That module can provide easy logging features and customization of program logging.
 
@@ -153,6 +153,7 @@ Logging and Debugging
         logging.basicConfig(level=logging.INFO)
 
     .. note::
+
         The code snippet will activate logging for all modules available in the running scope!
 
     The resulting log of the
@@ -167,15 +168,15 @@ Logging and Debugging
         INFO:openhivenpy.gateway.ws:[WEBSOCKET] >> Initialization of Client was successful!
         INFO:openhivenpy.types.hiven_client:[CLIENT] Client loaded all data and is ready for usage!
 
-    In this example the initialization was successful and no errors were logged. With the level 'INFO'
-    that is used here, only the important information was logged, while with 'DEBUG' a lot more would
-    have been logged. Mostly WS Message Data, HTTP requests etc. that are needed to start the client.
-    'DEBUG' is great for detecting issues in the program and also seeing how openhiven.py works in the
-    background. 'INFO' is on the other hand very useful for deployment and usage where only errors should
-    be logged.
+    In this example, the initialization was successful, and the HivenClient registered and logged no errors. With the
+    level 'INFO' that is used here. Only the vital information was logged, while with 'DEBUG' the HivenClient would
+    activate a broader range of useful logs for debugging. Mostly websocket Message data and HTTP requests that are
+    needed to start the client. 'DEBUG' is excellent for detecting issues in the program and also seeing how
+    openhiven.py works in the  background. 'INFO' is, on the other hand, handy for deployment and usage where the
+    HivenClient should log only errors.
 
     For more advanced usage of logging and also debugging it is recommended to use a more advanced logging system
-    to also get timestamps, logging info, user data etc. that are connected to the running of the Bot.
+    to get timestamps, logging info and user data that are connected to the running of the Bot.
 
     **Example for a advanced logging system:**
     
@@ -191,7 +192,6 @@ Logging and Debugging
         logger.addHandler(handler)
 
     With this example, also time will be logged and the log will even be saved to a file called `openhiven.log`.
-
 
     For more customization for the :code:`logging.Formatter` and :code:`logging.FileHandler` classes
     visit the `logging <https://docs.python.org/3/library/logging.html#module-logging>`_ documentation!

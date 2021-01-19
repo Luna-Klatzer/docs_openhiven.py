@@ -2,77 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/advanced_usage/utils.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/core/exceptions.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/intro/bug_report.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/types/data_models.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_static/make_a_fork.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/attachment.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/attachment.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/category.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/category.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/context.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/context.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/embed.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/embed.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/feed.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/feed.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/house.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/house.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/invite.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/invite.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/member.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/member.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/mention.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/mention.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/message.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/message.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/presence.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/presence.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/private_room.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/private_room.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/room.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/room.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/typing.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/typing.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/types/user.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/types/user.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/attatchment.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/attatchment.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/deletedmessage.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/deletedmessage.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/embed.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/embed.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/hivenclient.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/hivenclient.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/house.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/house.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/contributing.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/contributing.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/invite.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/invite.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/message.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/message.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/privategroup.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/privategroup.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/privateroom.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/privateroom.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/room.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/room.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/attachment.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/attachment.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/attatchment.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/attatchment.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/category.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/category.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/context.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/context.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/deletedmessage.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/deletedmessage.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/embed.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/embed.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/feed.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/feed.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/introduction.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/quick_start.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/quick_start.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/types/house.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/house.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/invite.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/invite.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/member.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/member.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/mention.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/mention.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/types/message.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/message.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/presence.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/presence.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/private_room.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/private_room.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/privategroup.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/privategroup.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/privateroom.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/privateroom.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/types/room.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/room.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/typing.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/typing.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/types/user.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/types/user.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/user.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/user.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/doctools.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/doctools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/language_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/language_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/searchtools.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/searchtools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/advanced_usage/event_handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/advanced_usage/event_handler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/advanced_usage/http_client.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/advanced_usage/http_client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/deletedmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/deletedmessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/contributing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/genindex.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/invite.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/invite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/quick_start.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/quick_start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/attachment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/context.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/context.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/types/deletedmessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/deletedmessage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/embed.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/embed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/feed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/house.html" afterDir="false" />
@@ -82,36 +33,33 @@
       <change beforePath="$PROJECT_DIR$/build/html/types/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/message.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/presence.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/presence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/private_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/private_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/types/relationship.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/relationship.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/room.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/typing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/typing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/types/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/types/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/connection.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/core/connection.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/contributing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/contributing.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/event_handling.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/core/event_handling.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/hivenclient.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/core/hivenclient.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/advanced_usage/utils.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/advanced_usage/utils.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/core/hivenclient.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/core/hivenclient.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/introduction.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/introduction.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/quick_start.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/quick_start.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/attachment.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/attachment.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/category.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/category.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/context.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/context.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/deletedmessage.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/embed.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/embed.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/feed.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/feed.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/house.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/house.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/invite.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/invite.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/member.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/member.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/mention.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/mention.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/message.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/message.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/presence.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/presence.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/private_group_room.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/private_room.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/private_room.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/relationship.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/relationship.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/room.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/room.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/typing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/typing.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/types/user.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/user.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/intro/bug_report.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/bug_reporting.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/intro/contributing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/contributing.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/intro/introduction.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/introduction.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/intro/quick_start.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/intro/quick_start.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/attachment.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/category.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/context.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/data_models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/types/data_models.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/embed.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/feed.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/house.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/invite.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/member.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/mention.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/message.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/presence.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/private_room.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/relationship.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/room.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/typing.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/types/user.rst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +68,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lbcxZ0JSLpqrQaloJeNDbctwuz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -183,7 +139,8 @@
       <workItem from="1610440230370" duration="1249000" />
       <workItem from="1610441567633" duration="6211000" />
       <workItem from="1610608497744" duration="1198000" />
-      <workItem from="1611037695190" duration="15094000" />
+      <workItem from="1611037695190" duration="18718000" />
+      <workItem from="1611056727014" duration="1568000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -199,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610449013097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated core docs to the latest changes. Needs more work!">
+      <created>1611053140996</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611053140996</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added quick_start and some small changes to overall docs" />
     <MESSAGE value="Updated introduction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated introduction" />
+    <MESSAGE value="Updated core docs to the latest changes. Needs more work!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated core docs to the latest changes. Needs more work!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

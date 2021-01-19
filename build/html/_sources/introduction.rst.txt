@@ -8,7 +8,7 @@ A small Intro to openhiven.py
 
 Welcome to the Documentation of openhiven.py!
 
-Openhiven.py is an easy, fast and async API wrapper written in Python
+openhiven.py is an easy, fast and async API wrapper written in Python
 that provides extensive functionality for the Hiven Swarm and Hiven API.
 
 .. note::
@@ -90,7 +90,7 @@ Basic Concept
 Logging and Debugging
 ~~~~~~~~~~~~~~~~~~~~~
 
-    Openhiven.py uses to log and report issues and problems the built-in
+    openhiven.py uses to log and report issues and problems the built-in
     `logging <https://docs.python.org/3/library/logging.html#module-logging>`_ module of Python.
     That module can provide easy logging features and customization of program logging.
 

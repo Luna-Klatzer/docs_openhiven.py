@@ -31,10 +31,10 @@ Room
         Returns the room's description
 
     .. function:: send(kwargs)
+        :async:
 
         Sends a message in the Room. Returns the message if successful.
 
-        :async:
         :param content: The message's content
         :type content: str
         :param delay: Delay until execution. Defaults to 0
@@ -43,10 +43,10 @@ Room
         :rtype: :class:`Message`
 
     .. function:: edit(**kwargs)
+        :async:
 
         Edits the Room. The client needs permissions to do this.
 
-        :async:
         :param name: The room name
         :type name: str
         :param emoji: The room's emoji

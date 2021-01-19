@@ -59,18 +59,18 @@ House
         :rtype: :class:`Room`
 
     .. function:: leave()
+        :async:
 
         Leaves the current house.
 
-        :async:
         :return: True if successful else False
         :rtype: bool
 
     .. function:: edit(**kwargs)
+        :async:
 
         Edits the current house. Requires the user to have permissions.
 
-        :async:
         :param name: House name
         :type name: str
         :param icon: House icon
@@ -79,9 +79,9 @@ House
         :rtype: bool
 
     .. function:: create_invite()
+        :async:
 
         Creates an invite for the current house.
 
-        :async:
         :return: The new generated invite link of the House if the request was successful else None
         :rtype: str or None
