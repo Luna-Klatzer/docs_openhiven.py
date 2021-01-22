@@ -59,20 +59,22 @@ plugins:
 
 # Extensions to the basic mkdocs markdown
 markdown_extensions:
-  - pymdownx.tabbed
-  - pymdownx.superfences
+  - pymdownx.tabbed # Nice tabs
+  - pymdownx.superfences # Very cool embed objects
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-  - attr_list
+  - attr_list # => very cool html and css syntax
   - abbr
-  - pymdownx.snippets
+  - pymdownx.snippets # snippet looking sharp!
   - admonition
   - toc:
       permalink: true
       toc_depth: 3
-
+  - pymdownx.emoji: # emojis aka. nice addition
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 extra:
   version:
       method: mike

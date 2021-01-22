@@ -1,6 +1,8 @@
+pymdown-extensions
+pygments
 mkdocs
 mike
 mkdocs-material
-pymdown-extensions
 mkdocs-redirects
+mkdocs-htmlproofer-plugin
 mkdocs-git-revision-date-plugin
