@@ -4,10 +4,10 @@
 
 version: 2
 
-sphinx:
-  configuration: source/conf.py
+mkdocs:
+  configuration: mkdocs.yml
 
 python:
   version: 3.8
   install:
-    - requirements: source/config/requirements.txt
+    - requirements: docs/requirements.txt

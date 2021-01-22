@@ -1,0 +1,90 @@
+# Openhiven.py Mkdocs Customisation
+
+site_name: 'OpenHiven.py Docs'
+site_description: 'Documentation Page for OpenHiven.py'
+site_author: 'Nicolas Klatzer'
+site_url: 'https://openhivenpy.readthedocs.io'
+site_dir: './build/'
+
+copyright: Copyright &copy; 2020 - 2021 FrostbyteSpace
+
+# Page tree
+nav:
+  - Home:
+    - index.md
+    - home/troubleshooting.md
+    - home/bug_reporting.md
+    - home/contributing.md
+    - home/license.md
+  - Getting Started:
+    - getting_started/intro.md
+    - getting_started/logging.md
+    - getting_started/event_handling.md
+
+extra_css:
+  - etc/css/index.css
+# Github repo
+repo_url: https://github.com/FrostbyteSpace/OpenHiven.py
+repo_name: FrostbyteSpace/OpenHiven.py
+
+# Material theme options
+theme:
+  name: material
+  favicon: ./openhivenpy.ico
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  hljs_languages:
+    - yaml
+    - python
+  palette:
+    primary: deep purple
+    accent: purple
+  logo: ./etc/static/openhivenpy.png
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - toc.integrate
+
+# Plugins
+plugins:
+  - git-revision-date:
+      enabled_if_env: CI
+  - search:
+      lang: en
+
+# Extensions to the basic mkdocs markdown
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+extra:
+  version:
+      method: mike
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/thekudofox
+      name: The author on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/FrostbyteSpace/
+      name: The Github Organisation managing the project
