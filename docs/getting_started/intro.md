@@ -47,7 +47,7 @@ is received, enabling the user to customise the event's handling!
 
 In case of an event, Hiven will send the corresponding data over the Hiven Swarm and the websocket connection of the 
 [aiohttp](https://docs.aiohttp.org/en/stable/) HTTP-Session. That data will then be passed to the HivenClient where 
-the Hiven Swarm message will get processed, and if Hiven sent an event message, an event would be triggered.
+the Hiven Swarm message will get processed, and an event would be triggered.
 
 ![OpenHiven.py System Visualised](../etc/static/openhivenpy-system.png)
 
@@ -151,9 +151,10 @@ Therefore, bugs are likely to occur! If you encounter bugs, please report them!*
 ### Hiven-Types
 [:octicons-file-code-24: Source Code - `openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
 
-After setting up a Bot and creating the first events you will notice that instead of raw data OpenHiven.py sends entire
-instances of Classes with the event methods as parameters. This is because of the type-system OpenHiven.py uses where
-objects are parallel to the corresponding Hiven ones, making it easily accessible for usage. 
+You might have already noticed in prior examples that instead of raw data OpenHiven.py sends entire instances of Classes 
+with the event data as parameters. This is because of the type-system OpenHiven.py uses where objects are created and 
+initialised parallel to the corresponding Hiven ones, making it easier for usage due to the easy attribute
+and data access. 
 
 These instances can then be used to interact with the Hiven API directly instead of needing to write own requests for 
 data and updating the objects accordingly. For each possible request OpenHiven.py adds a method to the class which 
