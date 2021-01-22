@@ -1,0 +1,5 @@
+mkdocs
+mike
+mkdocs-material
+pymdown-extensions
+mkdocs-redirects
