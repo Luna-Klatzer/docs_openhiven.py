@@ -156,7 +156,7 @@ Logging and Debugging
 
         The code snippet will activate logging for all modules available in the running scope!
 
-    The resulting log of the
+    The resulting log will then look like this:
 
     **Example Log Output:**
 

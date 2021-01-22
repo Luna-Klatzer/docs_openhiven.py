@@ -30,10 +30,10 @@ Github
         More Bug-Reporting details in the `bug-reporting docs-page <https://openhivenpy.readthedocs.io/en/latest/bug_report.html>`_
 
     .. image:: https://github-readme-stats.vercel.app/api/pin/?username=FrostbyteSpace&repo=openhiven.py&show_owner=true
-        :width: 400
+        :width: 300
         :target: https://github.com/FrostbyteSpace/openhiven.py
         :alt: github-page
-        :align: center
+        :align: left
 
 ====================
 Contributing changes
@@ -41,8 +41,11 @@ Contributing changes
 
     If you found your issue or your feature you want to work on, make a Fork of the repository and then commit changes
     to that repository on your account. If you need a guide of Github, go to the official
-    `github-guides for git and github <https://guides.github.com/activities/hello-world/>`_
+    `github-guides for git and github. <https://guides.github.com/activities/hello-world/>`_
 
-    .. image:: ../_static/make_a_fork.jpg
-        :alt: openhiven.py
-        :align: center
+    Later, when you are done with the changes you wanted to make, you can make a pull-request, where we can then see
+    what changes you made. Still, for a successful and fast change, a pull-request should contain a summary of changes,
+    so we can see your motivations and exactly why you made these changes. If some parts still need some rework, we will
+    tag them and write small comments containing the changes we want to see. If everything is then committed and works,
+    the changes will be merged and so Congratulations! You made changes to an open-source project, and the owners of the
+    project will forever be thankful for that!

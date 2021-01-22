@@ -43,7 +43,7 @@ HivenClient
         :raises InvalidToken: If an empty, faulty or None Type Token was passed!
         :raises ImportError: If an required module is missing and not installed!
 
-        .. py:function:: run()
+        .. function:: run()
 
             Starts the HivenClient and the HTTP and Swarm Connection to Hiven. Uses :class:`asyncio.get_event_loop()`
             to fetch the current event_loop. Creates a new one if no one is found!
@@ -52,13 +52,13 @@ HivenClient
 
             .. _connect:
 
-        .. py:function:: connect()
+        .. function:: connect()
             :async:
 
             Starts the HivenClient and the Websocket Connection to Hiven
 
 
-        .. py:function:: stop()
+        .. function:: stop()
             :async:
 
             Stops the current session if an active connection exists
@@ -233,7 +233,7 @@ UserClient
         :raises InvalidToken: If an empty, faulty or None Type Token was passed!
         :raises ImportError: If an required module is missing and not installed!
 
-        .. py:function:: fetch_current_friend_requests()
+        .. function:: fetch_current_friend_requests()
             :async:
 
             Fetches all open friend requests on Hiven
@@ -241,7 +241,7 @@ UserClient
             :return: A dict with all incoming and outgoing friend requests
             :rtype: dict
 
-        .. py:function:: block_user(user_id, user)
+        .. function:: block_user(user_id, user)
             :async:
 
             Blocks the user if the user exists.
@@ -255,7 +255,7 @@ UserClient
             :return: Returns `True` if the request succeeded else `False`
             :rtype: dict or None
 
-        .. py:function:: unblock_user(user_id, user)
+        .. function:: unblock_user(user_id, user)
             :async:
 
             Unblocks the user if the user exists and the user is blocked!
@@ -269,7 +269,7 @@ UserClient
             :return: Returns `True` if the request succeeded else `False`
             :rtype: dict or None
 
-        .. py:function:: send_friend_request(user_id, user)
+        .. function:: send_friend_request(user_id, user)
             :async:
 
             Sends the user a friend request.
@@ -283,7 +283,7 @@ UserClient
             :return: Returns `True` if the request succeeded else `False`
             :rtype: bool
 
-        .. py:function:: cancel_friend_request(user_id, user)
+        .. function:: cancel_friend_request(user_id, user)
             :async:
 
             Cancels a friend requests if it exists.

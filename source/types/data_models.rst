@@ -9,7 +9,7 @@ data in object form which can be used to interact with the Hiven API directly an
 
     Data-models are still in development and therefore can partly have not entirely working API methods.
     If issues are found please report them on the github issues page. (More infos on Bug-Reporting on the according
-    `docs-page <Bug-Reporting>`_)
+    `docs-page <https://openhivenpy.readthedocs.io/en/stable/intro/bug_reporting.html>`_)
 
 ***********
 Attachment
@@ -364,7 +364,8 @@ Private Room
 
         The name of the room
 
-    .. py:function:: send(content, delay)
+    .. function:: send(content, delay)
+        :async:
 
         This function is a coroutine!
 
@@ -403,7 +404,7 @@ Private Group Room
 
         The name of the Group
 
-    .. py:function:: send(content, delay)
+    .. function:: send(content, delay)
         :async:
 
         Sends a message in the room
