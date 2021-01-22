@@ -3,3 +3,5 @@ mike
 mkdocs-material
 pymdown-extensions
 mkdocs-redirects
+markdown_extensions
+mkdocs-git-revision-date-plugin
