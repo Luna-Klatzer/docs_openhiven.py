@@ -15,7 +15,7 @@
       </a>
   </a>
 </p>
-  <h2 align="center"> Dependendies </h2>
+  <h2 align="center"> Dependencies </h2>
 <p align="center">
    <a href="https://docs.aiohttp.org/en/stable/">
       <img align="center" src='https://img.shields.io/github/pipenv/locked/dependency-version/FrostbyteSpace/openhiven.py/aiohttp/main' alt='aiohttp' />
