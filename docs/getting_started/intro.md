@@ -144,8 +144,10 @@ A Bot Client like the UserClient is a wrapper for the main HivenClient class. It
 functionality on Hiven. Therefore, it's usage is very similar, but it can specifically utilise Methods and functions
 related to text-commands and will likely receive in future versions more modules specifically adding that functionality.
 
-*Note that in the release v0.1.2 the Bot-Client lacks optimisation and can break using it. 
-Therefore, bugs are likely to occur! If you encounter bugs, please report them!*
+!!! note 
+
+    The current release v0.1.2 the Bot-Client lacks optimisation and can break using it. 
+    Therefore, bugs are likely to occur! If you encounter bugs, please report them!
 
 
 ### Hiven-Types

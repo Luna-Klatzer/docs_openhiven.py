@@ -4,6 +4,7 @@ mkdocs
 mike
 markdown
 mkdocs-material
+mkdocs-material-extensions
 mkdocs-redirects
 mkdocs-htmlproofer-plugin
 mkdocs-git-revision-date-plugin

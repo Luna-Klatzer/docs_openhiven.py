@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting_started/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/intro.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1611037695190" duration="18718000" />
       <workItem from="1611056727014" duration="4985000" />
       <workItem from="1611072620676" duration="599000" />
-      <workItem from="1611165106889" duration="37268000" />
+      <workItem from="1611165106889" duration="37821000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611352583947</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated mkdocs.yml and requirements.txt">
+      <created>1611401993342</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611401993342</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +207,8 @@
     <MESSAGE value="Removed overwrites and emoji generator" />
     <MESSAGE value="Finished intro page" />
     <MESSAGE value="Small text fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small text fix" />
+    <MESSAGE value="Updated mkdocs.yml and requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated mkdocs.yml and requirements.txt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
