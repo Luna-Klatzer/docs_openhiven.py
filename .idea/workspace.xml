@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/bug_report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/feature_request.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/issue_templates.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy-system.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy_white_200x200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy_white_400x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy_with_py.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/images/source_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/bug_report.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/feature_request.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/issue_templates.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/openhivenpy-system.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/openhivenpy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/openhivenpy_white_200x200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/static/openhivenpy_white_400x400.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/getting_started/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/openhivenpy_with_py.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +108,7 @@
       <workItem from="1611037695190" duration="18718000" />
       <workItem from="1611056727014" duration="4985000" />
       <workItem from="1611072620676" duration="599000" />
-      <workItem from="1611165106889" duration="49797000" />
+      <workItem from="1611165106889" duration="51392000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -258,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611417331257</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="moved images and updated assets to ensure images are shown in readthedocs build">
+      <created>1611419046368</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611419046368</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Removed .ico since it broke in the readthedocs build">
+      <created>1611419469172</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611419469172</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +311,9 @@
     <MESSAGE value="Removed pymdownx.emoji entirely" />
     <MESSAGE value="Removed unneeded configuration option in .readthedocs.yml" />
     <MESSAGE value="moved source.ico into static folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved source.ico into static folder" />
+    <MESSAGE value="moved images and updated assets to ensure images are shown in readthedocs build" />
+    <MESSAGE value="Removed .ico since it broke in the readthedocs build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed .ico since it broke in the readthedocs build" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

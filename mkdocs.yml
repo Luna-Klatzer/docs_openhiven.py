@@ -8,6 +8,7 @@ site_dir: './build/'
 
 copyright: Copyright &copy; 2020 - 2021 FrostbyteSpace
 
+use_directory_urls: false
 # Page tree
 nav:
   - Home:
