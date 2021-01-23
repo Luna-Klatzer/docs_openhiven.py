@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.readthedocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.readthedocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting_started/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/intro.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +56,8 @@
       <recent name="D:\Dokumente\docs_openhiven.py\source\_static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Dokumente\docs_openhiven.py\docs\.icons" />
       <recent name="D:\Dokumente\docs_openhiven.py\docs" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\.icons" />
       <recent name="D:\Dokumente\docs_openhiven.py\docs\etc\static" />
       <recent name="D:\Dokumente\docs_openhiven.py\docs\home" />
       <recent name="D:\Dokumente\docs_openhiven.py\docs\getting_started" />
@@ -99,7 +99,7 @@
       <workItem from="1611037695190" duration="18718000" />
       <workItem from="1611056727014" duration="4985000" />
       <workItem from="1611072620676" duration="599000" />
-      <workItem from="1611165106889" duration="44403000" />
+      <workItem from="1611165106889" duration="45465000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611407031047</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Removed pymdownx.emoji due to missing support">
+      <created>1611409118652</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611409118652</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +255,8 @@
     <MESSAGE value="added requests to the requirements.txt" />
     <MESSAGE value="Adding PyYAML to see if that caused the issue" />
     <MESSAGE value="Removed unneeded file CNAME" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unneeded file CNAME" />
+    <MESSAGE value="Removed pymdownx.emoji due to missing support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed pymdownx.emoji due to missing support" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

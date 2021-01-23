@@ -86,12 +86,12 @@ markdown_extensions:
   - pymdownx.snippets # snippet looking sharp!
   - admonition
 # Abandoned for now => #5
-#  - pymdownx.emoji:
+  - pymdownx.emoji:
 #      emoji_index: !!python/name:materialx.emoji.twemoji
 #      emoji_generator: !!python/name:materialx.emoji.to_svg
-#      options:
-#        custom_icons:
-#          - docs/.icons
+      options:
+        custom_icons:
+          - docs/.icons
 
 extra:
   version:
