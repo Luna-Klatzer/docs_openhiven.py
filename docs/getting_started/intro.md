@@ -12,31 +12,42 @@ async event loop and environment. For more info about asyncio look into the [Asy
 
 ## Environment
 
-To use OpenHiven.py Python >= 3.6 is required since the package aiohttp needs Python
-functionality which is only available in Python >= 3.6!
-Python 2 is entirely not supported, and currently, there is no plan to make OpenHiven.py available for Python 2,
-since many features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp!
+OpenHiven.py is a Python module and can currently on be run in environments with Python >= 3.6. This is due to the used
+module aiohttp which requires Functionality only available in Python 3.6 or higher! Python 2 is entirely not supported, 
+and currently, there is no plan to make OpenHiven.py available for Python 2, since many features are dependent on 
+Python 3 and the modern async module of Python 3 as well as aiohttp!
 
 ## Installation
 
+OpenHiven.py can be easily installed using `pip`:
 
-=== "PyPi Installation"
+=== "PyPi Regular Installation"
 
-    ```
+    ```bash 
     python3 -m pip install -U openhivenpy
     ```
 
-=== "Specific Version"
+=== "PyPi Specific Version"
 
-    ```
+    ```bash 
     python3 -m pip install -U openhivenpy==version
     ```
 
 === "Github Build"
+    
+    !!! Warning
+    
+        Can be unstable due to development status! Only use if you need the most recent development version!
 
-    ```
+    ```bash
     python3 -m pip install -U https://github.com/FrostbyteSpace/OpenHiven.py/archive/main.zip
     ```
+
+Installing OpenHiven.py will automatically also include its dependencies, which currently are:
+
+* [aiohttp >= 3.6](https://docs.aiohttp.org/en/stable/)
+* [asyncio](https://docs.python.org/3/library/asyncio.html)
+* [typing](https://docs.python.org/3/library/typing.html)
 
 ## Basic Concept
 
@@ -52,30 +63,28 @@ the Hiven Swarm message will get processed, and an event would be triggered.
 ![OpenHiven.py System Visualised](../assets/images/openhivenpy-system.png)
 
 You can then specify in the Event Listener how the Client should react to such issues using the standard 
-[decorators](https://wiki.python.org/moin/PythonDecorators#What_is_a_Decorator). The methods will get the data passed, 
+[decorators](https://realpython.com/primer-on-python-decorators/). The methods will get the data passed, 
 and you can utilise it right afterwards.
 
 This event system and handling is done over the integrated [Event Handler](https://openhivenpy.readthedocs.io/en/latest/)
 class, which defaults to the used Client itself. Async Functions that are tagged with the `@client.event()` 
-[decorator](https://wiki.python.org/moin/PythonDecorators#What_is_a_Decorator) will automatically be saved in the 
+[decorator](https://realpython.com/primer-on-python-decorators/) will automatically be registered in the 
 EventHandler and then called whenever an Event is triggered.
-
-!!! Example
     
-    Example with the event `on_message_create`
+Example with the event `on_message_create`:
 
-    ```python
-        ...
+```python
+...
 
-        @client.event()
-        async def on_message_create(msg):
-            print(f"{msg.author.name} send a message: {msg.content}")
+@client.event()
+async def on_message_create(msg):
+    print(f"{msg.author.name} send a message: {msg.content}")
 
-        ...
-    ```
+...
+```
 
 ### Using a UserClient
-[![Source](../assets/images/source_icon.png){: width=28px align=top} Source Code ·`openhivenpy.UserClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py)
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.UserClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py)
 
 A UserClient object is an object that wraps the default [HivenClient](https://openhivenpy.readthedocs.io/en/latest/),
 which serves as a bridge between Hiven, and the Program you are using. The [HivenClient](https://openhivenpy.readthedocs.io/en/latest/)
@@ -87,9 +96,12 @@ and [BotClient](https://openhivenpy.readthedocs.io/en/latest/)
 To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
 If no token were passed, it would automatically raise an `openhivenpy.exceptions.exception.InvalidToken` Exception!
 
-!!! Example
+!!! Usage Examples
 
     === "Regular"
+
+        Note that using a decorator will also automatically add the function as a method to the [Event Handler](https://openhivenpy.readthedocs.io/en/latest/)
+        instance itself so it can call it directly from the Event Handler and it doesn't need to reference the origin!
 
         ```python
         
@@ -138,31 +150,33 @@ If no token were passed, it would automatically raise an `openhivenpy.exceptions
         ```
 
 ### Using a BotClient
-[![Source](../assets/images/source_icon.png){: width=28px align=top} Source Code ·`openhivenpy.BotClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/botclient.py)
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.BotClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/botclient.py)
 
 A Bot Client like the UserClient is a wrapper for the main HivenClient class. It serves as a Class using bot
-functionality on Hiven. Therefore, it's usage is very similar, but it can specifically utilise Methods and functions
-related to text-commands and will likely receive in future versions more modules specifically adding that functionality.
+functionality on Hiven. Therefore, it's usage is very similar to the UserClient, but it can specifically utilise Methods 
+and functions related to text-commands and will likely receive in future versions more updates specifically adding that 
+functionality.
 
-!!! note 
+!!! Warning 
 
-    The current release v0.1.2 the Bot-Client lacks optimisation and can break using it. 
-    Therefore, bugs are likely to occur! If you encounter bugs, please report them!
+    **The current release v0.1.2 the BotClient lacks major optimisation and functionality. 
+    Therefore, bugs are likely to occur! If you encounter such bugs, please report them!**
 
 
 ### Hiven-Types
 <!---
 # Using an .ico since readthedocs doesn't support emoji generation
 -->
-[![Source](../assets/images/source_icon.png){: width=28px align=top} Source Code ·`openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
-~~~~
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
+
 You might have already noticed in prior examples that instead of raw data OpenHiven.py sends entire instances of Classes 
 with the event data as parameters. This is because of the type-system OpenHiven.py uses where objects are created and 
 initialised parallel to the corresponding Hiven ones, making it easier for usage due to the easy attribute
 and data access. 
 
-These instances can then be used to interact with the Hiven API directly instead of needing to write own requests for 
-data and updating the objects accordingly. For each possible request OpenHiven.py adds a method to the class which 
-automatically changes data and returns configured objects if that specific methods returns data.
+These instances can then be used through methods to interact with the Hiven API directly, instead of you having to write 
+your own requests for fetching the data and having to update the objects accordingly yourself. For each possible request 
+OpenHiven.py already ships a pre-made method to the class which automatically changes data and returns configured objects 
+if that specific methods returns data.
 
 For detailed documentation see [Data Models](https://openhivenpy.readthedocs.io/en/latest/)

@@ -51,18 +51,14 @@ INFO:openhivenpy.gateway.ws:[WEBSOCKET] >> Initialization of Client was successf
 INFO:openhivenpy.types.hiven_client:[CLIENT] Client loaded all data and is ready for usage!
 ```
 
-Here, the initialization was successful, and the HivenClient connected itself to Hiven and logged no errors. 
-Only the vital information was logged, while with 'DEBUG' the HivenClient would activate a broader range of 
-useful logs for debugging. Debugging data can be very useful for tracing back errors in the program and also finding
-bug. 
+Here, the initialization was successful, and the HivenClient connected itself to Hiven and logged no errors.
 
-## Usage of Levels
-'DEBUG' is excellent for detecting issues in the program and also seeing how
-OpenHiven.py works in the  background. 'INFO' is, on the other hand, handy for deployment and usage where the
-HivenClient should log only errors.
+!!! Info
 
-For more advanced usage of logging and also debugging it is recommended to use a more advanced logging system
-to get timestamps, logging info and user data that are connected to the running of the Bot.
+    `DEBUG` is excellent for tracing back issues in the program and also seeing how OpenHiven.py works in the 
+    background. `INFO` is, on the other hand, handy for deployment and usage where the
+    HivenClient should log only errors and vital information. We recommend sticking to one of these two, since 
+    higher levels can possibly hide very important information that you might need later if a bug occurs!
 
 ## Advanced Logging
 

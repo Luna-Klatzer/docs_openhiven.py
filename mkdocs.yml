@@ -19,6 +19,7 @@ nav:
       - home/license.md
   - Getting Started:
       - getting_started/intro.md
+      - getting_started/deploying_your_first_bot.md
       - getting_started/logging.md
       - getting_started/event_handling.md
   - API Reference:
@@ -53,8 +54,10 @@ theme:
     - yaml
     - python
   palette:
-    primary: deep purple
-    accent: purple
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+
   logo: ./assets/images/openhivenpy.png
   icon:
     repo: fontawesome/brands/git-alt
@@ -81,7 +84,9 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.mark
+  - pymdownx.highlight
   - pymdownx.tilde
+  - pymdownx.keys
   - attr_list # => very cool html and css syntax
   - abbr
   - pymdownx.snippets # snippet looking sharp!
