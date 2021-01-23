@@ -49,7 +49,7 @@ In case of an event, Hiven will send the corresponding data over the Hiven Swarm
 [aiohttp](https://docs.aiohttp.org/en/stable/) HTTP-Session. That data will then be passed to the HivenClient where 
 the Hiven Swarm message will get processed, and an event would be triggered.
 
-![OpenHiven.py System Visualised](../etc/static/openhivenpy-system.png)
+![OpenHiven.py System Visualised](../assets/images/openhivenpy-system.png)
 
 You can then specify in the Event Listener how the Client should react to such issues using the standard 
 [decorators](https://wiki.python.org/moin/PythonDecorators#What_is_a_Decorator). The methods will get the data passed, 
@@ -75,7 +75,7 @@ EventHandler and then called whenever an Event is triggered.
     ```
 
 ### Using a UserClient
-[![Source](../etc/static/source.ico){: width=28px align=top} Source Code ·`openhivenpy.UserClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py)
+[![Source](../assets/images/source.ico){: width=28px align=top} Source Code ·`openhivenpy.UserClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py)
 
 A UserClient object is an object that wraps the default [HivenClient](https://openhivenpy.readthedocs.io/en/latest/),
 which serves as a bridge between Hiven, and the Program you are using. The [HivenClient](https://openhivenpy.readthedocs.io/en/latest/)
@@ -138,7 +138,7 @@ If no token were passed, it would automatically raise an `openhivenpy.exceptions
         ```
 
 ### Using a BotClient
-[![Source](../etc/static/source.ico){: width=28px align=top} Source Code ·`openhivenpy.BotClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/botclient.py)
+[![Source](../assets/images/source.ico){: width=28px align=top} Source Code ·`openhivenpy.BotClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/botclient.py)
 
 A Bot Client like the UserClient is a wrapper for the main HivenClient class. It serves as a Class using bot
 functionality on Hiven. Therefore, it's usage is very similar, but it can specifically utilise Methods and functions
@@ -154,7 +154,7 @@ related to text-commands and will likely receive in future versions more modules
 <!---
 # Using an .ico since readthedocs doesn't support emoji generation
 -->
-[![Source](../etc/static/source.ico){: width=28px align=top} Source Code ·`openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
+[![Source](../assets/images/source.ico){: width=28px align=top} Source Code ·`openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
 
 You might have already noticed in prior examples that instead of raw data OpenHiven.py sends entire instances of Classes 
 with the event data as parameters. This is because of the type-system OpenHiven.py uses where objects are created and 

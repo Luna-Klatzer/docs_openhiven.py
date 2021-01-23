@@ -33,7 +33,7 @@ nav:
       - reference/event_handler.md
 
 extra_css:
-    - etc/css/index.css
+    - assets/css/index.css
 
 # Github repo
 repo_url: https://github.com/FrostbyteSpace/OpenHiven.py
@@ -54,7 +54,7 @@ theme:
   palette:
     primary: deep purple
     accent: purple
-  logo: ./etc/static/openhivenpy.png
+  logo: ./assets/images/openhivenpy.png
   icon:
     repo: fontawesome/brands/git-alt
   features:
