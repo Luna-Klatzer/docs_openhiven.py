@@ -1,7 +1,8 @@
 pymdown-extensions
-pygments
+Pygments
 mkdocs
 mike
+markdown
 mkdocs-material
 mkdocs-redirects
 mkdocs-htmlproofer-plugin

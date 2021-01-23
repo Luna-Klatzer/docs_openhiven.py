@@ -56,6 +56,7 @@ plugins:
       enabled_if_env: CI
   - search:
       lang: en
+      prebuild_index: true
 
 # Extensions to the basic mkdocs markdown
 markdown_extensions:
@@ -75,6 +76,7 @@ markdown_extensions:
   - pymdownx.emoji: # emojis aka. nice addition
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
 extra:
   version:
       method: mike
