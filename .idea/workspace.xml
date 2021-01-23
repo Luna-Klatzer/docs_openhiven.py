@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/api_reference/events.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reference/botclient.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reference/event_handler.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reference/execution_loop.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reference/hivenclient.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reference/http.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reference/userclient.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.readthedocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.readthedocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +99,7 @@
       <workItem from="1611037695190" duration="18718000" />
       <workItem from="1611056727014" duration="4985000" />
       <workItem from="1611072620676" duration="599000" />
-      <workItem from="1611165106889" duration="38504000" />
+      <workItem from="1611165106889" duration="39202000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -193,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611402513260</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added reference pages and updated markdown_extensions">
+      <created>1611403217675</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611403217675</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +223,8 @@
     <MESSAGE value="Small text fix" />
     <MESSAGE value="Updated mkdocs.yml and requirements.txt" />
     <MESSAGE value="Updated requirements.txt again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated requirements.txt again" />
+    <MESSAGE value="Added reference pages and updated markdown_extensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added reference pages and updated markdown_extensions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
