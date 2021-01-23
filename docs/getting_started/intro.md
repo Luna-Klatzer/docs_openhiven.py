@@ -151,7 +151,10 @@ related to text-commands and will likely receive in future versions more modules
 
 
 ### Hiven-Types
-[:octicons-file-code-24: Source Code - `openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
+<!---
+# Using an .ico since readthedocs doesn't support emoji generation
+-->
+[![Source](../.icons/source.svg){: height=24% } Source Code - `openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
 
 You might have already noticed in prior examples that instead of raw data OpenHiven.py sends entire instances of Classes 
 with the event data as parameters. This is because of the type-system OpenHiven.py uses where objects are created and 

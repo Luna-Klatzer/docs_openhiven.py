@@ -1,3 +1,4 @@
+PyYAML
 pymdown-extensions
 Pygments
 mkdocs
