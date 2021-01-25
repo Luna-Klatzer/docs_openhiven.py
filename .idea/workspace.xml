@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy_auth-dark.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/getting_started/deploying_your_first_bot.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/deploying_your_first_bot.md" afterDir="false" />
     </list>
@@ -102,7 +101,7 @@
       <workItem from="1611072620676" duration="599000" />
       <workItem from="1611165106889" duration="64744000" />
       <workItem from="1611498645630" duration="602000" />
-      <workItem from="1611505696949" duration="4448000" />
+      <workItem from="1611505696949" duration="5421000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -279,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611444717129</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added auth graph and updated info on deploying_your_first_bot.md">
+      <created>1611577921469</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577921469</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +304,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added quick_start and some small changes to overall docs" />
     <MESSAGE value="Updated introduction" />
     <MESSAGE value="Updated core docs to the latest changes. Needs more work!" />
     <MESSAGE value="Updated introduction, quick_start and bug_reporting and merged types into one file" />
@@ -323,7 +328,8 @@
     <MESSAGE value="Removed .ico since it broke in the readthedocs build" />
     <MESSAGE value="Changed endpoint style to files to ensure images and content are found within the project" />
     <MESSAGE value="Changed to dark-theme and expanded docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to dark-theme and expanded docs" />
+    <MESSAGE value="Added auth graph and updated info on deploying_your_first_bot.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added auth graph and updated info on deploying_your_first_bot.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

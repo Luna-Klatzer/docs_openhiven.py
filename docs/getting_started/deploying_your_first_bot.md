@@ -21,7 +21,7 @@ features depend on such token! Because of that and the risk of other users takin
 crucial to keep such a token save and not share it on any platform! Doing that could risk that your entire
 account getting compromised! So try to keep it save!
 
-![OpenHiven.py Authentication](../assets/images/openhivenpy_auth-dark.png){: width=800px }
+![OpenHiven.py Authentication](../assets/images/openhivenpy_auth-dark.png){: width=900px align=center }
 
 ## Setting up a simple Bot
 
