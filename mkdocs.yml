@@ -5,6 +5,7 @@ site_description: 'Documentation Page for OpenHiven.py'
 site_author: 'Nicolas Klatzer'
 site_url: 'https://openhivenpy.readthedocs.io'
 site_dir: './build/'
+edit_uri: 'https://github.com/FrostbyteSpace/docs_openhiven.py/edit/mkdocs-material-rewrite/docs/'
 
 copyright: Copyright &copy; 2020 - 2021 FrostbyteSpace
 

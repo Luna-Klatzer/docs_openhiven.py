@@ -23,6 +23,12 @@ account getting compromised! So try to keep it save!
 
 ![OpenHiven.py Authentication](../assets/images/openhivenpy_auth-dark.png){: width=900px align=center }
 
+### Getting a User-token
+
+### Getting a Bot-token
+
+
+
 ## Setting up a simple Bot
 
 Setting up a simple Bot is relatively easy and quick. Choose the right Client-Type, pass a token, customise events and 
@@ -40,3 +46,7 @@ let the bot run. Still, for each Client-Type there are multiple things to know b
     A BotClient is a Client targeted at Bots! That means it has special functionality directed
     to Bot-Usage and long time execution! That also means user interaction functionality is missing and classic
     relationships with Users are not supported! 
+
+### Creating a Bot-Account
+
+### Setting up a simple EventListener
