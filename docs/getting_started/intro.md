@@ -45,7 +45,7 @@ OpenHiven.py can be easily installed using `pip`:
 
 Installing OpenHiven.py will automatically also include its dependencies, which currently are:
 
-* [aiohttp >= 3.6](https://docs.aiohttp.org/en/stable/)
+* [aiohttp >= 3.7](https://docs.aiohttp.org/en/stable/)
 * [asyncio](https://docs.python.org/3/library/asyncio.html)
 * [typing](https://docs.python.org/3/library/typing.html)
 
