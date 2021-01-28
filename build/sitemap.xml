@@ -36,6 +36,10 @@
      <lastmod>2021-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://openhivenpy.readthedocs.io/api_reference/index.html</loc>
+     <lastmod>2021-01-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://openhivenpy.readthedocs.io/api_reference/hiven_endpoints.html</loc>
      <lastmod>2021-01-28</lastmod>
      <changefreq>daily</changefreq>
@@ -45,6 +49,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://openhivenpy.readthedocs.io/api_reference/events.html</loc>
+     <lastmod>2021-01-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://openhivenpy.readthedocs.io/reference/index.html</loc>
      <lastmod>2021-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
