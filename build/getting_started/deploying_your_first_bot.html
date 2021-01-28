@@ -742,7 +742,20 @@ crucial to keep such a token save and not share it on any platform! Doing that c
 account getting compromised! So try to keep it save!</p>
 <p><img align="center" alt="OpenHiven.py Authentication" src="../assets/images/openhivenpy_auth-dark.png" width="900px" /></p>
 <h3 id="getting-a-user-token">Getting a User-token<a class="headerlink" href="#getting-a-user-token" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Step 1: Open your browsers development options.</li>
+<li>Step 2: Navigate in your Browser to your Web-Console which should allow code to be passed.</li>
+<li>Step 3: Execute this code-snippet <code>localStorage['hiven-auth']</code>. This will automatically fetch your token from the local Storage</li>
+<li>Step 4: Copy the returned hash-string. This string is the token itself which should have a length of 128 characters. </li>
+<li><strong>Recommended:</strong> As already stated in <a href="#authentication-and-tokens">Authentication and Tokens</a> store the token somewhere 
+  secure to avoid the risk of your account getting compromised!</li>
+</ul>
 <h3 id="getting-a-bot-token">Getting a Bot-token<a class="headerlink" href="#getting-a-bot-token" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently creating a Bot is rather hard and requires a request directly to the Hiven Staff! Get in touch with the Hiven staff to request a Bot 
+or wait until Bot-Accounts have entered Stable State!</p>
+</div>
 <h2 id="setting-up-a-simple-bot">Setting up a simple Bot<a class="headerlink" href="#setting-up-a-simple-bot" title="Permanent link">&para;</a></h2>
 <p>Setting up a simple Bot is relatively easy and quick. Choose the right Client-Type, pass a token, customise events and 
 let the bot run. Still, for each Client-Type there are multiple things to know before running:</p>
