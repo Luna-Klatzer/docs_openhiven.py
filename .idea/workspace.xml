@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/api_reference/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/reference/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/api_reference/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/openhivenpy_with_py.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/images/openhivenpy_with_py.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/getting_started/event_handling.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/event_handling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/getting_started/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/getting_started/logging.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/logging.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/home/bug_reporting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/bug_reporting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/home/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/contributing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/home/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/home/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/troubleshooting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reference/botclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/botclient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reference/event_handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/event_handler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reference/execution_loop.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/execution_loop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reference/hivenclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/hivenclient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reference/http.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/http.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reference/userclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/userclient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/search/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/events.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/events.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/images/openhivenpy_with_py.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy_with_py.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/getting_started/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/bug_reporting.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/bug_reporting.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/contributing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +106,8 @@
       <workItem from="1611165106889" duration="64744000" />
       <workItem from="1611498645630" duration="602000" />
       <workItem from="1611505696949" duration="12894000" />
-      <workItem from="1611840935354" duration="6239000" />
+      <workItem from="1611840935354" duration="6683000" />
+      <workItem from="1611856409960" duration="8990000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -345,7 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611841060364</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Updated home pages">
+      <created>1611847482547</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611847482547</updated>
+    </task>
+    <task id="LOCAL-00032" summary="removed intro.html">
+      <created>1611850392589</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1611850392589</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,8 +352,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished basic configuration of mkdocs page and rewrote basic introduction" />
-    <MESSAGE value="Added more content pages" />
     <MESSAGE value="Removed overwrites and emoji generator" />
     <MESSAGE value="Finished intro page" />
     <MESSAGE value="Small text fix" />
@@ -389,7 +375,9 @@
     <MESSAGE value="Added correct edit url" />
     <MESSAGE value="Small tag fix" />
     <MESSAGE value="Build docs after PR #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build docs after PR #6" />
+    <MESSAGE value="Updated home pages" />
+    <MESSAGE value="removed intro.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed intro.html" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

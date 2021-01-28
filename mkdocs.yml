@@ -24,10 +24,12 @@ nav:
       - getting_started/logging.md
       - getting_started/event_handling.md
   - API Reference:
+      - api_reference/index.md
       - api_reference/hiven_endpoints.md
       - api_reference/hiven_swarm.md
       - api_reference/events.md
   - Reference:
+      - reference/index.md
       - reference/hivenclient.md
       - reference/botclient.md
       - reference/userclient.md
