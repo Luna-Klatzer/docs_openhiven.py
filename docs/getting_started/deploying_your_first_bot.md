@@ -24,6 +24,10 @@ account getting compromised! So try to keep it save!
 ![OpenHiven.py Authentication](../assets/images/openhivenpy_auth-dark.png){: width=900px align=center }
 
 ### Getting a User-token
+Step 1: Open your browsers development options.
+Step 2: Navigate to "Applications" "Storage" "Local Storage" "(canary.)hiven.io"
+Step 3: Copy the "hiven-auth" string. It has to be 128 characters long.
+Step 4: Don't show your token to anyone. With a token you can get full access to your account even without a password.
 
 ### Getting a Bot-token
 
