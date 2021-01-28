@@ -1,8 +1,8 @@
-# Introduction to OpenHiven.py
+# Quickstart
 
 ---
 
-Welcome to the Introduction to OpenHiven.py!
+Welcome to the Quickstart page of OpenHiven.py!
 
 OpenHiven.py is an easy, fast and async API wrapper written in Python
 that provides extensive functionality for the Hiven Swarm and Hiven API.
@@ -45,16 +45,16 @@ OpenHiven.py can be easily installed using `pip`:
 
 Installing OpenHiven.py will automatically also include its dependencies, which currently are:
 
-* [aiohttp >= 3.7](https://docs.aiohttp.org/en/stable/)
-* [asyncio](https://docs.python.org/3/library/asyncio.html)
-* [typing](https://docs.python.org/3/library/typing.html)
+* [aiohttp](https://docs.aiohttp.org/en/stable/) - Asynchronous HTTP Client for OpenHiven.py
+* [asyncio](https://docs.python.org/3/library/asyncio.html) - Execution of functions using asynchronous concurrent code
+* [typing](https://docs.python.org/3/library/typing.html) - Type Hinting in Python
 
 ## Basic Concept
 
-The system of OpenHiven.py is very closely related to the discord.py(Discord Python Wrapper) module and
-was structured to be similar to it. Therefore, the basic concept is based on an event listener system where events
-are mapped to user-specified functions and methods. These will be executed when in the websocket a Hiven Swarm Event 
-is received, enabling the user to customise the event's handling!
+The system of OpenHiven.py is very closely related to the [discord.py](https://pypi.org/project/discord.py/) 
+(Discord Python Wrapper) module and was structured to be similar to it. Therefore, the basic concept is based on an event 
+listener system where events are mapped to user-specified functions and methods. These will be executed when in the 
+websocket a Hiven Swarm Event is received, enabling the user to customise the event's handling!
 
 In case of an event, Hiven will send the corresponding data over the Hiven Swarm and the websocket connection of the 
 [aiohttp](https://docs.aiohttp.org/en/stable/) HTTP-Session. That data will then be passed to the HivenClient where 

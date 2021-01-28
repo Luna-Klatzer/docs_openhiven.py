@@ -1,4 +1,4 @@
-# Hiven Endpoints
+# API Reference
 
 ---
 

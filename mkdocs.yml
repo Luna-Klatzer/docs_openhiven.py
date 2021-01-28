@@ -19,7 +19,7 @@ nav:
       - home/contributing.md
       - home/license.md
   - Getting Started:
-      - getting_started/intro.md
+      - getting_started/index.md
       - getting_started/deploying_your_first_bot.md
       - getting_started/logging.md
       - getting_started/event_handling.md
