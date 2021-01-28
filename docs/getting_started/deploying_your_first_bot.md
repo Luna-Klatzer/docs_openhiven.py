@@ -24,10 +24,19 @@ account getting compromised! So try to keep it save!
 ![OpenHiven.py Authentication](../assets/images/openhivenpy_auth-dark.png){: width=900px align=center }
 
 ### Getting a User-token
+* Step 1: Open your browsers development options.
+* Step 2: Navigate in your Browser to your Web-Console which should allow code to be passed.
+* Step 3: Execute this code-snippet `localStorage['hiven-auth']`. This will automatically fetch your token from the local Storage
+* Step 4: Copy the returned hash-string. This string is the token itself which should have a length of 128 characters. 
+* (Step 5 (**Recommended!**): As already stated in [Authentication and Tokens](#authentication-and-tokens) store the token somewhere secure to 
+  avoid the risk of your account getting compromised!)
 
 ### Getting a Bot-token
 
+!!! Note
 
+   Currently creating a Bot is rather hard and requires a request directly to the Hiven Staff! Get in touch with the Hiven staff to request a Bot 
+   or wait until Bot-Accounts have entered Stable State!
 
 ## Setting up a simple Bot
 
