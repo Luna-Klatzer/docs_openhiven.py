@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +102,7 @@
       <workItem from="1611498645630" duration="602000" />
       <workItem from="1611505696949" duration="12894000" />
       <workItem from="1611840935354" duration="6683000" />
-      <workItem from="1611856409960" duration="14074000" />
+      <workItem from="1611856409960" duration="15103000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -354,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611913760379</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Updated source-icon">
+      <created>1611913950073</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1611913950073</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +382,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated requirements.txt again" />
     <MESSAGE value="Added reference pages and updated markdown_extensions" />
     <MESSAGE value="added requests to the requirements.txt" />
     <MESSAGE value="Adding PyYAML to see if that caused the issue" />
@@ -398,7 +406,8 @@
     <MESSAGE value="Pushing build" />
     <MESSAGE value="Updated Hiven Swarm Docs" />
     <MESSAGE value="Updated icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated icons" />
+    <MESSAGE value="Updated source-icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated source-icon" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
