@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/reference/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/events.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/events.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/openhivenpy_with_py.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/images/openhivenpy_with_py.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,7 @@
       <workItem from="1611498645630" duration="602000" />
       <workItem from="1611505696949" duration="12894000" />
       <workItem from="1611840935354" duration="6683000" />
-      <workItem from="1611856409960" duration="8990000" />
+      <workItem from="1611856409960" duration="12796000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -333,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611850392589</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added basic Hiven Swarm docs. Needs more work!">
+      <created>1611867946831</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1611867946831</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Pushing build">
+      <created>1611867973015</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1611867973015</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,8 +363,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed overwrites and emoji generator" />
-    <MESSAGE value="Finished intro page" />
     <MESSAGE value="Small text fix" />
     <MESSAGE value="Updated mkdocs.yml and requirements.txt" />
     <MESSAGE value="Updated requirements.txt again" />
@@ -377,7 +386,9 @@
     <MESSAGE value="Build docs after PR #6" />
     <MESSAGE value="Updated home pages" />
     <MESSAGE value="removed intro.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed intro.html" />
+    <MESSAGE value="Added basic Hiven Swarm docs. Needs more work!" />
+    <MESSAGE value="Pushing build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pushing build" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

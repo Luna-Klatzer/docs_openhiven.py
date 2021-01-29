@@ -872,6 +872,7 @@
         <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
         <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
         <span class="nt">&quot;room_overrides&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="err">//</span> <span class="err">room</span> <span class="err">pre</span><span class="kc">feren</span><span class="err">ces</span> <span class="err">mapped</span> <span class="kc">t</span><span class="err">o</span> <span class="kc">t</span><span class="err">heir</span> <span class="err">id</span>
             <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span> 
                 <span class="nt">&quot;notification_preference&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span> 
             <span class="p">}</span>
@@ -901,7 +902,29 @@
           <span class="nt">&quot;mention_count&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
         <span class="p">},</span>
     <span class="p">},</span>
-    <span class="nt">&quot;private_rooms&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;private_rooms&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;default_permission_override&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;emoji&quot;</span><span class="p">:</span> <span class="err">objec</span><span class="kc">t</span><span class="p">,</span>
+        <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;last_message_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;owner_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;permission_overrides&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
+        <span class="nt">&quot;recipients&quot;</span><span class="p">:</span> <span class="p">[{</span>  
+            <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+            <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
     <span class="nt">&quot;presences&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span>
           <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -913,10 +936,11 @@
           <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
         <span class="p">}</span>
     <span class="p">},</span>
-    <span class="nt">&quot;house_memberships&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;house_memberships&quot;</span><span class="p">:</span> <span class="p">[{</span>
         <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
             <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
                 <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
                 <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
                 <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -930,364 +954,524 @@
             <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
             <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
         <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;house_ids&quot;</span><span class="p">:</span> <span class="p">[]</span>
-<span class="p">}</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;house_ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="err">//</span> <span class="err">lis</span><span class="kc">t</span> <span class="err">o</span><span class="kc">f</span> <span class="err">house_ids</span>
+        <span class="s2">&quot;house_id&quot;</span><span class="p">,</span>
+        <span class="err">...</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
 <h3 id="house_join"><code>HOUSE_JOIN</code><a class="headerlink" href="#house_join" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
 <a href="">Docs · <code>async def on_house_join()</code></a></p>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">rooms</span><span class="p">:</span> <span class="err">room</span><span class="p">[{</span>
-    <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="err">recipie</span><span class="kc">nts</span><span class="p">:</span> <span class="kc">null</span>
-    <span class="err">posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="err">permissio</span><span class="kc">n</span><span class="err">_overrides</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
-    <span class="err">ow</span><span class="kc">ner</span><span class="err">_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">las</span><span class="kc">t</span><span class="err">_message_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">emoji</span><span class="p">:</span> <span class="err">objec</span><span class="kc">t</span><span class="p">,</span>
-    <span class="err">descrip</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">de</span><span class="kc">fault</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_override</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
-  <span class="p">}],</span>
-  <span class="err">roles</span><span class="p">:</span> <span class="err">role</span><span class="p">[{</span>
-    <span class="err">posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">level</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">de</span><span class="kc">n</span><span class="err">y</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
-    <span class="err">color</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">allow</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span>
-  <span class="p">}],</span>
-  <span class="err">ow</span><span class="kc">ner</span><span class="err">_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">members</span><span class="p">:</span> <span class="p">[{</span>
-    <span class="err">user_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-      <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-    <span class="p">},</span>
-    <span class="err">roles</span><span class="p">:</span> <span class="err">array</span><span class="p">,</span>
-    <span class="err">las</span><span class="kc">t</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_upda</span><span class="kc">te</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">}],</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">e</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">ies</span><span class="p">:</span> <span class="p">[{</span>
-    <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="err">resource_poi</span><span class="kc">nters</span><span class="p">:</span> <span class="p">[{</span>
-      <span class="err">resource_</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">resource_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Room</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;recipients&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;permission_overrides&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+        <span class="nt">&quot;owner_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;last_message_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;emoji&quot;</span><span class="p">:</span> <span class="err">objec</span><span class="kc">t</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;default_permission_override&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+    <span class="p">},</span> <span class="err">...</span><span class="p">],</span>
+    <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+        <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span>
     <span class="p">}],</span>
-    <span class="err">posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">}],</span>
-  <span class="err">de</span><span class="kc">fault</span><span class="err">_permissio</span><span class="kc">ns</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">ba</span><span class="kc">nner</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+    <span class="nt">&quot;owner_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;members&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Member</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+            <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+            <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;last_permission_update&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">}],</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;entities&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">E</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;resource_pointers&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="err">//</span> <span class="err">Resource</span> <span class="err">Poi</span><span class="kc">nter</span>
+            <span class="nt">&quot;resource_type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;resource_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;default_permissions&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;banner&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="house_leave"><code>HOUSE_LEAVE</code><a class="headerlink" href="#house_leave" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+  <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="batch_house_member_update"><code>BATCH_HOUSE_MEMBER_UPDATE</code><a class="headerlink" href="#batch_house_member_update" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g;</span>
-  <span class="err">ba</span><span class="kc">t</span><span class="err">ch_</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">lis</span><span class="kc">t</span><span class="err">;</span>
-  <span class="err">ba</span><span class="kc">t</span><span class="err">ch_size</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="err">;</span>
-  <span class="err">da</span><span class="kc">ta</span><span class="p">:</span> <span class="p">{</span>
-    <span class="p">[</span><span class="err">resource_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">]:</span> <span class="err">HouseMember</span>
-  <span class="p">}</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;batch_type&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;batch_size&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">Collec</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="err">o</span><span class="kc">f</span> <span class="err">Members</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">are</span> <span class="err">mapped</span> <span class="kc">t</span><span class="err">o</span> <span class="kc">t</span><span class="err">heir</span> <span class="err">id</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="err">//</span> <span class="err">Member</span> <span class="err">Objec</span><span class="kc">t</span>
+            <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+                <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+                <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+                <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+                <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+                <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span>
+            <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+            <span class="nt">&quot;last_permission_update&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="relationship_update"><code>RELATIONSHIP_UPDATE</code><a class="headerlink" href="#relationship_update" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">websi</span><span class="kc">te</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">loca</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">bio</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">},</span>
-  <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">recipie</span><span class="kc">nt</span><span class="err">_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="message_create"><code>MESSAGE_CREATE</code><a class="headerlink" href="#message_create" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">room_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">me</span><span class="kc">nt</span><span class="err">io</span><span class="kc">ns</span><span class="p">:</span> <span class="p">[{</span>
-    <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">bo</span><span class="kc">t</span><span class="p">:</span> <span class="err">boolea</span><span class="kc">n</span>
-  <span class="p">}],</span>
-  <span class="err">member</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">user_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-      <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;website&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;bio&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
     <span class="p">},</span>
-    <span class="err">roles</span><span class="p">:</span> <span class="err">array</span><span class="p">,</span>
-    <span class="err">las</span><span class="kc">t</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_upda</span><span class="kc">te</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">},</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">explodi</span><span class="kc">n</span><span class="err">g_age</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">explodi</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span> <span class="err">boolea</span><span class="kc">n</span><span class="p">,</span>
-  <span class="err">device_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">co</span><span class="kc">ntent</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">bucke</span><span class="kc">t</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">au</span><span class="kc">t</span><span class="err">hor_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">au</span><span class="kc">t</span><span class="err">hor</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">}</span>
-  <span class="err">a</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">media_url</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">f</span><span class="err">ile</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">dime</span><span class="kc">ns</span><span class="err">io</span><span class="kc">ns</span><span class="p">:</span> <span class="p">{</span>
-      <span class="err">wid</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-      <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">heigh</span><span class="kc">t</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;recipient_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
+<h3 id="message_create"><code>MESSAGE_CREATE</code><a class="headerlink" href="#message_create" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;mentions&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Me</span><span class="kc">nt</span><span class="err">io</span><span class="kc">n</span> <span class="err">objec</span><span class="kc">t</span> <span class="err">aka.</span> <span class="err">user</span> <span class="err">objec</span><span class="kc">t</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;bot&quot;</span><span class="p">:</span> <span class="err">bool</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;member&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">Member</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+            <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+            <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+            <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span>
+        <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+        <span class="nt">&quot;last_permission_update&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;exploding_age&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;exploding&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+    <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;bucket&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;author_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">}</span>
+    <span class="nt">&quot;attachment&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">A</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;media_url&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;dimensions&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
 <h3 id="message_delete"><code>MESSAGE_DELETE</code><a class="headerlink" href="#message_delete" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">room_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">message_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="message_update"><code>MESSAGE_UPDATE</code><a class="headerlink" href="#message_update" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">room_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">me</span><span class="kc">ta</span><span class="err">da</span><span class="kc">ta</span><span class="p">:</span> <span class="err">u</span><span class="kc">n</span><span class="err">k</span><span class="kc">n</span><span class="err">ow</span><span class="kc">n</span><span class="p">,</span>
-  <span class="err">me</span><span class="kc">nt</span><span class="err">io</span><span class="kc">ns</span><span class="p">:</span> <span class="p">[{</span>
-    <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">}],</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">explodi</span><span class="kc">n</span><span class="err">g_age</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">explodi</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span> <span class="err">boolea</span><span class="kc">n</span><span class="p">,</span>
-  <span class="err">embed</span><span class="p">:</span> <span class="err">objec</span><span class="kc">t</span><span class="p">,</span>
-  <span class="err">edi</span><span class="kc">te</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">device_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">co</span><span class="kc">ntent</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">bucke</span><span class="kc">t</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">au</span><span class="kc">t</span><span class="err">hor_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">a</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">media_url</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">f</span><span class="err">ile</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">dime</span><span class="kc">ns</span><span class="err">io</span><span class="kc">ns</span><span class="p">:</span> <span class="p">{</span>
-      <span class="err">wid</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-      <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">heigh</span><span class="kc">t</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="err">u</span><span class="kc">n</span><span class="err">k</span><span class="kc">n</span><span class="err">ow</span><span class="kc">n</span><span class="p">,</span>
+    <span class="nt">&quot;mentions&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Me</span><span class="kc">nt</span><span class="err">io</span><span class="kc">n</span> <span class="err">objec</span><span class="kc">t</span> <span class="err">aka.</span> <span class="err">user</span> <span class="err">objec</span><span class="kc">t</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">},</span> <span class="err">...</span><span class="p">],</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;exploding_age&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;exploding&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+    <span class="nt">&quot;embed&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">Embed</span> <span class="err">Objec</span><span class="kc">t</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;edited_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;device_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;bucket&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;author_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;attachment&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">A</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;media_url&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;dimensions&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+        <span class="p">}</span>
     <span class="p">}</span>
-  <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="presence_update"><code>PRESENCE_UPDATE</code><a class="headerlink" href="#presence_update" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+    <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="room_create"><code>ROOM_CREATE</code><a class="headerlink" href="#room_create" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
 <span class="p">}</span>
 </code></pre></div>
+<a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: </p>
 <h3 id="room_update"><code>ROOM_UPDATE</code><a class="headerlink" href="#room_update" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
 <div class="highlight"><pre><span></span><code>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="room_delete"><code>ROOM_DELETE</code><a class="headerlink" href="#room_delete" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
 <div class="highlight"><pre><span></span><code>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_member_join"><code>HOUSE_MEMBER_JOIN</code><a class="headerlink" href="#house_member_join" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">,</span>
-    <span class="err">roles</span><span class="p">:</span> <span class="p">[]</span>
-    <span class="err">le</span><span class="kc">n</span><span class="err">g</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
-    <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-        <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">,</span>
+    <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+        <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span> 
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+    <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_member_exit"><code>HOUSE_MEMBER_EXIT</code><a class="headerlink" href="#house_member_exit" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_member_enter"><code>HOUSE_MEMBER_ENTER</code><a class="headerlink" href="#house_member_enter" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">user_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-      <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">bo</span><span class="kc">t</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
-  <span class="p">},</span>
-  <span class="err">roles</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">las</span><span class="kc">t</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_upda</span><span class="kc">te</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-  <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;bot&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+        <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span> 
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;last_permission_update&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_member_update"><code>HOUSE_MEMBER_UPDATE</code><a class="headerlink" href="#house_member_update" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">user_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">websi</span><span class="kc">te</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">loca</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">email_veri</span><span class="kc">f</span><span class="err">ied</span><span class="p">:</span> <span class="err">boolea</span><span class="kc">n</span><span class="p">,</span>
-    <span class="err">bo</span><span class="kc">t</span><span class="p">:</span> <span class="err">boolea</span><span class="kc">n</span><span class="p">,</span>
-    <span class="err">bio</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">},</span>
-  <span class="err">roles</span><span class="p">:</span> <span class="err">objec</span><span class="kc">t</span><span class="p">[],</span>
-  <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">las</span><span class="kc">t</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_upda</span><span class="kc">te</span><span class="p">:</span> <span class="err">u</span><span class="kc">n</span><span class="err">k</span><span class="kc">n</span><span class="err">ow</span><span class="kc">n</span><span class="p">,</span>
-  <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;website&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;email_verified&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="nt">&quot;bot&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="nt">&quot;bio&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+        <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span> 
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;last_permission_update&quot;</span><span class="p">:</span> <span class="err">u</span><span class="kc">n</span><span class="err">k</span><span class="kc">n</span><span class="err">ow</span><span class="kc">n</span><span class="p">,</span>
+    <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_members_chunk"><code>HOUSE_MEMBERS_CHUNK</code><a class="headerlink" href="#house_members_chunk" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">members</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">id</span><span class="p">:</span> <span class="p">{</span>
-      <span class="err">user_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">user</span><span class="p">:</span> <span class="p">{</span>
-        <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">ico</span><span class="kc">n</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">header</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-        <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-      <span class="p">},</span>
-      <span class="err">roles</span><span class="p">:</span> <span class="err">array</span><span class="p">,</span>
-      <span class="err">las</span><span class="kc">t</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_upda</span><span class="kc">te</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-    <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;members&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">trstr</span>
+            <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+            <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+            <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span> 
+        <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+        <span class="nt">&quot;last_permission_update&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="typing_start"><code>TYPING_START</code><a class="headerlink" href="#typing_start" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-  <span class="err">room_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">au</span><span class="kc">t</span><span class="err">hor_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+  <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+  <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+  <span class="nt">&quot;author_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_entity_update"><code>HOUSE_ENTITY_UPDATE</code><a class="headerlink" href="#house_entity_update" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-  <span class="err">e</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">ies</span><span class="p">:</span> <span class="p">[{</span>
-    <span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="err">resource_poi</span><span class="kc">nters</span><span class="p">:</span> <span class="p">[{</span>
-      <span class="err">resource_</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-      <span class="err">resource_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-    <span class="p">}],</span>
-    <span class="err">posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">,</span>
-    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
-  <span class="p">}]</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;entities&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;resource_pointers&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="err">//</span> <span class="err">Resource</span> <span class="err">Poi</span><span class="kc">nter</span>
+            <span class="nt">&quot;resource_type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;resource_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="house_down"><code>HOUSE_DOWN</code><a class="headerlink" href="#house_down" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="err">op</span><span class="p">:</span> <span class="mi">0</span>
-<span class="err">d</span><span class="p">:</span> <span class="p">{</span>
-  <span class="err">u</span><span class="kc">na</span><span class="err">vailable</span><span class="p">:</span> <span class="err">boolea</span><span class="kc">n</span><span class="p">,</span>
-  <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="">Docs · <code>async def on_init()</code></a></p>
+<p>Expected json-data: 
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nt">&quot;unavailable&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+  <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></p>
                 
               
               
