@@ -774,9 +774,15 @@ Python 3 and the modern async module of Python 3 as well as aiohttp!</p>
 </div>
 <p>Installing OpenHiven.py will automatically also include its dependencies, which currently are:</p>
 <ul>
-<li><a href="https://docs.aiohttp.org/en/stable/">aiohttp</a> - Asynchronous HTTP Client for OpenHiven.py</li>
-<li><a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> - Execution of functions using asynchronous concurrent code</li>
-<li><a href="https://docs.python.org/3/library/typing.html">typing</a> - Type Hinting in Python</li>
+<li>
+<p><a href="https://docs.aiohttp.org/en/stable/">aiohttp</a> - Asynchronous HTTP Client for OpenHiven.py</p>
+</li>
+<li>
+<p><a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> - Execution of functions using asynchronous concurrent code</p>
+</li>
+<li>
+<p><a href="https://docs.python.org/3/library/typing.html">typing</a> - Type Hinting in Python**</p>
+</li>
 </ul>
 <h2 id="basic-concept">Basic Concept<a class="headerlink" href="#basic-concept" title="Permanent link">&para;</a></h2>
 <p>The system of OpenHiven.py is very closely related to the <a href="https://pypi.org/project/discord.py/">discord.py</a> 
@@ -813,8 +819,8 @@ type you are using, resulting in various functionality. These two bot-types are 
 and <a href="https://openhivenpy.readthedocs.io/en/latest/">BotClient</a></p>
 <p>To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
 If no token were passed, it would automatically raise an <code>openhivenpy.exceptions.exception.InvalidToken</code> Exception!</p>
-<div class="admonition usage examples">
-<p class="admonition-title">Usage</p>
+<div class="admonition note">
+<p class="admonition-title">Usage Examples</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Regular</label><div class="tabbed-content">
 <p>Note that using a decorator will also automatically add the function as a method to the <a href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a>
 instance itself so it can call it directly from the Event Handler and it doesn't need to reference the origin!</p>

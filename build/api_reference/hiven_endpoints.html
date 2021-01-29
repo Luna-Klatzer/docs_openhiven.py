@@ -500,9 +500,79 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Hiven Endpoints
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="hiven_endpoints.html" class="md-nav__link md-nav__link--active">
         Hiven Endpoints
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-header" class="md-nav__link">
+    Authentication Header
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-endpoints" class="md-nav__link">
+    User Endpoints
+  </a>
+  
+    <nav class="md-nav" aria-label="User Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usersme" class="md-nav__link">
+    /users/@me
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#house-endpoints" class="md-nav__link">
+    House Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-endpoints" class="md-nav__link">
+    Message Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#room-endpoints" class="md-nav__link">
+    Room Endpoints
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -677,6 +747,55 @@
 <p class="admonition-title">Warning</p>
 <p><strong>This documentation page is not finished yet! Information can be outdated or entirely not available!</strong></p>
 </div>
+<h2 id="authentication-header">Authentication Header<a class="headerlink" href="#authentication-header" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="user-endpoints">User Endpoints<a class="headerlink" href="#user-endpoints" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="usersme"><code>/users/@me</code><a class="headerlink" href="#usersme" title="Permanent link">&para;</a></h3>
+<p>Default user endpoint for accessing the user-data of the owner of the passed token in the header.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">GET</label><div class="tabbed-content">
+<details class="success"><summary>200</summary><p><strong>Expected Response:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;success&quot;</span><span class="p">:</span> <span class="err">True</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;bot&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;website&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;bio&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;email_verified&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="nt">&quot;mfa_enabled&quot;</span><span class="p">:</span> <span class="err">bool</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<details class="fail"><summary>400</summary><p>Authorisation Token is not set or faulty! Check your header if the token was entered correctly!</p>
+<p><strong>Expected Response:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;success&quot;</span><span class="p">:</span> <span class="err">False</span><span class="p">,</span>
+    <span class="nt">&quot;error&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;no_auth&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Authorization is required for this route&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><em>Note that the issue can also be caused by a faulty header-configuration in the set fields like 'Content-Type'</em></p>
+</details>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">PATCH</label><div class="tabbed-content"></div>
+</div>
+<h2 id="house-endpoints">House Endpoints<a class="headerlink" href="#house-endpoints" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="message-endpoints">Message Endpoints<a class="headerlink" href="#message-endpoints" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="room-endpoints">Room Endpoints<a class="headerlink" href="#room-endpoints" title="Permanent link">&para;</a></h2>
+<hr />
                 
               
               
