@@ -17,11 +17,11 @@ The available levels for logging are:
 
 | **Levels** | **Description** |
 | ----------- | ----------- |
-| CRITICAL | Logs only very critical errors | 
-| ERROR | Logs only errors | 
-| WARNING | Logs only warnings and errors in the program |
-| INFO | Logs only vital information about the program |
-| DEBUG | Logs every output related to the running program |
+| `CRITICAL` | Logs only very critical errors | 
+| `ERROR` | Logs only errors | 
+| `WARNING` | Logs only warnings and errors in the program |
+| `INFO` | Logs only vital information about the program |
+| `DEBUG` | Logs every output related to the running program |
 
 See [logging levels](https://docs.python.org/3/library/logging.html#logging-levels) for complete docs
 
