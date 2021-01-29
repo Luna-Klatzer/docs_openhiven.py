@@ -46,8 +46,10 @@ OpenHiven.py can be easily installed using `pip`:
 Installing OpenHiven.py will automatically also include its dependencies, which currently are:
 
 * [aiohttp](https://docs.aiohttp.org/en/stable/) - Asynchronous HTTP Client for OpenHiven.py
+
 * [asyncio](https://docs.python.org/3/library/asyncio.html) - Execution of functions using asynchronous concurrent code
-* [typing](https://docs.python.org/3/library/typing.html) - Type Hinting in Python
+  
+* [typing](https://docs.python.org/3/library/typing.html) - Type Hinting in Python**
 
 ## Basic Concept
 
@@ -96,7 +98,7 @@ and [BotClient](https://openhivenpy.readthedocs.io/en/latest/)
 To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
 If no token were passed, it would automatically raise an `openhivenpy.exceptions.exception.InvalidToken` Exception!
 
-!!! Usage Examples
+!!! note "Usage Examples"
 
     === "Regular"
 
@@ -157,8 +159,7 @@ functionality on Hiven. Therefore, it's usage is very similar to the UserClient,
 and functions related to text-commands and will likely receive in future versions more updates specifically adding that 
 functionality.
 
-!!! Warning 
-
+!!! Warning
     **The current release v0.1.2 the BotClient lacks major optimisation and functionality. 
     Therefore, bugs are likely to occur! If you encounter such bugs, please report them!**
 

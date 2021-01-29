@@ -15,7 +15,7 @@ and higher than it. That means if `WARNING` was specified, `ERROR` and `CRITICAL
 
 The available levels for logging are:
 
-| Levels | Description |
+| **Levels** | **Description** |
 | ----------- | ----------- |
 | CRITICAL | Logs only very critical errors | 
 | ERROR | Logs only errors | 

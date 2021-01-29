@@ -122,139 +122,22 @@ Expected json-data:
 }
 ```
 
-### `HOUSE_JOIN`
+### `PRESENCE_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_house_join()`]()
+[Docs · `async def on_init()`]()
 
+Expected json-data: 
 ```json
 "op": 0,
 "d": {
-    "rooms": [{
-        // Room Object
-        "type": int,
-        "recipients": None
-        "position": int,
-        "permission_overrides": bits,
-        "owner_id": str,
-        "name": str,
-        "last_message_id": str,
-        "id": str,
-        "house_id": str,
-        "emoji": object,
-        "description": str,
-        "default_permission_override": int
-    }, ...],
-    "roles": [{
-        // Role Object
-        "position": int,
-        "name": str,
-        "level": int,
-        "id": str,
-        "deny": bits,
-        "color": str,
-        "allow": bits
-    }],
-    "owner_id": str,
+    // User Object
+    "username": str,
+    "user_flags": str,
     "name": str,
-    "members": [{
-        // Member Object
-        "user_id": str,
-        "user": {
-            // User Object
-            "username": str,
-            "user_flags": str,
-            "name": str,
-            "id": str,
-            "icon": str,
-            "header": str,
-            "presence": str
-        },
-        "roles": [
-            "position": int,
-            "name": str,
-            "level": int,
-            "id": str,
-            "deny": bits,
-            "color": str,
-            "allow": bits
-        ],
-        "last_permission_update": str,
-        "joined_at": str,
-        "house_id": str
-    }],
     "id": str,
     "icon": str,
-    "entities": [{
-        // Entity Object
-        "type": int,
-        "resource_pointers": [{
-            // Resource Pointer
-            "resource_type": str,
-            "resource_id": str
-        } ... ],
-        "position": int,
-        "name": str,
-        "id": str
-    } ... ],
-    "default_permissions": int,
-    "banner": str
-}
-```
-
-### `HOUSE_LEAVE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_init()`]()
-
-Expected json-data: 
-```json
-"op": 0,
-"d": {
-  "id": str,
-  "house_id": str
-}
-```
-
-### `BATCH_HOUSE_MEMBER_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_init()`]()
-
-Expected json-data: 
-```json
-"op": 0,
-"d": {
-    "house_id": str,
-    "batch_type": [],
-    "batch_size": int,
-    "data": {
-        // Collection of Members that are mapped to their id
-        "id": {
-            // Member Object
-            "user_id": str,
-            "user": {
-                // User Object
-                "username": str,
-                "user_flags": str,
-                "name": str,
-                "id": str,
-                "icon": str,
-                "header": str,
-                "presence": str
-            },
-            "roles": [{
-                // Role Object
-                "position": int,
-                "name": str,
-                "level": int,
-                "id": str,
-                "deny": bits,
-                "color": str,
-                "allow": bits
-            } ... ],
-            "last_permission_update": str,
-            "joined_at": str,
-            "house_id": str
-        }
-    }
+    "header": str,
+    "presence": str
 }
 ```
 
@@ -423,25 +306,6 @@ Expected json-data:
 }
 ```
 
-### `PRESENCE_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_init()`]()
-
-Expected json-data: 
-```json
-"op": 0,
-"d": {
-    // User Object
-    "username": str,
-    "user_flags": str,
-    "name": str,
-    "id": str,
-    "icon": str,
-    "header": str,
-    "presence": str
-}
-```
-
 ### `ROOM_CREATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 [Docs · `async def on_init()`]()
@@ -457,8 +321,6 @@ Expected json-data:
     "type": int
 }
 ```
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_init()`]()
 
 Expected json-data: 
 ### `ROOM_UPDATE`
@@ -475,6 +337,99 @@ Expected json-data:
 
 Expected json-data: 
 ```json
+```
+
+
+### `HOUSE_JOIN`
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
+[Docs · `async def on_house_join()`]()
+
+```json
+"op": 0,
+"d": {
+    "rooms": [{
+        // Room Object
+        "type": int,
+        "recipients": None
+        "position": int,
+        "permission_overrides": bits,
+        "owner_id": str,
+        "name": str,
+        "last_message_id": str,
+        "id": str,
+        "house_id": str,
+        "emoji": object,
+        "description": str,
+        "default_permission_override": int
+    }, ...],
+    "roles": [{
+        // Role Object
+        "position": int,
+        "name": str,
+        "level": int,
+        "id": str,
+        "deny": bits,
+        "color": str,
+        "allow": bits
+    }],
+    "owner_id": str,
+    "name": str,
+    "members": [{
+        // Member Object
+        "user_id": str,
+        "user": {
+            // User Object
+            "username": str,
+            "user_flags": str,
+            "name": str,
+            "id": str,
+            "icon": str,
+            "header": str,
+            "presence": str
+        },
+        "roles": [
+            "position": int,
+            "name": str,
+            "level": int,
+            "id": str,
+            "deny": bits,
+            "color": str,
+            "allow": bits
+        ],
+        "last_permission_update": str,
+        "joined_at": str,
+        "house_id": str
+    }],
+    "id": str,
+    "icon": str,
+    "entities": [{
+        // Entity Object
+        "type": int,
+        "resource_pointers": [{
+            // Resource Pointer
+            "resource_type": str,
+            "resource_id": str
+        } ... ],
+        "position": int,
+        "name": str,
+        "id": str
+    } ... ],
+    "default_permissions": int,
+    "banner": str
+}
+```
+
+### `HOUSE_LEAVE`
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
+[Docs · `async def on_init()`]()
+
+Expected json-data: 
+```json
+"op": 0,
+"d": {
+  "id": str,
+  "house_id": str
+}
 ```
 
 ### `HOUSE_MEMBER_JOIN`
@@ -634,25 +589,6 @@ Expected json-data:
     "house_id": str
 }
 ```
-        
-### `TYPING_START`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_init()`]()
-
-Expected json-data: 
-```json
-"op": 0
-"d": {
-  "timestamp": int,
-  "room_id": str,
-  "house_id": str,
-  "author_id": str
-}
-```
-
-### `HOUSE_ENTITY_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
-[Docs · `async def on_init()`]()
 
 Expected json-data: 
 ```json
@@ -673,6 +609,58 @@ Expected json-data:
 }
 ```
 
+### `BATCH_HOUSE_MEMBER_UPDATE`
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
+[Docs · `async def on_init()`]()
+
+Expected json-data: 
+```json
+"op": 0,
+"d": {
+    "house_id": str,
+    "batch_type": [],
+    "batch_size": int,
+    "data": {
+        // Collection of Members that are mapped to their id
+        "id": {
+            // Member Object
+            "user_id": str,
+            "user": {
+                // User Object
+                "username": str,
+                "user_flags": str,
+                "name": str,
+                "id": str,
+                "icon": str,
+                "header": str,
+                "presence": str
+            },
+            "roles": [{
+                // Role Object
+                "position": int,
+                "name": str,
+                "level": int,
+                "id": str,
+                "deny": bits,
+                "color": str,
+                "allow": bits
+            } ... ],
+            "last_permission_update": str,
+            "joined_at": str,
+            "house_id": str
+        }
+    }
+}
+```
+
+### `HOUSE_ENTITY_UPDATE`
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
+[Docs · `async def on_init()`]()
+
+Expected json-data: 
+```json
+```
+
 ### `HOUSE_DOWN`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 [Docs · `async def on_init()`]()
@@ -683,5 +671,20 @@ Expected json-data:
 "d": {
   "unavailable": bool,
   "house_id": str
+}
+```
+
+### `TYPING_START`
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
+[Docs · `async def on_init()`]()
+
+Expected json-data: 
+```json
+"op": 0
+"d": {
+  "timestamp": int,
+  "room_id": str,
+  "house_id": str,
+  "author_id": str
 }
 ```
