@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/getting_started/logging.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/logging.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/home/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/contributing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/home/license.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/license.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/home/troubleshooting.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/troubleshooting.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +108,7 @@
       <workItem from="1611505696949" duration="12894000" />
       <workItem from="1611840935354" duration="6683000" />
       <workItem from="1611856409960" duration="16318000" />
-      <workItem from="1611946809496" duration="8067000" />
+      <workItem from="1611946809496" duration="19588000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -379,7 +383,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611960711400</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Updated list in logging">
+      <created>1611960805980</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1611960805980</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Build for last commit">
+      <created>1611961065553</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1611961065553</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,8 +416,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding PyYAML to see if that caused the issue" />
-    <MESSAGE value="Removed unneeded file CNAME" />
     <MESSAGE value="Removed pymdownx.emoji due to missing support" />
     <MESSAGE value="Finally fixed source and replaced it with imported .ico images" />
     <MESSAGE value="Removed pymdownx.emoji entirely" />
@@ -423,7 +439,9 @@
     <MESSAGE value="Updated source-icon" />
     <MESSAGE value="Updated source-icon again" />
     <MESSAGE value="Added Hiven Endpoints docs base and updated swarm and core docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Hiven Endpoints docs base and updated swarm and core docs" />
+    <MESSAGE value="Updated list in logging" />
+    <MESSAGE value="Build for last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build for last commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

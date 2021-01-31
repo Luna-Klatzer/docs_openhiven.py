@@ -18,18 +18,18 @@ can change very quickly and therefore the library needs to also apply quickly to
 
 ## Using Github
 
-It is relatively easy to contribute to the project if you do it the right way. 
-OpenHiven.py, in this case, uses Github to host it's the repository and manage the project. Therefore, contributions
-need to be made on Github since else the Developers and Repo-'Managers' cannot correctly integrate your new changes.
+It is relatively easy to contribute if you do it the right way. OpenHiven.py, in this case, uses Github to host it's the
+repository and manage the project. Therefore, contributions need to be made on Github since else the Developers are not 
+able to correctly integrate your new changes.
 
- If you need a guide for Github, go to the official
-[github-guides for git and github.](https://guides.github.com/activities/hello-world/)
+If you need a guide for Github, go to the [github-guides for git and github.](https://guides.github.com/activities/hello-world/)
 
 ### Issue-Page
-To start, go to the [Github page](https://github.com/FrostbyteSpace/OpenHiven.py) and look into issues and see
-what is happening right now. There you can see what exactly needs work, and can also discuss issues or share your ideas 
-on new features and improvements. To that if you find bugs this is place where you should first look into for reporting
-them and also asking for information on what to do.
+
+The issue-page is the place where you can easily report issues and bugs, share your ideas and ask questions to the developers and
+other people that also use OpenHiven.py. So, if you want to contribute that's the place to go to. Just keep in mind
+try to give as much information as possible when reporting something, so the developers that read it can understand what
+the issue or contribution is.
 
 !!! Note
 
@@ -54,6 +54,6 @@ Still, for a successful and fast change, a pull-request should contain multiple 
 ### Summary
 
 Committing to OpenSource-projects is important and that does not only count for this project but for thousands out there that are
-dependent on the user reporting bugs when they occur! Therefore, if you already have made improvements or will make some 
-to an open-source project, you can be sure the owners of the project will forever be thankful for that as long as you
-do it right!
+dependent on the users helping the project when they can! Therefore, if you already have made improvements, reported some
+bugs or will share some ideas and improvements to an open-source project, you can be sure the owners of the project will 
+forever be thankful for that as long as you do it right.
