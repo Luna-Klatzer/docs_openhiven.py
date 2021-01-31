@@ -9,24 +9,39 @@
 !!! Bug "Important"
 
     Before even starting troubleshooting and testing, it is strongly recommended to activate logging as already shown in
-    [Getting Started](../getting_started/logging.html)!
+    [Logging](../getting_started/logging.html)!
 
 ## Issues Downloading the Module
 
-If you encounter issues with downloading OpenHiven.py there can be multiple reasons for that.
+If you encounter issues or warnings with downloading OpenHiven.py, there can be multiple reasons for that.
 Here is a small list of known issues and possible solutions to solve them:
 
-- ??? note "PEP 517 Error" 
+- ??? error "Failed to build wheel" 
   
-        The PEP 517 Error or also Wheel Build Error usually occurs when the python environment does not contain a working
-        C++ Compiler which is used to build the dependecies using modern PEP 517 and PEP 427 wheels. 
-
-        Possible Solutions:
-  
+        This error is a very popular in the Python area where since PEP 427 wheels are used to install python packages
+        more efficiently and effectively! This can be caused by many different issues but here are some possible 
+        solutions to them:
+        
+        * If `wheel` or `setuptools` are missing or outdated install the most recent version of them and also `pip` 
+          just to be sure using:
+          ```bash
+          pip install --upgrade pip setuptools wheel
+          ```
         * If you are using linux or the gcc-compiler try installing the newest version of the gcc compiler which should 
-          automatically be used for the building of the wheels.
-        * If you are using Windows if the Microsoft C++ Build Tools are working correctly
+          automatically be used for the building of the wheels. For Linux refer to your Package Manager or Respositor 
+          manager where you can install gcc
+        
+        * If you are using Windows check if the Microsoft C++ Build Tools are working properly
 
+- ??? warning "Using legacy 'setup.py install' for {package}, since package 'wheel' is not installed."
+
+        This warning is caused due to no installation of the package wheel which is required to build and install packages
+        using wheel with pip.
+        To solve simple install wheel using:
+        
+        ```bash
+        pip install wheel
+        ```
 
 ## Unexpected behavior
 

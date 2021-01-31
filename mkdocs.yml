@@ -81,7 +81,7 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
-      toc_depth: 3
+      toc_depth: 5
   - pymdownx.tabbed # Nice tabs
   - pymdownx.superfences # Very cool embed objects
   - pymdownx.critic
