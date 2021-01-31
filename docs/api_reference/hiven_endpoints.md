@@ -49,10 +49,10 @@ To specify this datatype add to the header this line:
 }
 ```
 
-After that, you only need to write proper JSON-requests, and it should work like wanted! There are exceptions to that 
+After that, you only need to write a proper JSON-body, and it should work like wanted! There are exceptions to that 
 of course, since some requests might require some additional information and configuration.
 
-Body-Example for the data:
+Body-Example:
 ```json
 {
   "data_field": "value"

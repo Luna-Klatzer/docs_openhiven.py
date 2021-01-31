@@ -328,9 +328,45 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="troubleshooting.html" class="md-nav__link md-nav__link--active">
         Troubleshooting
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#issues-downloading-the-module" class="md-nav__link">
+    Issues Downloading the Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unexpected-behavior" class="md-nav__link">
+    Unexpected behavior
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -677,6 +713,54 @@
 <p class="admonition-title">Warning</p>
 <p><strong>This documentation page is not finished yet! Information can be outdated or entirely not available!</strong></p>
 </div>
+<div class="admonition bug">
+<p class="admonition-title">Important</p>
+<p>Before even starting troubleshooting and testing, it is strongly recommended to activate logging as already shown in
+<a href="../getting_started/logging.html">Logging</a>!</p>
+</div>
+<h2 id="issues-downloading-the-module">Issues Downloading the Module<a class="headerlink" href="#issues-downloading-the-module" title="Permanent link">&para;</a></h2>
+<p>If you encounter issues or warnings with downloading OpenHiven.py, there can be multiple reasons for that.
+Here is a small list of known issues and possible solutions to solve them:</p>
+<ul>
+<li>
+<details class="error"><summary>Failed to build wheel</summary><p>This error is a very popular in the Python area where since PEP 427 wheels are used to install python packages
+more efficiently and effectively! This can be caused by many different issues but here are some possible 
+solutions to them:</p>
+<ul>
+<li>If <code>wheel</code> or <code>setuptools</code> are missing or outdated install the most recent version of them and also <code>pip</code> 
+  just to be sure using:
+  <div class="highlight"><pre><span></span><code>pip install --upgrade pip setuptools wheel
+</code></pre></div></li>
+<li>
+<p>If you are using linux or the gcc-compiler try installing the newest version of the gcc compiler which should 
+  automatically be used for the building of the wheels. For Linux refer to your Package Manager or Respositor 
+  manager where you can install gcc</p>
+</li>
+<li>
+<p>If you are using Windows check if the Microsoft C++ Build Tools are working properly</p>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<details class="warning"><summary>Using legacy 'setup.py install' for {package}, since package 'wheel' is not installed.</summary><p>This warning is caused due to no installation of the package wheel which is required to build and install packages
+using wheel with pip.
+To solve simple install wheel using:</p>
+<div class="highlight"><pre><span></span><code>pip install wheel
+</code></pre></div>
+</details>
+</li>
+</ul>
+<h2 id="unexpected-behavior">Unexpected behavior<a class="headerlink" href="#unexpected-behavior" title="Permanent link">&para;</a></h2>
+<p>If you encounter unexpected behavior and functionality that is not working like wanted this can either be of a bug of
+OpenHiven.py, Connection or Hiven Server error or an issue relating the configuration. If you receive results different 
+from those in the documentation we first recommend you looking into the logs and activate <code>DEBUG</code> mode to see what could 
+have caused the issue. </p>
+<p>If you are using a function, or a method that executes a request there might be an issue with the HTTP request that 
+caused an unexpected result. If this is not the case try to look into the input, debug the program and inspect data
+for possible issues. If there are no issues found with the data and everything seems fine, please open an issue on
+the <a href="https://github.com/FrostbyteSpace/openhiven.py/issues">GitHub page</a> for further investigation. We will try to help 
+you and also possibly find the error that caused that issue.</p>
                 
               
               

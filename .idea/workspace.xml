@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/docs_openhiven.py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docs_openhiven.py.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/contributing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/search/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/contributing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/troubleshooting.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/troubleshooting.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +145,7 @@
       <workItem from="1611505696949" duration="12894000" />
       <workItem from="1611840935354" duration="6683000" />
       <workItem from="1611856409960" duration="16318000" />
-      <workItem from="1611946809496" duration="27423000" />
+      <workItem from="1611946809496" duration="27501000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -439,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612122989350</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Updated Endpoints documentation">
+      <created>1612135833509</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612135833509</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +467,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed pymdownx.emoji due to missing support" />
     <MESSAGE value="Finally fixed source and replaced it with imported .ico images" />
     <MESSAGE value="Removed pymdownx.emoji entirely" />
     <MESSAGE value="Removed unneeded configuration option in .readthedocs.yml" />
@@ -483,7 +491,8 @@
     <MESSAGE value="Updated list in logging" />
     <MESSAGE value="Build for last commit" />
     <MESSAGE value="Updated home pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated home pages" />
+    <MESSAGE value="Updated Endpoints documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Endpoints documentation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$test.coverage" NAME="test Coverage Results" MODIFIED="1612126345911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
