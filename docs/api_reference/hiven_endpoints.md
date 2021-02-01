@@ -1,4 +1,4 @@
-# Hiven Endpoints
+# REST API
 
 ---
 
@@ -30,7 +30,7 @@ If you already have one and want to make a request to Hiven simply put it as fol
 }
 ```
 
-## Writing a Request with json-body
+## Writing a Request with a JSON-body
 
 ### Specifying the Content-Type
 
@@ -51,7 +51,7 @@ To specify the `application/json` datatype, add to the header this line:
 }
 ```
 
-### Writing a json-body
+### Passing values in the body
 
 After the content-type was specified, and the configuration works, you only need to write a proper JSON-body, and it 
 should work like wanted! There are exceptions to that of course, since some requests might require some additional 
@@ -215,20 +215,35 @@ Endpoint for fetching your mentions in the Houses and rooms of your scope.
         {
             "success": true,
             "data": [
-            {
-                "room_id": str,
-                "bucket": int,
-                "id": str,
-                "attachment": unknown,
-                "author_id": str,
-                "content": str,
-                "device_id": str,
-                "edited_at": str,
-                "embed": {},
-                "exploding": bool,
-                "exploding_age": unknown,
-                "mentions": [
-                    {
+                {
+                    "room_id": str,
+                    "bucket": int,
+                    "id": str,
+                    "attachment": unknown,
+                    "author_id": str,
+                    "content": str,
+                    "device_id": str,
+                    "edited_at": str,
+                    "embed": {},
+                    "exploding": bool,
+                    "exploding_age": unknown,
+                    "mentions": [
+                        {
+                            // User object
+                            "icon": str,
+                            "id": str,
+                            "username": str,
+                            "name": str,
+                            "header": str,
+                            "user_flags": str,
+                            "bot": bool
+                        }
+                        // All mentions in the message
+                    ],
+                    "metadata": unknown,
+                    "timestamp": str,
+                    "type": int,
+                    "author": {
                         // User object
                         "icon": str,
                         "id": str,
@@ -238,23 +253,8 @@ Endpoint for fetching your mentions in the Houses and rooms of your scope.
                         "user_flags": str,
                         "bot": bool
                     }
-                    // All mentions in the message
-                ],
-                "metadata": unknown,
-                "timestamp": str,
-                "type": int,
-                "author": {
-                    // User object
-                    "icon": str,
-                    "id": str,
-                    "username": str,
-                    "name": str,
-                    "header": str,
-                    "user_flags": str,
-                    "bot": bool
-                }
-            },
-            ...
+                },
+                ...
             ]
         }
         ```
@@ -278,6 +278,17 @@ Endpoint for fetching your mentions in the Houses and rooms of your scope.
         !!! Warning
 
             Currently there is a bug in the Hiven API causing it to return 200 instead of 400 or 403!
+
+#### `users/@me/rooms`
+
+Endpoint for private rooms that are not related to any House
+
+=== "POST"
+
+    ??? success "200"
+
+    ??? fail "400"
+        
 
 ### House Endpoints
 

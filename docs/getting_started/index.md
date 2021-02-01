@@ -4,18 +4,23 @@
 
 Welcome to the Quickstart page of OpenHiven.py!
 
-OpenHiven.py is an easy, fast and async API wrapper written in Python
-that provides extensive functionality for the Hiven Swarm and Hiven API.
+OpenHiven.py is an easy, fast and async API wrapper written in Python that provides extensive functionality for the Hiven 
+Swarm and Hiven API. So if you want to run bots and utilise your client with additional functionality and tools OpenHiven.py
+is the Tool for you to make your Hiven Bot great
 
-The OpenHiven.py module is entirely written in async and can therefore only be used in an
-async event loop and environment. For more info about asyncio look into the [Asyncio documentation](https://docs.python.org/3/library/asyncio.html)
+
+!!! info
+
+    The OpenHiven.py module is entirely written in async and can therefore only be used in an
+    async event loop and environment. For more info about asyncio look into the [Asyncio documentation](https://docs.python.org/3/library/asyncio.html)
 
 ## Environment
 
 OpenHiven.py is a Python module and can currently on be run in environments with Python >= 3.6. This is due to the used
-module aiohttp which requires Functionality only available in Python 3.6 or higher! Python 2 is entirely not supported, 
-and currently, there is no plan to make OpenHiven.py available for Python 2, since many features are dependent on 
-Python 3 and the modern async module of Python 3 as well as aiohttp!
+module aiohttp which requires Functionality only available in Python 3.6 or higher! 
+
+Python 2 is entirely not supported, and currently, there is no plan to make the module available for Python 2, since many 
+features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp!
 
 ## Installation
 
@@ -55,28 +60,49 @@ Installing OpenHiven.py will automatically also include its dependencies, which 
 
 The system of OpenHiven.py is very closely related to the [discord.py](https://pypi.org/project/discord.py/) 
 (Discord Python Wrapper) module and was structured to be similar to it. Therefore, the basic concept is based on an event 
-listener system where events are mapped to user-specified functions and methods. These will be executed when in the 
-websocket a Hiven Swarm Event is received, enabling the user to customise the event's handling!
+listener system where events are mapped to user-specified functions and methods. These are user-declared and therefore
+only what you specify will be executed and utilised, so the handling is up to you.
 
-In case of an event, Hiven will send the corresponding data over the Hiven Swarm and the websocket connection of the 
-[aiohttp](https://docs.aiohttp.org/en/stable/) HTTP-Session. That data will then be passed to the HivenClient where 
-the Hiven Swarm message will get processed, and an event would be triggered.
+### The Hiven Swarm
+
+The module uses a [aiohttp](https://docs.aiohttp.org/en/stable/) HTTP Websocket Connection to interact with the Hiven 
+Swarm and react to events that the server sent over it. In case of an event, Hiven will send the corresponding data to 
+you in the form of JSON-wrapped messages which gets automatically handled in OpenHiven.py. That means the library deals 
+with events, keep-alive, close-frames and handling of the connection, and you only need to configure how to react. 
+ 
+So, in this case, the Websocket will then pass the data to the EventHandler where the Hiven Swarm message will get processed, 
+and an event would be triggered if the user declared it.
 
 ![OpenHiven.py System Visualised](../assets/images/openhivenpy-system.png)
 
-You can then specify in the Event Listener how the Client should react to such issues using the standard 
-[decorators](https://realpython.com/primer-on-python-decorators/). The methods will get the data passed, 
-and you can utilise it right afterwards.
+### Event listening with the EventHandler 
 
-This event system and handling is done over the integrated [Event Handler](https://openhivenpy.readthedocs.io/en/latest/)
-class, which defaults to the used Client itself. Async Functions that are tagged with the `@client.event()` 
-[decorator](https://realpython.com/primer-on-python-decorators/) will automatically be registered in the 
-EventHandler and then called whenever an Event is triggered.
+The system used here is a classic event listening system where a client listens and waits over the connection for 
+events and triggers specified code when the Websocket received such event. In Web-Languages such as JavaScript, TypeScript,
+PHP etc. this is common practise and applied for websites, servers and clients. 
+
+In Python, this is less common, so here it is not already integrated into the language, so OpenHiven.py uses aiohttp to
+provide the option for a Connection to Hiven and its own [Event Handler](../reference/event_handler.html), 
+which handles how the Client should react to such events.
+
+**Now onto actual examples of how that works:**
+
+To add an event listener, you must declare an async function with the correct name inside the HivenClient. 
+This can be done either by inheriting the Client and then adding the method or using [decorators](https://realpython.com/primer-on-python-decorators/). 
+Async Functions that are tagged with the `@client.event()` [decorator](https://realpython.com/primer-on-python-decorators/) 
+will automatically be registered in the EventHandler and then called whenever an Event is triggered.
     
+!!! note
+
+    All events that can you can use are listed on the page for the 
+    [EventHandler](https://openhivenpy.readthedocs.io/en/mkdocs-material-rewrite/getting_started/event_handling.html).
+
 Example with the event `on_message_create`:
 
 ```python
-...
+import openhivenpy as hiven
+
+client = hiven.UserClient(token="")
 
 @client.event()
 async def on_message_create(msg):
@@ -85,15 +111,17 @@ async def on_message_create(msg):
 ...
 ```
 
+## Using OpenHiven.py
+
 ### Using a UserClient
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.UserClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py)
 
-A UserClient object is an object that wraps the default [HivenClient](https://openhivenpy.readthedocs.io/en/latest/),
-which serves as a bridge between Hiven, and the Program you are using. The [HivenClient](https://openhivenpy.readthedocs.io/en/latest/)
+A UserClient object is an object that wraps the default [HivenClient](../reference/hivenclient.html),
+which serves as a bridge between Hiven, and the Program you are using. The [HivenClient](../reference/hivenclient.html)
 contains all data and connection-vital information, but is not supposed to be used directly since some methods
 are not available due to the raw state. These are special methods related to the bot-type that decides based on what 
-type you are using, resulting in various functionality. These two bot-types are here [UserClient](https://openhivenpy.readthedocs.io/en/latest/) 
-and [BotClient](https://openhivenpy.readthedocs.io/en/latest/)
+type you are using, resulting in various functionality. These two bot-types are here [UserClient](../reference/userclient.html) 
+and [BotClient](../reference/botclient.html)
 
 To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
 If no token were passed, it would automatically raise an `openhivenpy.exceptions.exception.InvalidToken` Exception!
@@ -164,7 +192,7 @@ functionality.
     Therefore, bugs are likely to occur! If you encounter such bugs, please report them!**
 
 
-### Hiven-Types
+## Hiven-Types
 <!---
 # Using an .ico since readthedocs doesn't support emoji generation
 -->

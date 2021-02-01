@@ -453,6 +453,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#the-hiven-swarm" class="md-nav__link">
+    The Hiven Swarm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-listening-with-the-eventhandler" class="md-nav__link">
+    Event listening with the EventHandler
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-openhivenpy" class="md-nav__link">
+    Using OpenHiven.py
+  </a>
+  
+    <nav class="md-nav" aria-label="Using OpenHiven.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#using-a-userclient" class="md-nav__link">
     Using a UserClient
   </a>
@@ -466,15 +493,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hiven-types" class="md-nav__link">
     Hiven-Types
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -560,7 +587,7 @@
   
     <li class="md-nav__item">
       <a href="../api_reference/index.html" class="md-nav__link">
-        API Reference
+        Intro
       </a>
     </li>
   
@@ -572,7 +599,7 @@
   
     <li class="md-nav__item">
       <a href="../api_reference/hiven_endpoints.html" class="md-nav__link">
-        Hiven Endpoints
+        REST API
       </a>
     </li>
   
@@ -595,8 +622,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../api_reference/events.html" class="md-nav__link">
-        Hiven Objects
+      <a href="../api_reference/object_reference.html" class="md-nav__link">
+        Object Reference
       </a>
     </li>
   
@@ -640,7 +667,7 @@
   
     <li class="md-nav__item">
       <a href="../reference/index.html" class="md-nav__link">
-        OpenHiven.py Reference
+        Using the Reference
       </a>
     </li>
   
@@ -718,6 +745,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/types/index.html" class="md-nav__link">
+        Hiven Types
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -744,15 +783,19 @@
                 <h1 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h1>
 <hr />
 <p>Welcome to the Quickstart page of OpenHiven.py!</p>
-<p>OpenHiven.py is an easy, fast and async API wrapper written in Python
-that provides extensive functionality for the Hiven Swarm and Hiven API.</p>
+<p>OpenHiven.py is an easy, fast and async API wrapper written in Python that provides extensive functionality for the Hiven 
+Swarm and Hiven API. So if you want to run bots and utilise your client with additional functionality and tools OpenHiven.py
+is the Tool for you to make your Hiven Bot great</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>The OpenHiven.py module is entirely written in async and can therefore only be used in an
 async event loop and environment. For more info about asyncio look into the <a href="https://docs.python.org/3/library/asyncio.html">Asyncio documentation</a></p>
+</div>
 <h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
 <p>OpenHiven.py is a Python module and can currently on be run in environments with Python &gt;= 3.6. This is due to the used
-module aiohttp which requires Functionality only available in Python 3.6 or higher! Python 2 is entirely not supported, 
-and currently, there is no plan to make OpenHiven.py available for Python 2, since many features are dependent on 
-Python 3 and the modern async module of Python 3 as well as aiohttp!</p>
+module aiohttp which requires Functionality only available in Python 3.6 or higher! </p>
+<p>Python 2 is entirely not supported, and currently, there is no plan to make the module available for Python 2, since many 
+features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp!</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <p>OpenHiven.py can be easily installed using <code>pip</code>:</p>
 <div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">PyPi Regular Installation</label><div class="tabbed-content">
@@ -787,21 +830,37 @@ Python 3 and the modern async module of Python 3 as well as aiohttp!</p>
 <h2 id="basic-concept">Basic Concept<a class="headerlink" href="#basic-concept" title="Permanent link">&para;</a></h2>
 <p>The system of OpenHiven.py is very closely related to the <a href="https://pypi.org/project/discord.py/">discord.py</a> 
 (Discord Python Wrapper) module and was structured to be similar to it. Therefore, the basic concept is based on an event 
-listener system where events are mapped to user-specified functions and methods. These will be executed when in the 
-websocket a Hiven Swarm Event is received, enabling the user to customise the event's handling!</p>
-<p>In case of an event, Hiven will send the corresponding data over the Hiven Swarm and the websocket connection of the 
-<a href="https://docs.aiohttp.org/en/stable/">aiohttp</a> HTTP-Session. That data will then be passed to the HivenClient where 
-the Hiven Swarm message will get processed, and an event would be triggered.</p>
+listener system where events are mapped to user-specified functions and methods. These are user-declared and therefore
+only what you specify will be executed and utilised, so the handling is up to you.</p>
+<h3 id="the-hiven-swarm">The Hiven Swarm<a class="headerlink" href="#the-hiven-swarm" title="Permanent link">&para;</a></h3>
+<p>The module uses a <a href="https://docs.aiohttp.org/en/stable/">aiohttp</a> HTTP Websocket Connection to interact with the Hiven 
+Swarm and react to events that the server sent over it. In case of an event, Hiven will send the corresponding data to 
+you in the form of JSON-wrapped messages which gets automatically handled in OpenHiven.py. That means the library deals 
+with events, keep-alive, close-frames and handling of the connection, and you only need to configure how to react. </p>
+<p>So, in this case, the Websocket will then pass the data to the EventHandler where the Hiven Swarm message will get processed, 
+and an event would be triggered if the user declared it.</p>
 <p><img alt="OpenHiven.py System Visualised" src="../assets/images/openhivenpy-system.png" /></p>
-<p>You can then specify in the Event Listener how the Client should react to such issues using the standard 
-<a href="https://realpython.com/primer-on-python-decorators/">decorators</a>. The methods will get the data passed, 
-and you can utilise it right afterwards.</p>
-<p>This event system and handling is done over the integrated <a href="https://openhivenpy.readthedocs.io/en/latest/">Event Handler</a>
-class, which defaults to the used Client itself. Async Functions that are tagged with the <code>@client.event()</code> 
-<a href="https://realpython.com/primer-on-python-decorators/">decorator</a> will automatically be registered in the 
-EventHandler and then called whenever an Event is triggered.</p>
+<h3 id="event-listening-with-the-eventhandler">Event listening with the EventHandler<a class="headerlink" href="#event-listening-with-the-eventhandler" title="Permanent link">&para;</a></h3>
+<p>The system used here is a classic event listening system where a client listens and waits over the connection for 
+events and triggers specified code when the Websocket received such event. In Web-Languages such as JavaScript, TypeScript,
+PHP etc. this is common practise and applied for websites, servers and clients. </p>
+<p>In Python, this is less common, so here it is not already integrated into the language, so OpenHiven.py uses aiohttp to
+provide the option for a Connection to Hiven and its own <a href="../reference/event_handler.html">Event Handler</a>, 
+which handles how the Client should react to such events.</p>
+<p><strong>Now onto actual examples of how that works:</strong></p>
+<p>To add an event listener, you must declare an async function with the correct name inside the HivenClient. 
+This can be done either by inheriting the Client and then adding the method or using <a href="https://realpython.com/primer-on-python-decorators/">decorators</a>. 
+Async Functions that are tagged with the <code>@client.event()</code> <a href="https://realpython.com/primer-on-python-decorators/">decorator</a> 
+will automatically be registered in the EventHandler and then called whenever an Event is triggered.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All events that can you can use are listed on the page for the 
+<a href="https://openhivenpy.readthedocs.io/en/mkdocs-material-rewrite/getting_started/event_handling.html">EventHandler</a>.</p>
+</div>
 <p>Example with the event <code>on_message_create</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">openhivenpy</span> <span class="k">as</span> <span class="nn">hiven</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">hiven</span><span class="o">.</span><span class="n">UserClient</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 
 <span class="nd">@client</span><span class="o">.</span><span class="n">event</span><span class="p">()</span>
 <span class="k">async</span> <span class="k">def</span> <span class="nf">on_message_create</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
@@ -809,14 +868,15 @@ EventHandler and then called whenever an Event is triggered.</p>
 
 <span class="o">...</span>
 </code></pre></div>
+<h2 id="using-openhivenpy">Using OpenHiven.py<a class="headerlink" href="#using-openhivenpy" title="Permanent link">&para;</a></h2>
 <h3 id="using-a-userclient">Using a UserClient<a class="headerlink" href="#using-a-userclient" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · <code>openhivenpy.UserClient</code></a></p>
-<p>A UserClient object is an object that wraps the default <a href="https://openhivenpy.readthedocs.io/en/latest/">HivenClient</a>,
-which serves as a bridge between Hiven, and the Program you are using. The <a href="https://openhivenpy.readthedocs.io/en/latest/">HivenClient</a>
+<p>A UserClient object is an object that wraps the default <a href="../reference/hivenclient.html">HivenClient</a>,
+which serves as a bridge between Hiven, and the Program you are using. The <a href="../reference/hivenclient.html">HivenClient</a>
 contains all data and connection-vital information, but is not supposed to be used directly since some methods
 are not available due to the raw state. These are special methods related to the bot-type that decides based on what 
-type you are using, resulting in various functionality. These two bot-types are here <a href="https://openhivenpy.readthedocs.io/en/latest/">UserClient</a> 
-and <a href="https://openhivenpy.readthedocs.io/en/latest/">BotClient</a></p>
+type you are using, resulting in various functionality. These two bot-types are here <a href="../reference/userclient.html">UserClient</a> 
+and <a href="../reference/botclient.html">BotClient</a></p>
 <p>To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
 If no token were passed, it would automatically raise an <code>openhivenpy.exceptions.exception.InvalidToken</code> Exception!</p>
 <div class="admonition note">
@@ -876,7 +936,7 @@ functionality.</p>
 <p><strong>The current release v0.1.2 the BotClient lacks major optimisation and functionality. 
 Therefore, bugs are likely to occur! If you encounter such bugs, please report them!</strong></p>
 </div>
-<h3 id="hiven-types">Hiven-Types<a class="headerlink" href="#hiven-types" title="Permanent link">&para;</a></h3>
+<h2 id="hiven-types">Hiven-Types<a class="headerlink" href="#hiven-types" title="Permanent link">&para;</a></h2>
 <!---
 # Using an .ico since readthedocs doesn't support emoji generation
 -->
@@ -982,7 +1042,7 @@ if that specific methods returns data.</p>
       <script>
         app = initialize({
           base: "..",
-          features: ['navigation.tabs', 'navigation.expand', 'toc.integrate'],
+          features: ['navigation.tabs', 'navigation.expand', 'navigation.sections', 'toc.integrate'],
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)

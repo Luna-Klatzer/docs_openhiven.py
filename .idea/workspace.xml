@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/reference/types/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/event_handling.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/event_handling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/logging.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/logging.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/bug_reporting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/bug_reporting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/contributing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/botclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/botclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/event_handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/event_handler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/execution_loop.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/execution_loop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/hivenclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/hivenclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/http.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/http.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/userclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/userclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/search/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/events.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/object_reference.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_endpoints.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting_started/deploying_your_first_bot.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/deploying_your_first_bot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting_started/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/home/bug_reporting.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/bug_reporting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/reference/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reference/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +171,7 @@
       <workItem from="1611505696949" duration="12894000" />
       <workItem from="1611840935354" duration="6683000" />
       <workItem from="1611856409960" duration="16318000" />
-      <workItem from="1611946809496" duration="34040000" />
+      <workItem from="1611946809496" duration="43502000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -448,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612135940566</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Updated endpoint general info, exception and user endpoint documentation">
+      <created>1612183566914</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1612183566914</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed pymdownx.emoji entirely" />
     <MESSAGE value="Removed unneeded configuration option in .readthedocs.yml" />
     <MESSAGE value="moved source.ico into static folder" />
     <MESSAGE value="moved images and updated assets to ensure images are shown in readthedocs build" />
@@ -492,7 +531,8 @@
     <MESSAGE value="Updated home pages" />
     <MESSAGE value="Updated Endpoints documentation" />
     <MESSAGE value="Small phrase changing in hiven endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small phrase changing in hiven endpoints" />
+    <MESSAGE value="Updated endpoint general info, exception and user endpoint documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated endpoint general info, exception and user endpoint documentation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$test.coverage" NAME="test Coverage Results" MODIFIED="1612126345911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

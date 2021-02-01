@@ -15,7 +15,7 @@ some might fail when using, if such a thing happens please report these on the G
 !!! Tip
 
     For in-dept docs and information about customisation and functionality refer to the Reference pages, 
-    where each object is explained and possible usage-examplesa are shown.
+    where each object is explained and possible usage-examples are shown.
 
 
 ## Authentication and Tokens

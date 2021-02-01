@@ -27,7 +27,7 @@ nav:
       - api_reference/index.md
       - api_reference/hiven_endpoints.md
       - api_reference/hiven_swarm.md
-      - api_reference/events.md
+      - api_reference/object_reference.md
   - Reference:
       - reference/index.md
       - reference/hivenclient.md
@@ -36,7 +36,7 @@ nav:
       - reference/http.md
       - reference/execution_loop.md
       - reference/event_handler.md
-
+      - reference/types/index.md
 extra_css:
     - assets/css/index.css
 
@@ -67,6 +67,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.expand
+    - navigation.sections
     - toc.integrate
 
 # Plugins
