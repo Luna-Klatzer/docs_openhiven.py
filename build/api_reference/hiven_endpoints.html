@@ -580,6 +580,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#usersid" class="md-nav__link">
+    /users/{id}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#streamsmementions" class="md-nav__link">
     /streams/@me/mentions
   </a>
@@ -943,6 +950,19 @@ causes a <code>400 Bad Request</code> HTTP-Exception!</p>
 </details>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">PATCH</label><div class="tabbed-content">
+<div class="admonition note">
+<p class="admonition-title">Requires body</p>
+<p>Pass at least one value that should be overwritten</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;website&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;bio&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">u</span><span class="kc">n</span><span class="err">k</span><span class="kc">n</span><span class="err">ow</span><span class="kc">n</span><span class="p">,</span>
+    <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">u</span><span class="kc">n</span><span class="err">k</span><span class="kc">n</span><span class="err">ow</span><span class="kc">n</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 <details class="success"><summary>200</summary><p>Patch was successful and the data was changed! The response will containt the updated data of the User</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;success&quot;</span><span class="p">:</span> <span class="err">True</span><span class="p">,</span>
@@ -997,9 +1017,51 @@ will change no value. Still the result will be 200 and the user-data will be sen
 </details>
 </div>
 </div>
+<h4 id="usersid"><code>/users/{id}</code><a class="headerlink" href="#usersid" title="Permanent link">&para;</a></h4>
+<p>Endpoint for a specific user based on their id. Will return the user if they were found </p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">GET</label><div class="tabbed-content">
+<details class="success"><summary>200</summary><p>Authorisation was successful and the body contains the requested data</p>
+<p><strong>Expected Response:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;success&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;bot&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;website&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;bio&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;email_verified&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="nt">&quot;mfa_enabled&quot;</span><span class="p">:</span> <span class="err">bool</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<details class="fail"><summary>400</summary><p>User with that id was not found</p>
+<p><strong>Expected Response:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;success&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;error&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;user_not_found&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;That user does not exist&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently there is a bug in the Hiven API causing it to return 200 instead of 400 or 403!</p>
+</div>
+</details>
+</div>
+</div>
 <h4 id="streamsmementions"><code>/streams/@me/mentions</code><a class="headerlink" href="#streamsmementions" title="Permanent link">&para;</a></h4>
 <p>Endpoint for fetching your mentions in the Houses and rooms of your scope.</p>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">GET</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">GET</label><div class="tabbed-content">
 <details class="success"><summary>200</summary><p>Returns a list with all mentions wrapped in a message Hiven object</p>
 <p><strong>Expected Response:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1068,7 +1130,7 @@ will change no value. Still the result will be 200 and the user-data will be sen
 </div>
 <h4 id="usersmerooms"><code>users/@me/rooms</code><a class="headerlink" href="#usersmerooms" title="Permanent link">&para;</a></h4>
 <p>Endpoint for private rooms that are not related to any House</p>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">POST</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">POST</label><div class="tabbed-content">
 <details class="success"><summary>200</summary></details>
 <details class="fail"><summary>400</summary></details>
 </div>

@@ -133,6 +133,21 @@ Default user endpoint for accessing the user-data of the owner of the passed tok
 
 === "PATCH"
 
+    !!! note "Requires body"
+
+        Pass at least one value that should be overwritten
+
+        ```json
+        {
+            "location": str,
+            "username": str,
+            "website": str,
+            "bio": str,
+            "header": unknown,
+            "icon": unknown
+        }
+        ```
+
     ??? success "200"
 
         Patch was successful and the data was changed! The response will containt the updated data of the User
@@ -198,6 +213,60 @@ Default user endpoint for accessing the user-data of the owner of the passed tok
             }
         }
         ```
+
+#### ```/users/{id}```
+
+Endpoint for a specific user based on their id. Will return the user if they were found 
+
+=== "GET"
+
+    ??? success "200"
+
+        Authorisation was successful and the body contains the requested data
+
+        **Expected Response:**
+
+        ```json
+        {
+            "success": true,
+            "data": {
+                "id": str,
+                "name": str,
+                "username": str,
+                "icon": str,
+                "header": str,
+                "user_flags": int,
+                "bot": bool,
+                "location": str,
+                "website": str,
+                "bio": str,
+                "email": str,
+                "email_verified": bool,
+                "mfa_enabled": bool
+            }
+        }
+        ```
+
+    ??? fail "400"
+
+        User with that id was not found
+
+        **Expected Response:**
+        
+        ```json
+        {
+            "success": false,
+            "error": {
+                "code": "user_not_found",
+                "message": "That user does not exist"
+            }
+        }
+        ```
+
+        !!! Warning
+
+            Currently there is a bug in the Hiven API causing it to return 200 instead of 400 or 403!
+
 
 #### ```/streams/@me/mentions```
 
