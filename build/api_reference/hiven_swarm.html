@@ -1540,25 +1540,34 @@
 </details>
 <h3 id="house_entity_update"><code>HOUSE_ENTITY_UPDATE</code><a class="headerlink" href="#house_entity_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="err">e</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">ies</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">//</span> <span class="err">E</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y</span> <span class="err">Objec</span><span class="kc">t</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="nt">&quot;resource_pointers&quot;</span><span class="p">:</span> <span class="p">[{</span>
-        <span class="err">//</span> <span class="err">Resource</span> <span class="err">Poi</span><span class="kc">nter</span>
-        <span class="nt">&quot;resource_type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
-        <span class="nt">&quot;resource_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
-    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
-    <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
-    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
-<span class="p">},</span>
-<span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="err">//</span> <span class="err">E</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;resource_pointers&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="err">//</span> <span class="err">Resource</span> <span class="err">Poi</span><span class="kc">nter</span>
+            <span class="nt">&quot;resource_type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+            <span class="nt">&quot;resource_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+        <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+<span class="p">}</span>
 </code></pre></div>
 </details>
 <h3 id="house_down"><code>HOUSE_DOWN</code><a class="headerlink" href="#house_down" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<details class="abstract"><summary>Expected json-data</summary><p>If unavailable is False the House was deleted, if it's true it's an issue on the server side</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
+<a href="../getting_started/event_handling.html"><code>on_house_down</code></a> <a href="../getting_started/event_handling.html">/ <code>on_house_delete</code></a> </p>
+<p><code>HOUSE_DOWN</code> represents two types of events:</p>
+<ul>
+<li>House Deletion - A House was entirely deleted.</li>
+<li>House Downtime - The data of a house failed to load, and the server has issues recovering it.</li>
+</ul>
+<p>If the given variable <code>unavailable</code> is <code>True</code>, the house with that id is currently down but not deleted. </p>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;unavailable&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
@@ -1567,8 +1576,7 @@
 </details>
 <h3 id="typing_start"><code>TYPING_START</code><a class="headerlink" href="#typing_start" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<details class="abstract"><summary>Expected json-data</summary><p>Typing is seperated into two different events, one for a house and one for a private_room. Both have their own kind 
-of data passed.</p>
+<details class="abstract"><summary>Expected json-data</summary><p>Hiven separates the <code>TYPING_START</code> event into two classifications: </p>
 <p><strong>House Typing:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1581,10 +1589,10 @@ of data passed.</p>
 <p><strong>Private Room Typing:</strong>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="err">au</span><span class="kc">t</span><span class="err">hor_id</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
-    <span class="err">recipie</span><span class="kc">nt</span><span class="err">_ids</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="err">...</span> <span class="p">]</span>
-    <span class="err">room_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
-    <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+    <span class="nt">&quot;author_id&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;recipient_ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="err">...</span> <span class="p">]</span>
+    <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
 <span class="p">}</span>
 </code></pre></div></p>
 </details>

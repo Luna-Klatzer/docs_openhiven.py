@@ -707,27 +707,36 @@ The user logged successfully into the account, and the data will now be sent bac
 ??? abstract "Expected json-data"
 
     ```json
-    entities: {
-        // Entity Object
-        "type": int,
-        "resource_pointers": [{
-            // Resource Pointer
-            "resource_type": str,
-            "resource_id": str
-        } ... ],
-        "position": int,
-        "name": str,
-        "id": str
-    },
-    house_id: str
+    "op": 0,
+    "d": {
+        "entities": {
+            // Entity Object
+            "type": int,
+            "resource_pointers": [{
+                // Resource Pointer
+                "resource_type": str,
+                "resource_id": str
+            } ... ],
+            "position": int,
+            "name": str,
+            "id": str
+        },
+        "house_id": str
+    }
     ```
 
 ### `HOUSE_DOWN`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
+[`on_house_down`](../getting_started/event_handling.html) [/ `on_house_delete`](../getting_started/event_handling.html) 
+
+`HOUSE_DOWN` represents two types of events:
+
+* House Deletion - A House was entirely deleted.
+* House Downtime - The data of a house failed to load, and the server has issues recovering it.
+
+If the given variable `unavailable` is `True`, the house with that id is currently down but not deleted. 
 
 ??? abstract "Expected json-data"
-
-    If unavailable is False the House was deleted, if it's true it's an issue on the server side
 
     ```json
     "op": 0,
@@ -742,8 +751,7 @@ The user logged successfully into the account, and the data will now be sent bac
 
 ??? abstract "Expected json-data"
 
-    Typing is seperated into two different events, one for a house and one for a private_room. Both have their own kind 
-    of data passed.
+    Hiven separates the `TYPING_START` event into two classifications: 
 
     **House Typing:**
     
@@ -761,10 +769,10 @@ The user logged successfully into the account, and the data will now be sent bac
     ```json
     "op": 0,
     "d": {
-        author_id: int,
-        recipient_ids: [ "user_id", ... ]
-        room_id: str,
-        timestamp: int
+        "author_id": int,
+        "recipient_ids": [ "user_id", ... ]
+        "room_id": str,
+        "timestamp": int
     }
     ```
 

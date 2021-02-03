@@ -95,7 +95,7 @@ will automatically be registered in the EventHandler and then called whenever an
 !!! note
 
     All events that can you can use are listed on the page for the 
-    [EventHandler](https://openhivenpy.readthedocs.io/en/mkdocs-material-rewrite/getting_started/event_handling.html).
+    [EventHandler](../getting_started/event_handling.html).
 
 Example with the event `on_message_create`:
 

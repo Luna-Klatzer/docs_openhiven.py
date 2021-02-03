@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/search/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting_started/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +141,7 @@
       <workItem from="1611856409960" duration="16318000" />
       <workItem from="1611946809496" duration="43810000" />
       <workItem from="1612264980491" duration="7426000" />
-      <workItem from="1612310642778" duration="867000" />
+      <workItem from="1612310642778" duration="1583000" />
     </task>
     <task id="LOCAL-00001" summary="added quick_start and some small changes to overall docs">
       <created>1607877867922</created>
@@ -481,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612291275243</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Added HOUSE_MEMBER_LEAVE and updated swarm">
+      <created>1612313406363</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1612313406363</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +505,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved images and updated assets to ensure images are shown in readthedocs build" />
     <MESSAGE value="Removed .ico since it broke in the readthedocs build" />
     <MESSAGE value="Changed endpoint style to files to ensure images and content are found within the project" />
     <MESSAGE value="Changed to dark-theme and expanded docs" />
@@ -525,7 +529,8 @@
     <MESSAGE value="Updated endpoint general info, exception and user endpoint documentation" />
     <MESSAGE value="Updated endpoints, core and user endpoint documentation" />
     <MESSAGE value="Added /users/{id}" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added /users/{id}" />
+    <MESSAGE value="Added HOUSE_MEMBER_LEAVE and updated swarm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HOUSE_MEMBER_LEAVE and updated swarm" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$test.coverage" NAME="test Coverage Results" MODIFIED="1612126345911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
