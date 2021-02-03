@@ -21,7 +21,7 @@
 The user logged successfully into the account, and the data will now be sent back to initialise the client-side.
 
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -134,7 +134,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `PRESENCE_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -153,7 +153,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `RELATIONSHIP_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -178,7 +178,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `MESSAGE_CREATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -257,7 +257,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `MESSAGE_DELETE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -271,7 +271,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `MESSAGE_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -318,7 +318,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `ROOM_CREATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -331,11 +331,10 @@ The user logged successfully into the account, and the data will now be sent bac
     }
     ```
 
-!!! abstract "Expected json-data"
 ### `ROOM_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     ```
@@ -343,9 +342,11 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `ROOM_DELETE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
+
+
     ```
 
 
@@ -353,7 +354,7 @@ The user logged successfully into the account, and the data will now be sent bac
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 [Docs · `async def on_house_join()`]()
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -433,7 +434,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `HOUSE_LEAVE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -446,7 +447,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `HOUSE_MEMBER_JOIN`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -473,10 +474,43 @@ The user logged successfully into the account, and the data will now be sent bac
     }
     ```
 
+### `HOUSE_MEMBER_LEAVE`
+
+??? abstract "Expected json-data"
+
+    ```json
+    "op": 0,
+    "d": {
+        house_id: str,
+        id: str,
+        joined_at: str,
+        last_permission_update: str,
+        presence: str,
+        roles: [{
+            // Role Object
+            "position": int,
+            "name": str,
+            "level": int,
+            "id": str,
+            "deny": bits,
+            "color": str,
+            "allow": bits 
+        } ... ],
+        user: { 
+            bot: bool,
+            id: str,
+            name: str,
+            user_flags: str,
+            username: str,
+        },
+        user_id: str
+    }
+    ```
+
 ### `HOUSE_MEMBER_EXIT`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -489,7 +523,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `HOUSE_MEMBER_ENTER`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -524,7 +558,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `HOUSE_MEMBER_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -565,7 +599,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `HOUSE_MEMBERS_CHUNK`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
     
     ```json
     "op": 0,
@@ -603,7 +637,7 @@ The user logged successfully into the account, and the data will now be sent bac
 
 ### `HOUSE_ENTITIES_UPDATE`
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0
@@ -626,7 +660,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `BATCH_HOUSE_MEMBER_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -670,15 +704,30 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `HOUSE_ENTITY_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
+    entities: {
+        // Entity Object
+        "type": int,
+        "resource_pointers": [{
+            // Resource Pointer
+            "resource_type": str,
+            "resource_id": str
+        } ... ],
+        "position": int,
+        "name": str,
+        "id": str
+    },
+    house_id: str
     ```
 
 ### `HOUSE_DOWN`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
+
+    If unavailable is False the House was deleted, if it's true it's an issue on the server side
 
     ```json
     "op": 0,
@@ -691,8 +740,13 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `TYPING_START`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
+    Typing is seperated into two different events, one for a house and one for a private_room. Both have their own kind 
+    of data passed.
+
+    **House Typing:**
+    
     ```json
     "op": 0,
     "d": {
@@ -703,10 +757,21 @@ The user logged successfully into the account, and the data will now be sent bac
     }
     ```
 
+    **Private Room Typing:**
+    ```json
+    "op": 0,
+    "d": {
+        author_id: int,
+        recipient_ids: [ "user_id", ... ]
+        room_id: str,
+        timestamp: int
+    }
+    ```
+
 ### `CALL_CREATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -723,7 +788,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `CALL_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,
@@ -749,7 +814,7 @@ The user logged successfully into the account, and the data will now be sent bac
 ### `CALL_DELETE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 
-!!! abstract "Expected json-data"
+??? abstract "Expected json-data"
 
     ```json
     "op": 0,

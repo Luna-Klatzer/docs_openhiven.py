@@ -654,6 +654,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#house_member_leave" class="md-nav__link">
+    HOUSE_MEMBER_LEAVE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#house_member_exit" class="md-nav__link">
     HOUSE_MEMBER_EXIT
   </a>
@@ -927,9 +934,7 @@
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
 <a href="">Docs · <code>async def on_init()</code></a></p>
 <p>The user logged successfully into the account, and the data will now be sent back to initialise the client-side.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -1035,12 +1040,10 @@
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="presence_update"><code>PRESENCE_UPDATE</code><a class="headerlink" href="#presence_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
     <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -1052,12 +1055,10 @@
     <span class="nt">&quot;presence&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="relationship_update"><code>RELATIONSHIP_UPDATE</code><a class="headerlink" href="#relationship_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
@@ -1075,12 +1076,10 @@
     <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="message_create"><code>MESSAGE_CREATE</code><a class="headerlink" href="#message_create" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
     <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -1152,24 +1151,20 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="message_delete"><code>MESSAGE_DELETE</code><a class="headerlink" href="#message_delete" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="message_update"><code>MESSAGE_UPDATE</code><a class="headerlink" href="#message_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
     <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -1209,12 +1204,10 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="room_create"><code>ROOM_CREATE</code><a class="headerlink" href="#room_create" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -1223,30 +1216,21 @@
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-</div>
+</details>
 <h3 id="room_update"><code>ROOM_UPDATE</code><a class="headerlink" href="#room_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code>
 </code></pre></div>
-</div>
+</details>
 <h3 id="room_delete"><code>ROOM_DELETE</code><a class="headerlink" href="#room_delete" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_join"><code>HOUSE_JOIN</code><a class="headerlink" href="#house_join" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
 <a href="">Docs · <code>async def on_house_join()</code></a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[{</span>
         <span class="err">//</span> <span class="err">Room</span> <span class="err">Objec</span><span class="kc">t</span>
@@ -1319,23 +1303,19 @@
     <span class="nt">&quot;banner&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_leave"><code>HOUSE_LEAVE</code><a class="headerlink" href="#house_leave" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
   <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
   <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_member_join"><code>HOUSE_MEMBER_JOIN</code><a class="headerlink" href="#house_member_join" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;joined_at&quot;</span><span class="p">:</span> <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">,</span>
@@ -1358,23 +1338,48 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
+<h3 id="house_member_leave"><code>HOUSE_MEMBER_LEAVE</code><a class="headerlink" href="#house_member_leave" title="Permanent link">&para;</a></h3>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="err">joi</span><span class="kc">ne</span><span class="err">d_a</span><span class="kc">t</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="err">las</span><span class="kc">t</span><span class="err">_permissio</span><span class="kc">n</span><span class="err">_upda</span><span class="kc">te</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="err">prese</span><span class="kc">n</span><span class="err">ce</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="err">roles</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Role</span> <span class="err">Objec</span><span class="kc">t</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;deny&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span><span class="p">,</span>
+        <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;allow&quot;</span><span class="p">:</span> <span class="err">bi</span><span class="kc">ts</span> 
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="err">user</span><span class="p">:</span> <span class="p">{</span> 
+        <span class="err">bo</span><span class="kc">t</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+        <span class="err">id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="err">user_</span><span class="kc">fla</span><span class="err">gs</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="err">user</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="err">user_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
 <h3 id="house_member_exit"><code>HOUSE_MEMBER_EXIT</code><a class="headerlink" href="#house_member_exit" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_member_enter"><code>HOUSE_MEMBER_ENTER</code><a class="headerlink" href="#house_member_enter" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1402,12 +1407,10 @@
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_member_update"><code>HOUSE_MEMBER_UPDATE</code><a class="headerlink" href="#house_member_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1441,12 +1444,10 @@
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_members_chunk"><code>HOUSE_MEMBERS_CHUNK</code><a class="headerlink" href="#house_members_chunk" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;members&quot;</span><span class="p">:</span> <span class="p">[{</span>
         <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1478,11 +1479,9 @@
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_entities_update"><code>HOUSE_ENTITIES_UPDATE</code><a class="headerlink" href="#house_entities_update" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;entities&quot;</span><span class="p">:</span> <span class="p">[{</span>
@@ -1498,12 +1497,10 @@
     <span class="p">}</span> <span class="err">...</span> <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="batch_house_member_update"><code>BATCH_HOUSE_MEMBER_UPDATE</code><a class="headerlink" href="#batch_house_member_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;batch_type&quot;</span><span class="p">:</span> <span class="p">[],</span>
@@ -1540,29 +1537,39 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_entity_update"><code>HOUSE_ENTITY_UPDATE</code><a class="headerlink" href="#house_entity_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="err">e</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">ies</span><span class="p">:</span> <span class="p">{</span>
+    <span class="err">//</span> <span class="err">E</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y</span> <span class="err">Objec</span><span class="kc">t</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;resource_pointers&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="err">//</span> <span class="err">Resource</span> <span class="err">Poi</span><span class="kc">nter</span>
+        <span class="nt">&quot;resource_type&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+        <span class="nt">&quot;resource_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+    <span class="p">}</span> <span class="err">...</span> <span class="p">],</span>
+    <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+<span class="p">},</span>
+<span class="err">house_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="house_down"><code>HOUSE_DOWN</code><a class="headerlink" href="#house_down" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
+<details class="abstract"><summary>Expected json-data</summary><p>If unavailable is False the House was deleted, if it's true it's an issue on the server side</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;unavailable&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
     <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="typing_start"><code>TYPING_START</code><a class="headerlink" href="#typing_start" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
+<details class="abstract"><summary>Expected json-data</summary><p>Typing is seperated into two different events, one for a house and one for a private_room. Both have their own kind 
+of data passed.</p>
+<p><strong>House Typing:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
@@ -1571,12 +1578,19 @@
     <span class="nt">&quot;author_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+<p><strong>Private Room Typing:</strong>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="err">au</span><span class="kc">t</span><span class="err">hor_id</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="err">recipie</span><span class="kc">nt</span><span class="err">_ids</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="err">...</span> <span class="p">]</span>
+    <span class="err">room_id</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</details>
 <h3 id="call_create"><code>CALL_CREATE</code><a class="headerlink" href="#call_create" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;join_token&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;recipients&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="err">...</span><span class="p">],</span>
@@ -1586,12 +1600,10 @@
     <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="call_update"><code>CALL_UPDATE</code><a class="headerlink" href="#call_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;join_token&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
     <span class="nt">&quot;recipients&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="err">...</span><span class="p">],</span>
@@ -1610,17 +1622,15 @@
     <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
 <h3 id="call_delete"><code>CALL_DELETE</code><a class="headerlink" href="#call_delete" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
-<div class="admonition abstract">
-<p class="admonition-title">Expected json-data</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 <span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;room_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
 <span class="p">}</span>
 </code></pre></div>
-</div>
+</details>
                 
               
               
