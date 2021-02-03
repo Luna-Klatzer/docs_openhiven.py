@@ -20,7 +20,6 @@
 
 The user logged successfully into the account, and the data will now be sent back to initialise the client-side.
 
-
 ??? abstract "Expected json-data"
 
     ```json

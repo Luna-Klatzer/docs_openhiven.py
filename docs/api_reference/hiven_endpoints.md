@@ -214,9 +214,70 @@ Default user endpoint for accessing the user-data of the owner of the passed tok
         }
         ```
 
-#### ```/users/{id}```
+#### ```/users/username```
 
-Endpoint for a specific user based on their id. Will return the user if they were found 
+Endpoint for a specific user based on their username. Will return the user if they were found.
+
+!!! Example
+
+    GET `/users/kudo`
+
+=== "GET"
+
+    ??? success "200"
+
+        Authorisation was successful and the body contains the requested data
+
+        **Expected Response:**
+
+        ```json
+        {
+            "success": true,
+            "data": {
+                "id": str,
+                "name": str,
+                "username": str,
+                "icon": str,
+                "header": str,
+                "user_flags": int,
+                "bot": bool,
+                "location": str,
+                "website": str,
+                "bio": str,
+                "email": str,
+                "email_verified": bool,
+                "mfa_enabled": bool
+            }
+        }
+        ```
+
+    ??? fail "400"
+
+        User with that id was not found
+
+        **Expected Response:**
+        
+        ```json
+        {
+            "success": false,
+            "error": {
+                "code": "user_not_found",
+                "message": "That user does not exist"
+            }
+        }
+        ```
+
+        !!! Warning
+
+            Currently there is a bug in the Hiven API causing it to return 200 instead of 400 or 403!
+
+#### ```/users/id```
+
+Endpoint for a specific user based on their id. Will return the user if they were found.
+
+!!! Example
+
+    GET `/users/175697072878514388`
 
 === "GET"
 
@@ -384,6 +445,22 @@ More info on [`Authentication Header`](#authentication-header)
         "error": {
             "code": "no_auth",
             "message": "Authorization is required for this route"
+        }
+    }
+```
+
+### `400 ` - parent_entity_doesnt_exist
+
+The chosen parent_entity in the request does not exist in the house! 
+
+**Example Exception Response:**
+
+```json
+    {
+        "success": false,
+        "error": {
+            "code": "parent_entity_doesnt_exist",
+            "message": "Parent entity does not exist in this house"
         }
     }
 ```
