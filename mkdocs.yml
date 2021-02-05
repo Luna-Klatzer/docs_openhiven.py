@@ -37,6 +37,8 @@ nav:
       - reference/execution_loop.md
       - reference/event_handler.md
       - reference/types/index.md
+  - Changelog:
+      - changelog.md
 extra_css:
     - assets/css/index.css
 
