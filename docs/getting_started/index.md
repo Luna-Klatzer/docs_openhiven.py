@@ -4,10 +4,14 @@
 
 Welcome to the Quickstart page of OpenHiven.py!
 
-OpenHiven.py is an easy, fast and async API wrapper written in Python that provides extensive functionality for the Hiven 
-Swarm and Hiven API. So if you want to run bots and utilise your client with additional functionality and tools OpenHiven.py
-is the Tool for you to make your Hiven Bot great
+OpenHiven.py is an easy tool for creating bots and utilising API Functionality of Hiven. Its goal is to be fast but also
+provide good tools and functionality that can be used to write Hiven Bots easier. Therefore, OpenHiven.py is not a simple
+API-Wrapper but adds nice features to make running a bot easier such as: 
 
+* Data Caching for easier object fetching 
+* Event listening using parallel execution and a MessageBroker to distribute processes for larger Bots
+* WebSocket event and message handling for easier usage
+* Usage of in-code event listeners to not be dependent on entire functions
 
 !!! info
 
@@ -16,8 +20,8 @@ is the Tool for you to make your Hiven Bot great
 
 ## Environment
 
-OpenHiven.py is a Python module and can currently on be run in environments with Python >= 3.6. This is due to the used
-module aiohttp which requires Functionality only available in Python 3.6 or higher! 
+OpenHiven.py is a Python module and can currently on be run in environments with Python >= 3.7. This is due to the used
+module aiohttp which requires Functionality only available in Python 3.7 or higher! 
 
 Python 2 is entirely not supported, and currently, there is no plan to make the module available for Python 2, since many 
 features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp!
@@ -121,10 +125,11 @@ which serves as a bridge between Hiven, and the Program you are using. The [Hive
 contains all data and connection-vital information, but is not supposed to be used directly since some methods
 are not available due to the raw state. These are special methods related to the bot-type that decides based on what 
 type you are using, resulting in various functionality. These two bot-types are here [UserClient](../reference/userclient.html) 
-and [BotClient](../reference/botclient.html)
+and [BotClient](../reference/botclient.html).
 
-To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
-If no token were passed, it would automatically raise an `openhivenpy.exceptions.exception.InvalidToken` Exception!
+For the usage of a HivenClient, you are required to pass your token, which it will use to authorise on Hiven 
+and request data. If no token was passed, it will automatically raise an `openhivenpy.exceptions.exception.InvalidToken`
+Exception!
 
 !!! note "Usage Examples"
 

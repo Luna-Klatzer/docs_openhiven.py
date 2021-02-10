@@ -13,11 +13,11 @@ use_directory_urls: false
 # Page tree
 nav:
   - Home:
-      - index.md
-      - home/troubleshooting.md
-      - home/bug_reporting.md
+      - Home: index.md
       - home/contributing.md
       - home/license.md
+      - home/troubleshooting.md
+      - home/bug_reporting.md
   - Getting Started:
       - getting_started/index.md
       - getting_started/deploying_your_first_bot.md

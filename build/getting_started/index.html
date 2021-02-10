@@ -334,30 +334,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../home/troubleshooting.html" class="md-nav__link">
-        Troubleshooting
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../home/bug_reporting.html" class="md-nav__link">
-        Bug-Reporting
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../home/contributing.html" class="md-nav__link">
         Contributing
       </a>
@@ -372,6 +348,30 @@
     <li class="md-nav__item">
       <a href="../home/license.html" class="md-nav__link">
         License
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/troubleshooting.html" class="md-nav__link">
+        Troubleshooting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/bug_reporting.html" class="md-nav__link">
+        Bug-Reporting
       </a>
     </li>
   
@@ -843,17 +843,23 @@
                 <h1 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h1>
 <hr />
 <p>Welcome to the Quickstart page of OpenHiven.py!</p>
-<p>OpenHiven.py is an easy, fast and async API wrapper written in Python that provides extensive functionality for the Hiven 
-Swarm and Hiven API. So if you want to run bots and utilise your client with additional functionality and tools OpenHiven.py
-is the Tool for you to make your Hiven Bot great</p>
+<p>OpenHiven.py is an easy tool for creating bots and utilising API Functionality of Hiven. Its goal is to be fast but also
+provide good tools and functionality that can be used to write Hiven Bots easier. Therefore, OpenHiven.py is not a simple
+API-Wrapper but adds nice features to make running a bot easier such as: </p>
+<ul>
+<li>Data Caching for easier object fetching </li>
+<li>Event listening using parallel execution and a MessageBroker to distribute processes for larger Bots</li>
+<li>WebSocket event and message handling for easier usage</li>
+<li>Usage of in-code event listeners to not be dependent on entire functions</li>
+</ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The OpenHiven.py module is entirely written in async and can therefore only be used in an
 async event loop and environment. For more info about asyncio look into the <a href="https://docs.python.org/3/library/asyncio.html">Asyncio documentation</a></p>
 </div>
 <h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
-<p>OpenHiven.py is a Python module and can currently on be run in environments with Python &gt;= 3.6. This is due to the used
-module aiohttp which requires Functionality only available in Python 3.6 or higher! </p>
+<p>OpenHiven.py is a Python module and can currently on be run in environments with Python &gt;= 3.7. This is due to the used
+module aiohttp which requires Functionality only available in Python 3.7 or higher! </p>
 <p>Python 2 is entirely not supported, and currently, there is no plan to make the module available for Python 2, since many 
 features are dependent on Python 3 and the modern async module of Python 3 as well as aiohttp!</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
@@ -936,9 +942,10 @@ which serves as a bridge between Hiven, and the Program you are using. The <a hr
 contains all data and connection-vital information, but is not supposed to be used directly since some methods
 are not available due to the raw state. These are special methods related to the bot-type that decides based on what 
 type you are using, resulting in various functionality. These two bot-types are here <a href="../reference/userclient.html">UserClient</a> 
-and <a href="../reference/botclient.html">BotClient</a></p>
-<p>To use the UserClient, you are also required to have a token passed, which it can use to authorise on Hiven and request data.
-If no token were passed, it would automatically raise an <code>openhivenpy.exceptions.exception.InvalidToken</code> Exception!</p>
+and <a href="../reference/botclient.html">BotClient</a>.</p>
+<p>For the usage of a HivenClient, you are required to pass your token, which it will use to authorise on Hiven 
+and request data. If no token was passed, it will automatically raise an <code>openhivenpy.exceptions.exception.InvalidToken</code>
+Exception!</p>
 <div class="admonition note">
 <p class="admonition-title">Usage Examples</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Regular</label><div class="tabbed-content">
@@ -1028,7 +1035,7 @@ if that specific methods returns data.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../home/license.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../home/bug_reporting.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1037,7 +1044,7 @@ if that specific methods returns data.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                License
+                Bug-Reporting
               </div>
             </div>
           </a>
