@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/getting_started/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,14 +142,8 @@
       <workItem from="1612264980491" duration="7426000" />
       <workItem from="1612310642778" duration="9227000" />
       <workItem from="1612560632900" duration="1846000" />
-      <workItem from="1612917901072" duration="2126000" />
-    </task>
-    <task id="LOCAL-00004" summary="Updated introduction, quick_start and bug_reporting and merged types into one file">
-      <created>1611058386440</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1611058386440</updated>
+      <workItem from="1612917901072" duration="6316000" />
+      <workItem from="1613052818014" duration="861000" />
     </task>
     <task id="LOCAL-00005" summary="Finished intro pages and finished adding info about the project">
       <created>1611305690096</created>
@@ -489,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612511352559</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Small Changes in the core (index.md, getting_started)">
+      <created>1612920156965</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1612920156965</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added auth graph and updated info on deploying_your_first_bot.md" />
     <MESSAGE value="Updated image size and build docs" />
     <MESSAGE value="Added correct edit url" />
     <MESSAGE value="Small tag fix" />
@@ -533,7 +531,8 @@
     <MESSAGE value="Updated 'HOUSE_DOWN'" />
     <MESSAGE value="Added /users/username" />
     <MESSAGE value="Added Changelog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Changelog" />
+    <MESSAGE value="Small Changes in the core (index.md, getting_started)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Changes in the core (index.md, getting_started)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$test.coverage" NAME="test Coverage Results" MODIFIED="1612126345911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
