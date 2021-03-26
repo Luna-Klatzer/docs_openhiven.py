@@ -1,0 +1,118 @@
+# Openhiven.py Mkdocs Customisation
+
+site_name: 'OpenHiven.py Docs'
+site_description: 'Documentation Page for OpenHiven.py'
+site_author: 'Nicolas Klatzer'
+site_url: 'https://openhivenpy.readthedocs.io'
+site_dir: './build/'
+edit_uri: 'https://github.com/FrostbyteSpace/docs_openhiven.py/edit/mkdocs-material-rewrite/docs/'
+
+copyright: Copyright &copy; 2020 - 2021 FrostbyteSpace
+
+use_directory_urls: false
+# Page tree
+nav:
+  - Home:
+      - Home: index.md
+      - home/contributing.md
+      - home/license.md
+      - home/troubleshooting.md
+      - home/bug_reporting.md
+  - Getting Started:
+      - getting_started/index.md
+      - getting_started/deploying_your_first_bot.md
+      - getting_started/logging.md
+      - getting_started/event_handling.md
+  - API Reference:
+      - api_reference/index.md
+      - api_reference/hiven_endpoints.md
+      - api_reference/hiven_swarm.md
+      - api_reference/object_reference.md
+  - Reference:
+      - reference/index.md
+      - reference/hivenclient.md
+      - reference/botclient.md
+      - reference/userclient.md
+      - reference/http.md
+      - reference/execution_loop.md
+      - reference/event_handler.md
+      - reference/types/index.md
+  - Changelog:
+      - changelog.md
+extra_css:
+    - assets/css/index.css
+
+# Github repo
+repo_url: https://github.com/FrostbyteSpace/OpenHiven.py
+repo_name: FrostbyteSpace/OpenHiven.py
+
+# Material theme options
+theme:
+  name: material
+  favicon: ./openhivenpy.ico
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  hljs_languages:
+    - yaml
+    - python
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+
+  logo: ./assets/images/openhivenpy.png
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.sections
+    - toc.integrate
+
+# Plugins
+plugins:
+  - git-revision-date:
+      enabled_if_env: CI
+  - search:
+      lang: en
+      prebuild_index: true
+
+# Extensions to the basic mkdocs markdown
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 5
+  - pymdownx.tabbed # Nice tabs
+  - pymdownx.superfences # Very cool embed objects
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.tilde
+  - pymdownx.keys
+  - attr_list # => very cool html and css syntax
+  - abbr
+  - pymdownx.snippets # snippet looking sharp!
+  - admonition
+# Abandoned for now => #5
+#  - pymdownx.emoji:
+#      emoji_index: !!python/name:materialx.emoji.twemoji
+#      emoji_generator: !!python/name:materialx.emoji.to_svg
+#      options:
+#        custom_icons:
+#          - docs/.icons
+
+extra:
+  version:
+      method: mike
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/thekudofox
+      name: The author on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/FrostbyteSpace/
+      name: The Github Organisation managing the project

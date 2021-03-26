@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mkdocs-rewrite" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1lbcxZ0JSLpqrQaloJeNDbctwuz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmierung/Python" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dokumente\docs_openhiven.py\docs" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\etc" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\static" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\getting_started" />
+      <recent name="D:\Dokumente\docs_openhiven.py\source\_static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\assets\images\icons" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\etc\static" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\.icons" />
+      <recent name="D:\Dokumente\docs_openhiven.py\docs\home" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="docs_openhiven.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Sphinx" type="docs" factoryName="Sphinx task">
+      <module name="docs_openhiven.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="D:\Dokumente\docs_openhiven.py\source" />
+      <option name="docutils_output_file" value="D:\Dokumente\docs_openhiven.py\build" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="html" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
+      <created>1607869481035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607869481035</updated>
+      <workItem from="1607869484183" duration="9042000" />
+      <workItem from="1607895068665" duration="32000" />
+      <workItem from="1610438681522" duration="1519000" />
+      <workItem from="1610440230370" duration="1249000" />
+      <workItem from="1610441567633" duration="6211000" />
+      <workItem from="1610608497744" duration="1198000" />
+      <workItem from="1611037695190" duration="18718000" />
+      <workItem from="1611056727014" duration="4985000" />
+      <workItem from="1611072620676" duration="599000" />
+      <workItem from="1611165106889" duration="64744000" />
+      <workItem from="1611498645630" duration="602000" />
+      <workItem from="1611505696949" duration="12894000" />
+      <workItem from="1611840935354" duration="6683000" />
+      <workItem from="1611856409960" duration="16318000" />
+      <workItem from="1611946809496" duration="43810000" />
+      <workItem from="1612264980491" duration="7426000" />
+      <workItem from="1612310642778" duration="9227000" />
+      <workItem from="1612560632900" duration="1846000" />
+      <workItem from="1612917901072" duration="6316000" />
+      <workItem from="1613052818014" duration="861000" />
+    </task>
+    <task id="LOCAL-00005" summary="Finished intro pages and finished adding info about the project">
+      <created>1611305690096</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611305690096</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finished basic configuration of mkdocs page and rewrote basic introduction">
+      <created>1611335349718</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611335349718</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added more content pages">
+      <created>1611335454496</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611335454496</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Removed overwrites and emoji generator">
+      <created>1611340076230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611340076230</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Finished intro page">
+      <created>1611352287925</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611352287925</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Small text fix">
+      <created>1611352583947</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611352583947</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated mkdocs.yml and requirements.txt">
+      <created>1611401993342</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611401993342</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated requirements.txt again">
+      <created>1611402513260</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611402513260</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added reference pages and updated markdown_extensions">
+      <created>1611403217675</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611403217675</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added requests to the requirements.txt">
+      <created>1611403931946</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611403931946</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adding PyYAML to see if that caused the issue">
+      <created>1611406967159</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611406967159</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Removed unneeded file CNAME">
+      <created>1611407031047</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611407031047</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Removed pymdownx.emoji due to missing support">
+      <created>1611409118652</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611409118652</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Finally fixed source and replaced it with imported .ico images">
+      <created>1611410264824</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611410264824</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Removed pymdownx.emoji entirely">
+      <created>1611410326351</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611410326351</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Removed unneeded configuration option in .readthedocs.yml">
+      <created>1611414594676</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611414594676</updated>
+    </task>
+    <task id="LOCAL-00021" summary="moved source.ico into static folder">
+      <created>1611417331257</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611417331257</updated>
+    </task>
+    <task id="LOCAL-00022" summary="moved images and updated assets to ensure images are shown in readthedocs build">
+      <created>1611419046368</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611419046368</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Removed .ico since it broke in the readthedocs build">
+      <created>1611419469172</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611419469172</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Changed endpoint style to files to ensure images and content are found within the project">
+      <created>1611420639408</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611420639408</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Changed to dark-theme and expanded docs">
+      <created>1611444717129</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611444717129</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added auth graph and updated info on deploying_your_first_bot.md">
+      <created>1611577921469</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577921469</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updated image size and build docs">
+      <created>1611587036713</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611587036713</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added correct edit url">
+      <created>1611740686142</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611740686142</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Small tag fix">
+      <created>1611751390130</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611751390130</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Build docs after PR #6">
+      <created>1611841060364</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611841060364</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Updated home pages">
+      <created>1611847482547</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611847482547</updated>
+    </task>
+    <task id="LOCAL-00032" summary="removed intro.html">
+      <created>1611850392589</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1611850392589</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added basic Hiven Swarm docs. Needs more work!">
+      <created>1611867946831</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1611867946831</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Pushing build">
+      <created>1611867973015</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1611867973015</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Updated Hiven Swarm Docs">
+      <created>1611910082250</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1611910082250</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated icons">
+      <created>1611913760379</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1611913760379</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Updated source-icon">
+      <created>1611913950073</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1611913950073</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Updated source-icon again">
+      <created>1611918265297</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1611918265297</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added Hiven Endpoints docs base and updated swarm and core docs">
+      <created>1611960711400</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1611960711400</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Updated list in logging">
+      <created>1611960805980</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1611960805980</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Build for last commit">
+      <created>1611961065553</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1611961065553</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Updated home pages">
+      <created>1612122989350</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1612122989350</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Updated Endpoints documentation">
+      <created>1612135833509</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612135833509</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Small phrase changing in hiven endpoints">
+      <created>1612135940566</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1612135940566</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Updated endpoint general info, exception and user endpoint documentation">
+      <created>1612183566914</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1612183566914</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Updated endpoints, core and user endpoint documentation">
+      <created>1612216604349</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1612216604349</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added /users/{id}">
+      <created>1612291206860</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1612291206860</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added /users/{id}">
+      <created>1612291275243</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1612291275243</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Added HOUSE_MEMBER_LEAVE and updated swarm">
+      <created>1612313406363</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1612313406363</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Updated 'HOUSE_DOWN'">
+      <created>1612314140324</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1612314140325</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Added /users/username">
+      <created>1612380823836</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1612380823836</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added Changelog">
+      <created>1612511352559</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1612511352559</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Small Changes in the core (index.md, getting_started)">
+      <created>1612920156965</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1612920156965</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated image size and build docs" />
+    <MESSAGE value="Added correct edit url" />
+    <MESSAGE value="Small tag fix" />
+    <MESSAGE value="Build docs after PR #6" />
+    <MESSAGE value="removed intro.html" />
+    <MESSAGE value="Added basic Hiven Swarm docs. Needs more work!" />
+    <MESSAGE value="Pushing build" />
+    <MESSAGE value="Updated Hiven Swarm Docs" />
+    <MESSAGE value="Updated icons" />
+    <MESSAGE value="Updated source-icon" />
+    <MESSAGE value="Updated source-icon again" />
+    <MESSAGE value="Added Hiven Endpoints docs base and updated swarm and core docs" />
+    <MESSAGE value="Updated list in logging" />
+    <MESSAGE value="Build for last commit" />
+    <MESSAGE value="Updated home pages" />
+    <MESSAGE value="Updated Endpoints documentation" />
+    <MESSAGE value="Small phrase changing in hiven endpoints" />
+    <MESSAGE value="Updated endpoint general info, exception and user endpoint documentation" />
+    <MESSAGE value="Updated endpoints, core and user endpoint documentation" />
+    <MESSAGE value="Added /users/{id}" />
+    <MESSAGE value="Added HOUSE_MEMBER_LEAVE and updated swarm" />
+    <MESSAGE value="Updated 'HOUSE_DOWN'" />
+    <MESSAGE value="Added /users/username" />
+    <MESSAGE value="Added Changelog" />
+    <MESSAGE value="Small Changes in the core (index.md, getting_started)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Changes in the core (index.md, getting_started)" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/docs_openhiven_py$test.coverage" NAME="test Coverage Results" MODIFIED="1612126345911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/docs_openhiven_py$Sphinx.coverage" NAME="Sphinx Coverage Results" MODIFIED="1607880568527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
