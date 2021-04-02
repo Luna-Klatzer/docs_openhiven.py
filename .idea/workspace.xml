@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
-    </list>
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmierung/Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,7 +67,29 @@
       <recent name="D:\Dokumente\docs_openhiven.py\docs\home" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="docs_openhiven.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="docs_openhiven.py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,21 +162,13 @@
       <workItem from="1612310642778" duration="9227000" />
       <workItem from="1612560632900" duration="1846000" />
       <workItem from="1612917901072" duration="6316000" />
-      <workItem from="1613052818014" duration="861000" />
-    </task>
-    <task id="LOCAL-00005" summary="Finished intro pages and finished adding info about the project">
-      <created>1611305690096</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1611305690096</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Finished basic configuration of mkdocs page and rewrote basic introduction">
-      <created>1611335349718</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1611335349718</updated>
+      <workItem from="1613052818014" duration="4673000" />
+      <workItem from="1613939711570" duration="3782000" />
+      <workItem from="1614238216020" duration="598000" />
+      <workItem from="1614280355511" duration="599000" />
+      <workItem from="1614337988223" duration="1795000" />
+      <workItem from="1614957978392" duration="474000" />
+      <workItem from="1617385347736" duration="109000" />
     </task>
     <task id="LOCAL-00007" summary="Added more content pages">
       <created>1611335454496</created>
@@ -488,7 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612920156965</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Small Hiven Swarm Docs Update">
+      <created>1613053719616</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1613053719617</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added events name reference">
+      <created>1613053775723</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1613053775723</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,8 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated image size and build docs" />
-    <MESSAGE value="Added correct edit url" />
     <MESSAGE value="Small tag fix" />
     <MESSAGE value="Build docs after PR #6" />
     <MESSAGE value="removed intro.html" />
@@ -532,7 +555,20 @@
     <MESSAGE value="Added /users/username" />
     <MESSAGE value="Added Changelog" />
     <MESSAGE value="Small Changes in the core (index.md, getting_started)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small Changes in the core (index.md, getting_started)" />
+    <MESSAGE value="Small Hiven Swarm Docs Update" />
+    <MESSAGE value="Added events name reference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added events name reference" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/docs_openhiven_py$test.coverage" NAME="test Coverage Results" MODIFIED="1612126345911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -69,7 +69,7 @@ The user logged successfully into the account, and the data will now be sent bac
             },
         },
         "private_rooms": [{
-            "default_permission_override": None
+            "default_permission_override": None,
             "description": str,
             "emoji": object,
             "house_id": None,
@@ -77,8 +77,8 @@ The user logged successfully into the account, and the data will now be sent bac
             "last_message_id": str,
             "name": str,
             "owner_id": str,
-            "permission_overrides": None
-            "position": None
+            "permission_overrides": None,
+            "position": None,
             "recipients": [{  
                 // User Object
                 "username": str,
