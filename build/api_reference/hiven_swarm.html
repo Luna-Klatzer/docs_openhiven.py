@@ -1047,7 +1047,7 @@
         <span class="p">},</span>
     <span class="p">},</span>
     <span class="nt">&quot;private_rooms&quot;</span><span class="p">:</span> <span class="p">[{</span>
-        <span class="nt">&quot;default_permission_override&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
+        <span class="nt">&quot;default_permission_override&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
         <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
         <span class="nt">&quot;emoji&quot;</span><span class="p">:</span> <span class="err">objec</span><span class="kc">t</span><span class="p">,</span>
         <span class="nt">&quot;house_id&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
@@ -1055,8 +1055,8 @@
         <span class="nt">&quot;last_message_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
         <span class="nt">&quot;owner_id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
-        <span class="nt">&quot;permission_overrides&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
-        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span>
+        <span class="nt">&quot;permission_overrides&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
+        <span class="nt">&quot;position&quot;</span><span class="p">:</span> <span class="err">No</span><span class="kc">ne</span><span class="p">,</span>
         <span class="nt">&quot;recipients&quot;</span><span class="p">:</span> <span class="p">[{</span>  
             <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
             <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
@@ -1111,6 +1111,22 @@
 <h3 id="user_update"><code>USER_UPDATE</code><a class="headerlink" href="#user_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a>
 <a href="">Docs · <code>on_user_update()</code></a></p>
+<details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="nt">&quot;d&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="err">//</span> <span class="err">User</span> <span class="err">Objec</span><span class="kc">t</span>
+    <span class="nt">&quot;bio&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;bot&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+    <span class="nt">&quot;email_verified&quot;</span><span class="p">:</span> <span class="err">bool</span><span class="p">,</span>
+    <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+    <span class="nt">&quot;user_flags&quot;</span><span class="p">:</span> <span class="err">i</span><span class="kc">nt</span><span class="p">,</span>
+    <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="err">s</span><span class="kc">tr</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
 <h3 id="presence_update"><code>PRESENCE_UPDATE</code><a class="headerlink" href="#presence_update" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/FrostbyteSpace/openhiven.py/"><img align="top" alt="Source" src="../assets/images/icons/source_icon.png" width="28px" /> Source Code · </a></p>
 <details class="abstract"><summary>Expected json-data</summary><div class="highlight"><pre><span></span><code><span class="nt">&quot;op&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
