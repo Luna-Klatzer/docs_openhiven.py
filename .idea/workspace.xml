@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,13 +172,8 @@
       <workItem from="1614337988223" duration="1795000" />
       <workItem from="1614957978392" duration="474000" />
       <workItem from="1617385347736" duration="109000" />
-    </task>
-    <task id="LOCAL-00007" summary="Added more content pages">
-      <created>1611335454496</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1611335454496</updated>
+      <workItem from="1617385558978" duration="85000" />
+      <workItem from="1617385768726" duration="1654000" />
     </task>
     <task id="LOCAL-00008" summary="Removed overwrites and emoji generator">
       <created>1611340076230</created>
@@ -513,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613053775723</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Added basic object documentation">
+      <created>1617385600997</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1617385600997</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Small tag fix" />
     <MESSAGE value="Build docs after PR #6" />
     <MESSAGE value="removed intro.html" />
     <MESSAGE value="Added basic Hiven Swarm docs. Needs more work!" />
@@ -557,7 +561,8 @@
     <MESSAGE value="Small Changes in the core (index.md, getting_started)" />
     <MESSAGE value="Small Hiven Swarm Docs Update" />
     <MESSAGE value="Added events name reference" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added events name reference" />
+    <MESSAGE value="Added basic object documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic object documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

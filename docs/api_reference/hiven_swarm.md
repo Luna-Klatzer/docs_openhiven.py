@@ -134,6 +134,23 @@ The user logged successfully into the account, and the data will now be sent bac
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
 [Docs · `on_user_update()`]()
 
+??? abstract "Expected json-data"
+    ```json
+    "op": 0,
+    "d": {
+        // User Object
+        "bio": str,
+        "bot": bool,
+        "email_verified": bool,
+        "header": str,
+        "icon": str,
+        "id": str,
+        "location": str,
+        "name": str,
+        "user_flags": int,
+        "username": str
+    }
+    ```
 
 ### `PRESENCE_UPDATE`
 [![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/FrostbyteSpace/openhiven.py/)
