@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/api_reference/object_reference.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/object_reference.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/changelog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/changelog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/event_handling.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/event_handling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/getting_started/logging.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/logging.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/bug_reporting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/bug_reporting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/contributing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/botclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/botclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/event_handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/event_handler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/execution_loop.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/execution_loop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/hivenclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/hivenclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/http.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/http.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/types/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/types/house.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/types/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/types/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reference/userclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/userclient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/search/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,13 +200,7 @@
       <workItem from="1617385347736" duration="109000" />
       <workItem from="1617385558978" duration="85000" />
       <workItem from="1617385768726" duration="1943000" />
-    </task>
-    <task id="LOCAL-00010" summary="Small text fix">
-      <created>1611352583947</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1611352583947</updated>
+      <workItem from="1617614005726" duration="1028000" />
     </task>
     <task id="LOCAL-00011" summary="Updated mkdocs.yml and requirements.txt">
       <created>1611401993342</created>
@@ -515,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617396328980</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Updated readme and added missing build pages">
+      <created>1617614159340</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614159340</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +564,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added basic Hiven Swarm docs. Needs more work!" />
     <MESSAGE value="Pushing build" />
     <MESSAGE value="Updated Hiven Swarm Docs" />
     <MESSAGE value="Updated icons" />
@@ -559,7 +588,8 @@
     <MESSAGE value="Added basic object documentation" />
     <MESSAGE value="Added missing user_update event data to the api docs" />
     <MESSAGE value="Build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build" />
+    <MESSAGE value="Updated readme and added missing build pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated readme and added missing build pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
