@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,14 +174,7 @@
       <workItem from="1617385347736" duration="109000" />
       <workItem from="1617385558978" duration="85000" />
       <workItem from="1617385768726" duration="1943000" />
-      <workItem from="1617614005726" duration="3736000" />
-    </task>
-    <task id="LOCAL-00015" summary="Adding PyYAML to see if that caused the issue">
-      <created>1611406967159</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1611406967159</updated>
+      <workItem from="1617614005726" duration="4436000" />
     </task>
     <task id="LOCAL-00016" summary="Removed unneeded file CNAME">
       <created>1611407031047</created>
@@ -516,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617621404129</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Rebuild docs">
+      <created>1617621668282</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1617621668282</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
