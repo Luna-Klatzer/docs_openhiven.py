@@ -1,4 +1,4 @@
-# ![OpenHiven.py](https://images.nxybi.me/da4e88d64f12.png) <br> OpenHiven.py
+# ![OpenHiven.py](https://images.nxybi.me/da4e88d64f12.png) <br> OpenHiven.py [(View Docs)](https://frostbytespace.github.io/docs_openhiven.py/build/)
 ## The OpenSource Python API Wrapper for Hiven!
 
 [![Package Version](https://img.shields.io/badge/package%20version-v0.1.3-purple?logo=python)](https://github.com/FrostbyteSpace/openhiven.py)

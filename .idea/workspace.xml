@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/hiven_swarm.md" afterDir="false" />
-    </list>
+    <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmierung/Python/Projects/MentalHealthBot" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -173,21 +170,7 @@
       <workItem from="1614957978392" duration="474000" />
       <workItem from="1617385347736" duration="109000" />
       <workItem from="1617385558978" duration="85000" />
-      <workItem from="1617385768726" duration="1654000" />
-    </task>
-    <task id="LOCAL-00008" summary="Removed overwrites and emoji generator">
-      <created>1611340076230</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1611340076230</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Finished intro page">
-      <created>1611352287925</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1611352287925</updated>
+      <workItem from="1617385768726" duration="1943000" />
     </task>
     <task id="LOCAL-00010" summary="Small text fix">
       <created>1611352583947</created>
@@ -518,7 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617385600997</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Added missing user_update event data to the api docs">
+      <created>1617396306486</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1617396306486</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Build">
+      <created>1617396328980</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1617396328980</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,8 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Build docs after PR #6" />
-    <MESSAGE value="removed intro.html" />
     <MESSAGE value="Added basic Hiven Swarm docs. Needs more work!" />
     <MESSAGE value="Pushing build" />
     <MESSAGE value="Updated Hiven Swarm Docs" />
@@ -562,7 +557,9 @@
     <MESSAGE value="Small Hiven Swarm Docs Update" />
     <MESSAGE value="Added events name reference" />
     <MESSAGE value="Added basic object documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic object documentation" />
+    <MESSAGE value="Added missing user_update event data to the api docs" />
+    <MESSAGE value="Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
