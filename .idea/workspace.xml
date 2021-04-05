@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2f1e46-f87a-46d3-a053-0598c7eed03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/docs_openhiven.py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docs_openhiven.py.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_endpoints.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/hiven_swarm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/api_reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/api_reference/object_reference.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/api_reference/object_reference.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/bundle.83e5331e.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/bundle.83e5331e.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/lunr/tinyseg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/vendor.93c04032.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/vendor.93c04032.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/worker/search.8c7e0a7e.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/javascripts/worker/search.8c7e0a7e.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/stylesheets/main.15aa0b43.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/stylesheets/main.15aa0b43.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/stylesheets/palette.75751829.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/stylesheets/palette.75751829.min.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/changelog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/changelog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/deploying_your_first_bot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/getting_started/event_handling.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/getting_started/event_handling.html" afterDir="false" />
@@ -27,9 +40,8 @@
       <change beforePath="$PROJECT_DIR$/build/reference/types/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/types/house.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reference/types/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/types/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reference/userclient.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reference/userclient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/search/search_index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/build/sitemap.xml.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,14 +212,7 @@
       <workItem from="1617385347736" duration="109000" />
       <workItem from="1617385558978" duration="85000" />
       <workItem from="1617385768726" duration="1943000" />
-      <workItem from="1617614005726" duration="1028000" />
-    </task>
-    <task id="LOCAL-00011" summary="Updated mkdocs.yml and requirements.txt">
-      <created>1611401993342</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1611401993342</updated>
+      <workItem from="1617614005726" duration="3406000" />
     </task>
     <task id="LOCAL-00012" summary="Updated requirements.txt again">
       <created>1611402513260</created>
@@ -545,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617614159340</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Rebuild and updated config">
+      <created>1617615892106</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1617615892106</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pushing build" />
     <MESSAGE value="Updated Hiven Swarm Docs" />
     <MESSAGE value="Updated icons" />
     <MESSAGE value="Updated source-icon" />
@@ -589,7 +600,8 @@
     <MESSAGE value="Added missing user_update event data to the api docs" />
     <MESSAGE value="Build" />
     <MESSAGE value="Updated readme and added missing build pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated readme and added missing build pages" />
+    <MESSAGE value="Rebuild and updated config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebuild and updated config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
