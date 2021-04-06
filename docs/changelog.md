@@ -2,6 +2,37 @@
 
 ---
 
+## v0.1.3
+
+[PyPi Release](https://pypi.org/project/openhivenpy/0.1.3/)
+
+https://github.com/Nicolas-Klatzer/openhiven.py/releases/download/v0.1.3/openhivenpy-0.1.3-py3-none-any.whl
+
+OpenHiven.py Types Rewrite and Validation Update v0.1.3
+
+This release is the last release before the big Rewrite of the core infrastructure and system, therefore it might take a while until new releases outside of bug-fix versions are released
+
+!!! tip "Changelog"
+
+    * Fixed `HivenClient.close()` for closing the HivenClient Connection
+    * Added `HivenObject` as Base for Type Classes
+    * Added more TypeHinting using the module `typing`
+    * Updated current docstrings as in #36 
+    * Added ObjectValidation as in #46 using an integration of a `@classmethod` for object creation as explained in #37. Will likely switch from `marshmallow` to another library for the sake of speed and more efficiency (or possibly own implementation using `@dataclass`
+    * Fixed circular Import errors and fixed some Type Errors
+    * Fixed WebSocket bug causing events to be fired before the initialisation was successful
+    * Removed deprecated `timeout_handler` and replaced it with a standard `asyncio.wait_for()`
+    * Adding op-code constants to the WebSocket
+    * Added `wait_for_initialisation()` and `wait_for_ready()` to the WebSocket to wait for the initialisation or ready state to be fired
+    * Fixed bug causing `last_message_id` sometimes to be a string and not an integer
+    * Added missing Schemas and fully implemented the Validation process
+    * Added `client_user` to `PrivateRoom` and `PrivateGroupRoom`
+    * Added `bucket`, `author_id`, `exploding_age` and `device_id` to the Message Class
+    * Fixed multiple WebSocket and Instance Construction bugs
+    * Added missing `CLOSED` and `CLOSING` handlers to the WebSocket
+    * Added event `USER_UPDATE` as event and its corresponding event_handler `on_user_update` 
+    * Added Exceptions to object initialisation and validation
+
 ## v0.1.2
 
 [PyPi Release](https://pypi.org/project/openhivenpy/0.1.2/)

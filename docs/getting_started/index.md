@@ -49,7 +49,7 @@ OpenHiven.py can be easily installed using `pip`:
         Can be unstable due to development status! Only use if you need the most recent development version!
 
     ```bash
-    python3 -m pip install -U https://github.com/FrostbyteSpace/OpenHiven.py/archive/main.zip
+    python3 -m pip install -U https://github.com/Nicolas-Klatzer/OpenHiven.py/archive/main.zip
     ```
 
 Installing OpenHiven.py will automatically also include its dependencies, which currently are:
@@ -118,7 +118,7 @@ async def on_message_create(msg):
 ## Using OpenHiven.py
 
 ### Using a UserClient
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.UserClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/userclient.py)
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.UserClient`](https://github.com/Nicolas-Klatzer/openhiven.py/blob/main/openhivenpy/client/userclient.py)
 
 A UserClient object is an object that wraps the default [HivenClient](../reference/hivenclient.html),
 which serves as a bridge between Hiven, and the Program you are using. The [HivenClient](../reference/hivenclient.html)
@@ -185,7 +185,7 @@ Exception!
         ```
 
 ### Using a BotClient
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.BotClient`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/client/botclient.py)
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.BotClient`](https://github.com/Nicolas-Klatzer/openhiven.py/blob/main/openhivenpy/client/botclient.py)
 
 A Bot Client like the UserClient is a wrapper for the main HivenClient class. It serves as a Class using bot
 functionality on Hiven. Therefore, it's usage is very similar to the UserClient, but it can specifically utilise Methods 
@@ -201,7 +201,7 @@ functionality.
 <!---
 # Using an .ico since readthedocs doesn't support emoji generation
 -->
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.types`](https://github.com/FrostbyteSpace/openhiven.py/blob/main/openhivenpy/types/)
+[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · `openhivenpy.types`](https://github.com/Nicolas-Klatzer/openhiven.py/blob/main/openhivenpy/types/)
 
 You might have already noticed in prior examples that instead of raw data OpenHiven.py sends entire instances of Classes 
 with the event data as parameters. This is because of the type-system OpenHiven.py uses where objects are created and 

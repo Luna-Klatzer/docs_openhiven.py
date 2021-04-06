@@ -5,7 +5,7 @@ site_description: 'Documentation Page for OpenHiven.py'
 site_author: 'Nicolas Klatzer'
 site_url: 'https://openhivenpy.readthedocs.io'
 site_dir: './build/'
-edit_uri: 'https://github.com/FrostbyteSpace/docs_openhiven.py/edit/main/docs/'
+edit_uri: 'https://github.com/Nicolas-Klatzer/docs_openhiven.py/edit/main/docs/'
 
 copyright: Copyright &copy; 2020 - 2021 Nicolas-Klatzer
 
@@ -43,8 +43,8 @@ extra_css:
     - assets/css/index.css
 
 # Github repo
-repo_url: https://github.com/FrostbyteSpace/OpenHiven.py
-repo_name: FrostbyteSpace/OpenHiven.py
+repo_url: https://github.com/Nicolas-Klatzer/OpenHiven.py
+repo_name: Nicolas-Klatzer/OpenHiven.py
 
 # Material theme options
 theme:
@@ -113,5 +113,5 @@ extra:
       link: https://twitter.com/thekudofox
       name: The author on Twitter
     - icon: fontawesome/brands/github
-      link: https://github.com/FrostbyteSpace/
+      link: https://github.com/Nicolas-Klatzer/
       name: The Github Organisation managing the project
