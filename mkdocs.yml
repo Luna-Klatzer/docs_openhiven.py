@@ -10,7 +10,6 @@ edit_uri: 'https://github.com/Nicolas-Klatzer/docs_openhiven.py/edit/main/docs/'
 copyright: Copyright &copy; 2020 - 2021 Nicolas-Klatzer
 
 use_directory_urls: false
-# Page tree
 nav:
   - Home:
       - Home: index.md
@@ -23,20 +22,26 @@ nav:
       - getting_started/deploying_your_first_bot.md
       - getting_started/logging.md
       - getting_started/event_handling.md
-  - API Reference:
-      - api_reference/index.md
-      - api_reference/hiven_endpoints.md
-      - api_reference/hiven_swarm.md
+  - Hiven API Reference:
+      - Hiven REST API:
+        - api_reference/hiven_restapi.md
+        - api_reference/hiven_request_endpoints.md
+        - api_reference/hiven_exceptions.md
+      - Hiven Swarm (WebSocket):
+        - api_reference/hiven_swarm.md
+        - api_reference/swarm_events.md
       - api_reference/object_reference.md
-  - Reference:
-      - reference/index.md
-      - reference/hivenclient.md
-      - reference/botclient.md
-      - reference/userclient.md
-      - reference/http.md
-      - reference/execution_loop.md
-      - reference/event_handler.md
-      - reference/types/index.md
+  - Library Reference:
+      - Core:
+        - reference/hivenclient.md
+        - reference/botclient.md
+        - reference/userclient.md
+        - reference/http.md
+        - reference/execution_loop.md
+        - reference/cache.md
+        - reference/events.md
+      - Types:
+        - reference/types.md
   - Changelog:
       - changelog.md
 extra_css:
