@@ -1,4 +1,4 @@
-# ![OpenHiven.py](https://images.nxybi.me/da4e88d64f12.png) <br> OpenHiven.py <br> OpenHiven.py [(View Docs)](https://Nicolas-Klatzer.github.io/docs_openhiven.py/latest/)
+# ![OpenHiven.py](https://images.nxybi.me/da4e88d64f12.png) <br> OpenHiven.py [(View Docs)](https://Nicolas-Klatzer.github.io/docs_openhiven.py/latest/)
 ## The OpenSource Python API Wrapper for Hiven!
 
 [![Package Version](https://img.shields.io/badge/package%20version-v0.1.3.2-purple?logo=python)](https://github.com/Nicolas-Klatzer/openhiven.py)
