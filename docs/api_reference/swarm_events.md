@@ -7,7 +7,7 @@
     **This documentation page is not finished yet! Information can be outdated or entirely not available!**
 
 ## `INIT_STATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_init()`]()
 
 The user logged successfully into the account, and the data will now be sent back to initialise the client-side.
@@ -123,7 +123,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `USER_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_user_update()`]()
 
 ??? abstract "Expected json-data"
@@ -145,7 +145,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `PRESENCE_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 
 ??? abstract "Expected json-data"
 
@@ -164,7 +164,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `RELATIONSHIP_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_relationship_update()`]()
 
 ??? abstract "Expected json-data"
@@ -190,7 +190,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `MESSAGE_CREATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_message_create()`]()
 
 ??? abstract "Expected json-data"
@@ -270,7 +270,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `MESSAGE_DELETE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_message_delete()`]()
 
 ??? abstract "Expected json-data"
@@ -285,7 +285,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `MESSAGE_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_message_update()`]()
 
 ??? abstract "Expected json-data"
@@ -333,7 +333,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `ROOM_CREATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_room_create()`]()
 
 ??? abstract "Expected json-data"
@@ -350,7 +350,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `ROOM_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_room_update)`]()
 
 ??? abstract "Expected json-data"
@@ -367,7 +367,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `ROOM_DELETE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_room_update)`]()
 
 ??? abstract "Expected json-data"
@@ -382,7 +382,7 @@ The user logged successfully into the account, and the data will now be sent bac
 
 
 ## `HOUSE_JOIN`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_join()`]()
 
 ??? abstract "Expected json-data"
@@ -393,7 +393,7 @@ The user logged successfully into the account, and the data will now be sent bac
         "rooms": [{
             // Room Object
             "type": int,
-            "recipients": None
+            "recipients": None,
             "position": int,
             "permission_overrides": bits,
             "owner_id": str,
@@ -463,7 +463,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `HOUSE_LEAVE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_remove()`]()
 
 ??? abstract "Expected json-data"
@@ -477,7 +477,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `HOUSE_MEMBER_JOIN`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_member_join()`]()
 
 ??? abstract "Expected json-data"
@@ -508,7 +508,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `HOUSE_MEMBER_LEAVE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_member_leave()`]()
 
 ??? abstract "Expected json-data"
@@ -543,7 +543,7 @@ The user logged successfully into the account, and the data will now be sent bac
     ```
 
 ## `HOUSE_MEMBER_ENTER`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 
 House member went online. Triggers in every house the client, and the user is in the event!
 
@@ -581,7 +581,7 @@ House member went online. Triggers in every house the client, and the user is in
 
 
 ## `HOUSE_MEMBER_EXIT`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_member_offline()`]()
 
 House user went offline. Triggers in every house the client, and the user is in the event
@@ -597,7 +597,7 @@ House user went offline. Triggers in every house the client, and the user is in 
     ```
 
 ## `HOUSE_MEMBER_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_member_update()`]()
 
 ??? abstract "Expected json-data"
@@ -639,7 +639,7 @@ House user went offline. Triggers in every house the client, and the user is in 
     ```
 
 ## `HOUSE_MEMBERS_CHUNK`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_member_chunk()`]()
 
 Chunked House Member Update
@@ -681,7 +681,7 @@ Chunked House Member Update
     ```
 
 ## `HOUSE_ENTITIES_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_entity_update()`]()
 
 ??? abstract "Expected json-data"
@@ -705,7 +705,7 @@ Chunked House Member Update
     ```
 
 ## `BATCH_HOUSE_MEMBER_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_batch_house_member_update()`]()
 
 ??? abstract "Expected json-data"
@@ -750,7 +750,7 @@ Chunked House Member Update
     ```
 
 ## `HOUSE_ENTITY_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_house_entity_update()`]()
 
 ??? abstract "Expected json-data"
@@ -775,7 +775,7 @@ Chunked House Member Update
     ```
 
 ## `HOUSE_DOWN`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · Docs](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · Docs](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [`on_house_down`](../getting_started/event_handling.html) [/ `on_house_delete`](../getting_started/event_handling.html) 
 [· `on_house_down()`]() [ · `on_house_delete()`]()
 
@@ -797,7 +797,7 @@ If the given variable `unavailable` is `True`, the house with that id is current
     ```
 
 ## `TYPING_START`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `on_typing_start()`]()
 
 ??? abstract "Expected json-data"
@@ -828,7 +828,7 @@ If the given variable `unavailable` is `True`, the house with that id is current
     ```
 
 ## `CALL_CREATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `missing`]()
 
 ??? abstract "Expected json-data"
@@ -846,7 +846,7 @@ If the given variable `unavailable` is `True`, the house with that id is current
     ```
 
 ## `CALL_UPDATE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `missing`]()
 
 ??? abstract "Expected json-data"
@@ -873,7 +873,7 @@ If the given variable `unavailable` is `True`, the house with that id is current
     ```
 
 ## `CALL_DELETE`
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
+[:octicons-file-code-24: Source Code · ](https://github.com/Nicolas-Klatzer/openhiven.py/)
 [Docs · `missing`]()
 
 ??? abstract "Expected json-data"

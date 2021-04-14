@@ -3,8 +3,7 @@
 site_name: 'OpenHiven.py Docs'
 site_description: 'Documentation Page for OpenHiven.py'
 site_author: 'Nicolas Klatzer'
-site_url: 'https://openhivenpy.readthedocs.io'
-site_dir: './build/'
+site_url: 'https://openhivenpy.readthedocs.io/en/'
 edit_uri: 'https://github.com/Nicolas-Klatzer/docs_openhiven.py/edit/main/docs/'
 
 copyright: Copyright &copy; 2020 - 2021 Nicolas-Klatzer
@@ -78,8 +77,7 @@ theme:
 
 # Plugins
 plugins:
-  - git-revision-date:
-      enabled_if_env: CI
+  - git-revision-date
   - search:
       lang: en
       prebuild_index: true
@@ -102,21 +100,21 @@ markdown_extensions:
   - abbr
   - pymdownx.snippets # snippet looking sharp!
   - admonition
-# Abandoned for now => #5
-#  - pymdownx.emoji:
-#      emoji_index: !!python/name:materialx.emoji.twemoji
-#      emoji_generator: !!python/name:materialx.emoji.to_svg
-#      options:
-#        custom_icons:
-#          - docs/.icons
+  - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/.icons
 
 extra:
   version:
-      method: mike
+    provider: mike
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/thekudofox
       name: The author on Twitter
     - icon: fontawesome/brands/github
       link: https://github.com/Nicolas-Klatzer/
-      name: The Github Organisation managing the project
+      name: The author and manager of the project

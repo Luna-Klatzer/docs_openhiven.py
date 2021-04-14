@@ -27,54 +27,54 @@
 ## Class Reference
 
 ### Attachment
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/attatchment.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/attatchment.py)
 
 ### Context
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/context.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/context.py)
 
 ### Embed
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/embed.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/embed.py)
 
 ### Entity
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/entity.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/entity.py)
 
 ### Feed
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/feed.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/feed.py)
 
 ### House
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/house.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/house.py)
 
 ### Invite
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/invite.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/invite.py)
 
 ### Member
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/member.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/member.py)
 
 ### Mention
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/mention.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/mention.py)
 
 ### DeletedMessage
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/message.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/message.py)
 
 ### Message
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/message.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/message.py)
 
 ### PrivateRoom
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/private_room.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/private_room.py)
 
 ### PrivateGroupRoom
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/private_room.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/private_room.py)
 
 ### Relationship
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/relationship.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/relationship.py)
 
 ### Room
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/room.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/room.py)
 
 ### User
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/user.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/user.py)
 
 ### UserTyping
-[![Source](../assets/images/icons/source_icon.png){: width=28px align=top} Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/usertyping.py)
+[:octicons-file-code-24: Source Code](https://github.com/Nicolas-Klatzer/openhiven.py/tree/main/openhivenpy/types/usertyping.py)
 
 
