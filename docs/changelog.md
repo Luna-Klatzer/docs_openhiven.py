@@ -4,7 +4,7 @@
 
 ## v0.1.3.2
 
-[PyPi Release](https://pypi.org/project/openhivenpy/0.1.3.1/)
+[PyPi Release](https://pypi.org/project/openhivenpy/0.1.3.2/)
 
 Optimisation Update for v0.1.3 which improves tracebacks and removed deprecated presence class
 
