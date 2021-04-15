@@ -82,6 +82,10 @@ plugins:
       lang: en
       prebuild_index: true
 
+google_analytics:
+  - G-WWRJSVTX2V
+  - auto
+
 # Extensions to the basic mkdocs markdown
 markdown_extensions:
   - toc:
