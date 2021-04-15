@@ -1,7 +1,7 @@
-# ![OpenHiven.py](https://images.nxybi.me/da4e88d64f12.png) <br> OpenHiven.py [(View Docs)](https://Nicolas-Klatzer.github.io/docs_openhiven.py/build/)
+# ![OpenHiven.py](https://images.nxybi.me/da4e88d64f12.png) <br> OpenHiven.py [(View Docs)](https://Nicolas-Klatzer.github.io/docs_openhiven.py/latest/)
 ## The OpenSource Python API Wrapper for Hiven!
 
-[![Package Version](https://img.shields.io/badge/package%20version-v0.1.3-purple?logo=python)](https://github.com/Nicolas-Klatzer/openhiven.py)
+[![Package Version](https://img.shields.io/badge/package%20version-v0.1.3.2-purple?logo=python)](https://github.com/Nicolas-Klatzer/openhiven.py)
 [![Python Version](https://img.shields.io/badge/python->=3.7-blue?logo=python)](https://python.org)
 ![Build](https://img.shields.io/github/workflow/status/Nicolas-Klatzer/openhiven.py/CodeQL?logo=github)
 [![Latest Commit](https://img.shields.io/github/last-commit/Nicolas-Klatzer/openhiven.py?logo=github&color=violet)](https://github.com/Nicolas-Klatzer/openhiven.py/commits/mainy)
@@ -36,10 +36,10 @@ python3 -m pip install -U https://github.com/Nicolas-Klatzer/openhiven.py/archiv
 ## Documentation
 For full documentation visit the documentation our readthedocs-page
 [here](https://openhivenpy.readthedocs.io/en/latest/) or go to the github pages build 
-[here](https://Nicolas-Klatzer.github.io/docs_openhiven.py/build/)
+[here [Recommended]](https://nicolas-klatzer.github.io/docs_openhiven.py/latest/)
 
 
-### Usage Example
+### Usage Example (v0.1.3.2)
 
 **A simple UserClient Bot for quick usage:**
 
@@ -47,23 +47,23 @@ For full documentation visit the documentation our readthedocs-page
 
 import openhivenpy as hiven
 
-client = hiven.UserClient()
+client = hiven.UserClient("Insert token")
 
 @client.event()
 async def on_ready():
     print("Bot is ready")
 
-client.run("Insert token")
+client.run()
 
 ```
 
-**A simple CommandListener for reacting to a command:**
+**A simple CommandListener for reacting to commands:**
 
 ```python 
 
 import openhivenpy as hiven
 
-client = hiven.UserClient()
+client = hiven.UserClient("Insert token")
 
 @client.event()
 async def on_ready():
@@ -75,7 +75,7 @@ async def on_message_create(msg):
         if msg.content == "-ping":
             return await msg.room.send("pong")
 
-client.run("Insert token")
+client.run()
  
 ```
 
@@ -86,14 +86,24 @@ client.run("Insert token")
 import openhivenpy as hiven
 
 class Bot(hiven.UserClient):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, token, *args, **kwargs):
+        self._token = token
+        super().__init__(token, *args, **kwargs)
+
+    # Not directly needed but protects the token from being changed while runtime!
+    @property
+    def token(self):
+        return self._token
 
     async def on_ready(self):
         print("Bot is ready!")
 
 if __name__ == '__main__':
-    client = Bot()
-    client.run("Insert token")
+    client = Bot(token="")
+    client.run()
 
 ```
+
+## Contributors
+<a href="https://github.com/Nicolas-Klatzer/openhiven.py/graphs/contributors"><image src="https://contributors-img.web.app/image?repo=Nicolas-Klatzer/openhiven.py"></a>
+
