@@ -53,5 +53,5 @@ have caused the issue.
 If you are using a function, or a method that executes a request there might be an issue with the HTTP request that 
 caused an unexpected result. If this is not the case try to look into the input, debug the program and inspect data
 for possible issues. If there are no issues found with the data and everything seems fine, please open an issue on
-the [GitHub page](https://github.com/Nicolas-Klatzer/openhiven.py/issues) for further investigation. We will try to help 
+the [GitHub page](https://github.com/Luna-Klatzer/openhiven.py/issues) for further investigation. We will try to help 
 you and also possibly find the error that caused that issue.

@@ -11,7 +11,7 @@ Optimisation Update for v0.1.3 which improves tracebacks and removed deprecated 
 !!! tip "Changelog"
     * Removed unneeded exception log inside the exception strings and replaced it with `from e` to have a cleaner traceback
     * Updated presence to be a string and removed the deprecated and unneeded class
-    * Added now to PyPi the updated validation traceback [#69](https://github.com/Nicolas-Klatzer/openhiven.py/issues/69)
+    * Added now to PyPi the updated validation traceback [#69](https://github.com/Luna-Klatzer/openhiven.py/issues/69)
     * Small code enhancements before v0.2 rewrite 
 
 ## v0.1.3.1
@@ -23,14 +23,14 @@ Bug-fix release for #68 which causes the version to fail with Python 3.7
 !!! tip "Changelog"
     * Removed old licensing of FrostbyteSpace and updated the URLs to the latest changes
     * Added error-messages for ValidationError in from_dict() inside type classes 
-    * [#68](https://github.com/Nicolas-Klatzer/openhiven.py/issues/68) Fixed with removal of name parameter in `asyncio.create_task()` which is unsupported in 3.7
+    * [#68](https://github.com/Luna-Klatzer/openhiven.py/issues/68) Fixed with removal of name parameter in `asyncio.create_task()` which is unsupported in 3.7
     * Updated MANIFEST.in
 
 ## v0.1.3
 
 [PyPi Release](https://pypi.org/project/openhivenpy/0.1.3/)
 
-https://github.com/Nicolas-Klatzer/openhiven.py/releases/download/v0.1.3/openhivenpy-0.1.3-py3-none-any.whl
+https://github.com/Luna-Klatzer/openhiven.py/releases/download/v0.1.3/openhivenpy-0.1.3-py3-none-any.whl
 
 OpenHiven.py Types Rewrite and Validation Update v0.1.3
 
