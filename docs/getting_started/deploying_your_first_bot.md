@@ -23,7 +23,9 @@ some might fail when using, if such a thing happens please report these on the G
 As already shown in examples on the page [Intro to OpenHiven.py](./intro.html) to use a bot, you need to pass
 a Token to authorise and connect to Hiven. This token is a key to the account that the Client will be
 using to interact with the Hiven Platform. Therefore, OpenHiven.py cannot run without it, since its
-features depend on such token. Because of that and the risk of other users taking over your account, it is
+features depend on such token.
+
+Because of that and the risk of other users taking over your account, it is
 crucial to keep such a token save and not share it on any platform! Doing that could risk that your entire
 account getting compromised! So try to keep it save!
 

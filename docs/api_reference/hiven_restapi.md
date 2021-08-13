@@ -4,7 +4,7 @@
 
 !!! Warning
 
-    **This documentation page is not finished yet! Information can be outdated or entirely not available!**
+    **This documentation page is not finished and due to Hiven being not stable yet, changes will and can occur**
 
 The Hiven API uses standard REST endpoints to allow its users to interact with it. Therefore, you can quickly write 
 HTTP-requests for these endpoints as long as you specify the details. We will explain this in-depth through-out the

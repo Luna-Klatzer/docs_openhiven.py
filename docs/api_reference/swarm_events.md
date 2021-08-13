@@ -4,7 +4,7 @@
 
 !!! Warning
 
-    **This documentation page is not finished yet! Information can be outdated or entirely not available!**
+    **This documentation page is not finished and due to Hiven being not stable yet, changes will and can occur**
 
 ## `INIT_STATE`
 [:octicons-file-code-24: Source Code · ](https://github.com/Luna-Klatzer/openhiven.py/)

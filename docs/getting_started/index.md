@@ -121,11 +121,14 @@ async def on_message_create(msg):
 [:octicons-file-code-24: Source Code · `openhivenpy.UserClient`](https://github.com/Luna-Klatzer/openhiven.py/blob/main/openhivenpy/client/userclient.py)
 
 A UserClient object is an object that wraps the default [HivenClient](../reference/hivenclient.html),
-which serves as a bridge between Hiven, and the Program you are using. The [HivenClient](../reference/hivenclient.html)
-contains all data and connection-vital information, but is not supposed to be used directly since some methods
-are not available due to the raw state. These are special methods related to the bot-type that decides based on what 
-type you are using, resulting in various functionality. These two bot-types are here [UserClient](../reference/userclient.html) 
-and [BotClient](../reference/botclient.html).
+which serves as a bridge between Hiven, and the Program you are using.
+
+The [HivenClient](../reference/hivenclient.html) contains all data and 
+connection-vital information, but is not supposed to be used directly since
+some methods are not available due to the raw state. These are special methods 
+related to the bot-type that decides based on what type you are using, 
+resulting in various functionality. These two bot-types are here 
+[UserClient](../reference/userclient.html) and [BotClient](../reference/botclient.html).
 
 For the usage of a HivenClient, you are required to pass your token, which it will use to authorise on Hiven 
 and request data. If no token was passed, it will automatically raise an `openhivenpy.exceptions.exception.InvalidToken`
@@ -198,19 +201,17 @@ functionality.
 
 
 ## Hiven-Types
-<!---
-# Using an .ico since readthedocs doesn't support emoji generation
--->
 [:octicons-file-code-24: Source Code · `openhivenpy.types`](https://github.com/Luna-Klatzer/openhiven.py/blob/main/openhivenpy/types/)
 
 You might have already noticed in prior examples that instead of raw data OpenHiven.py sends entire instances of Classes 
 with the event data as parameters. This is because of the type-system OpenHiven.py uses where objects are created and 
 initialised parallel to the corresponding Hiven ones, making it easier for usage due to the easy attribute
-and data access. 
+and data access of a Python class.
 
 These instances can then be used through methods to interact with the Hiven API directly, instead of you having to write 
-your own requests for fetching the data and having to update the objects accordingly yourself. For each possible request 
-OpenHiven.py already ships a pre-made method to the class which automatically changes data and returns configured objects 
-if that specific methods returns data.
+your own requests for fetching the data and having to update the objects accordingly yourself.
+
+For each possible request OpenHiven.py already ships a pre-made method to the 
+class which automatically changes data and returns configured objects if that specific methods returns data.
 
 For detailed documentation see [Data Models](https://openhivenpy.readthedocs.io/en/latest/)

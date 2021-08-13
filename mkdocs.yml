@@ -21,6 +21,8 @@ nav:
       - getting_started/deploying_your_first_bot.md
       - getting_started/logging.md
       - getting_started/event_handling.md
+  - Setup:
+      - setup/index.md
   - Hiven API Reference:
       - Hiven REST API:
         - api_reference/hiven_restapi.md
@@ -29,14 +31,14 @@ nav:
       - Hiven Swarm (WebSocket):
         - api_reference/hiven_swarm.md
         - api_reference/swarm_events.md
-      - api_reference/object_reference.md
+      - Hiven Objects:
+        - api_reference/object_reference.md
   - Library Reference:
       - Core:
         - reference/hivenclient.md
         - reference/botclient.md
         - reference/userclient.md
         - reference/http.md
-        - reference/execution_loop.md
         - reference/cache.md
         - reference/events.md
       - Types:

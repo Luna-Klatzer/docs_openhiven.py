@@ -46,12 +46,16 @@ Here is a small list of known issues and possible solutions to solve them:
 ## Unexpected behavior
 
 If you encounter unexpected behavior and functionality that is not working like wanted this can either be of a bug of
-OpenHiven.py, Connection or Hiven Server error or an issue relating the configuration. If you receive results different 
-from those in the documentation we first recommend you looking into the logs and activate `DEBUG` mode to see what could 
-have caused the issue. 
+OpenHiven.py, Connection Problem, Hiven Server error or an issue due to the configuration. 
 
-If you are using a function, or a method that executes a request there might be an issue with the HTTP request that 
-caused an unexpected result. If this is not the case try to look into the input, debug the program and inspect data
-for possible issues. If there are no issues found with the data and everything seems fine, please open an issue on
+If you receive results different from those in the documentation, we first 
+recommend you looking into the logs and activate `DEBUG` mode to see extended 
+logs about the Bot.
+
+If you are using a function, or a method that executes a request there might be an issue with the HTTP request. 
+If this is not the case try to look into the input, debug the program and inspect data
+for possible issues.
+
+If there are no issues found with the data and everything seems fine, please open an issue on
 the [GitHub page](https://github.com/Luna-Klatzer/openhiven.py/issues) for further investigation. We will try to help 
 you and also possibly find the error that caused that issue.
