@@ -10,5 +10,7 @@ the docs when changed:
 mike serve
 ```
 
+*Note! Install `openhiven.py` locally for the autodoc extension to work*
+
 ## Version management
 https://github.com/jimporter/mike
