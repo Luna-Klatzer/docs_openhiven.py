@@ -54,11 +54,13 @@ OpenHiven.py can be easily installed using `pip`:
 
 Installing OpenHiven.py will automatically also include its dependencies, which currently are:
 
-* [aiohttp](https://docs.aiohttp.org/en/stable/) - Asynchronous HTTP Client for OpenHiven.py
+* [aiohttp](https://docs.aiohttp.org/en/stable/) - *Async http client/server framework (asyncio)*
 
-* [asyncio](https://docs.python.org/3/library/asyncio.html) - Execution of functions using asynchronous concurrent code
+* [fastjsonschema](https://docs.python.org/3/library/asyncio.html) - *Fastest Python implementation of JSON schema*
   
-* [typing](https://docs.python.org/3/library/typing.html) - Type Hinting in Python**
+* [yarl](https://docs.python.org/3/library/typing.html) - *Yet another URL library*
+
+* [python-dotenv](https://docs.python.org/3/library/typing.html) - *Read key-value pairs from a .env file and set them as environment variable*
 
 ## Basic Concept
 
