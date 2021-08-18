@@ -23,6 +23,16 @@ nav:
       - getting_started/event_handling.md
   - Setup:
       - setup/index.md
+  - Library Reference:
+      - Core:
+          - reference/hivenclient.md
+          - reference/botclient.md
+          - reference/userclient.md
+          - reference/http.md
+          - reference/cache.md
+          - reference/events.md
+      - Types:
+          - reference/types.md
   - Hiven API Reference:
       - Hiven REST API:
         - api_reference/hiven_restapi.md
@@ -33,16 +43,6 @@ nav:
         - api_reference/swarm_events.md
       - Hiven Objects:
         - api_reference/object_reference.md
-  - Library Reference:
-      - Core:
-        - reference/hivenclient.md
-        - reference/botclient.md
-        - reference/userclient.md
-        - reference/http.md
-        - reference/cache.md
-        - reference/events.md
-      - Types:
-        - reference/types.md
   - Changelog:
       - changelog.md
 extra_css:
@@ -80,6 +80,8 @@ theme:
 # Plugins
 plugins:
   - git-revision-date
+  - mkdocstrings # code-gen
+  - autorefs
   - search:
       lang: en
       prebuild_index: true
@@ -109,7 +111,6 @@ markdown_extensions:
   - meta
   - admonition # code-gen
   - codehilite # code-gen
-  - mkautodoc # code-gen
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

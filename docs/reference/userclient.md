@@ -2,8 +2,9 @@
 
 ---
 
-!!! Warning
+!!! Note
+    This class inherits from the class [HivenClient](./hivenclient.html)
 
-    **This documentation page is not finished yet! Information can be outdated or entirely not available!**
-
-
+::: openhivenpy.UserClient
+    :docstring:
+    :members:
