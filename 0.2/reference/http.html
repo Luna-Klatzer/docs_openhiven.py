@@ -20,7 +20,7 @@
     
     
       
-        <title>HTTP - OpenHiven.py Docs</title>
+        <title>HTTP Client - OpenHiven.py Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#http" class="md-skip">
+        <a href="#http-client" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HTTP
+              HTTP Client
             
           </span>
         </div>
@@ -559,7 +559,7 @@
   
     <li class="md-nav__item">
       <a href="hivenclient.html" class="md-nav__link">
-        HivenClient
+        WebSocket Clients
       </a>
     </li>
   
@@ -579,12 +579,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          HTTP
+          HTTP Client
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="http.html" class="md-nav__link md-nav__link--active">
-        HTTP
+        HTTP Client
       </a>
       
         
@@ -602,85 +602,146 @@
       
         <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP" class="md-nav__link">
-    openhivenpy.gateway.http.HTTP
+    HTTP
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.loop" class="md-nav__link">
+    loop
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.ready" class="md-nav__link">
+    ready
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.session" class="md-nav__link">
+    session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.token" class="md-nav__link">
+    token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.__init__" class="md-nav__link">
     __init__()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.__repr__" class="md-nav__link">
+    __repr__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.__str__" class="md-nav__link">
+    __str__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.close" class="md-nav__link">
     close()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.connect" class="md-nav__link">
     connect()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.delete" class="md-nav__link">
     delete()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.get" class="md-nav__link">
     get()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.http_request" class="md-nav__link">
     http_request()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.options" class="md-nav__link">
     options()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.patch" class="md-nav__link">
     patch()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.post" class="md-nav__link">
     post()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.put" class="md-nav__link">
     put()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.raw_request" class="md-nav__link">
     raw_request()
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -698,7 +759,7 @@
   
     <li class="md-nav__item">
       <a href="cache.html" class="md-nav__link">
-        Cache
+        Client Cache
       </a>
     </li>
   
@@ -710,7 +771,7 @@
   
     <li class="md-nav__item">
       <a href="events.html" class="md-nav__link">
-        Events and Event Handling
+        HivenEventHandler and Listeners
       </a>
     </li>
   
@@ -722,7 +783,7 @@
   
     <li class="md-nav__item">
       <a href="types.html" class="md-nav__link">
-        Hiven Type Objects
+        Hiven Types
       </a>
     </li>
   
@@ -991,85 +1052,146 @@
       
         <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP" class="md-nav__link">
-    openhivenpy.gateway.http.HTTP
+    HTTP
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.loop" class="md-nav__link">
+    loop
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.ready" class="md-nav__link">
+    ready
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.session" class="md-nav__link">
+    session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.token" class="md-nav__link">
+    token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.__init__" class="md-nav__link">
     __init__()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.__repr__" class="md-nav__link">
+    __repr__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.gateway.http.HTTP.__str__" class="md-nav__link">
+    __str__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.close" class="md-nav__link">
     close()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.connect" class="md-nav__link">
     connect()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.delete" class="md-nav__link">
     delete()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.get" class="md-nav__link">
     get()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.http_request" class="md-nav__link">
     http_request()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.options" class="md-nav__link">
     options()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.patch" class="md-nav__link">
     patch()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.post" class="md-nav__link">
     post()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.put" class="md-nav__link">
     put()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.gateway.http.HTTP.raw_request" class="md-nav__link">
     raw_request()
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1090,13 +1212,21 @@
                   </a>
                 
                 
-                <h1 id="http">HTTP<a class="headerlink" href="#http" title="Permanent link">&para;</a></h1>
+                <h1 id="http-client">HTTP Client<a class="headerlink" href="#http-client" title="Permanent link">&para;</a></h1>
 <hr />
 
 
   <div class="doc doc-object doc-class">
 
-<a id="openhivenpy.gateway.http.HTTP"></a>
+
+
+<h2 id="openhivenpy.gateway.http.HTTP" class="doc doc-heading">
+        <code>openhivenpy.gateway.http.HTTP</code>
+
+
+
+<a href="#openhivenpy.gateway.http.HTTP" class="headerlink" title="Permanent link">&para;</a></h2>
+
     <div class="doc doc-contents first">
 
       <p>HTTP-Client for requests and interaction with the Hiven API </p>
@@ -1111,25 +1241,109 @@
 
 
 
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.gateway.http.HTTP.loop" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">loop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">asyncio</span><span class="o">.</span><span class="n">AbstractEventLoop</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.gateway.http.HTTP.loop" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.gateway.http.HTTP.ready" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">ready</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.gateway.http.HTTP.ready" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.gateway.http.HTTP.session" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">session</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.gateway.http.HTTP.session" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.gateway.http.HTTP.token" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.gateway.http.HTTP.token" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
 
 
 
 
-
-
+<h3 id="openhivenpy.gateway.http.HTTP-methods">Methods<a href="#openhivenpy.gateway.http.HTTP-methods" class="headerlink" title="Permanent link">&para;</a></h3>
 
   <div class="doc doc-object doc-method">
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.__init__" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.__init__" class="doc doc-heading">
 <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">api_version</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.__init__" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1172,20 +1386,80 @@
 
 
 
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.gateway.http.HTTP.__repr__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.gateway.http.HTTP.__repr__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\gateway\http.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;ready&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ready</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;host&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;api_version&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_version</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;headers&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+    <span class="p">]</span>
+    <span class="k">return</span> <span class="s1">&#39;&lt;HTTP </span><span class="si">{}</span><span class="s1">&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">=</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">info</span><span class="p">))</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
 
 
   <div class="doc doc-object doc-method">
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.close" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.__str__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.gateway.http.HTTP.__str__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\gateway\http.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.gateway.http.HTTP.close" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.close" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.close" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1223,14 +1497,14 @@
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.connect" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.connect" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.connect" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.connect" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1285,14 +1559,14 @@
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.delete" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.delete" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.delete" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.delete" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1367,14 +1641,14 @@
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.get" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.get" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.get" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.get" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1449,14 +1723,14 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.http_request" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.http_request" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">http_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.http_request" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.http_request" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1619,14 +1893,14 @@ can be seen by the asyncio.Task status!</p>
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.options" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.options" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.options" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.options" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1704,14 +1978,14 @@ can be seen by the asyncio.Task status!</p>
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.patch" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.patch" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">patch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.patch" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.patch" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1795,14 +2069,14 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.post" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.post" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.post" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.post" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1886,14 +2160,14 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.put" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.put" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">put</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.put" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.put" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1980,14 +2254,14 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
 
 
 
-<h2 id="openhivenpy.gateway.http.HTTP.raw_request" class="doc doc-heading">
+<h4 id="openhivenpy.gateway.http.HTTP.raw_request" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">raw_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">retry_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.gateway.http.HTTP.raw_request" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#openhivenpy.gateway.http.HTTP.raw_request" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -2096,7 +2370,7 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-08-18
+      Last update: 2021-08-21
     
   </small>
 </div>
@@ -2127,7 +2401,7 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
               <span class="md-footer__direction">
                 Previous
               </span>
-              HivenClient
+              WebSocket Clients
             </div>
           </div>
         </a>
@@ -2139,7 +2413,7 @@ https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession
               <span class="md-footer__direction">
                 Next
               </span>
-              Cache
+              Client Cache
             </div>
           </div>
           <div class="md-footer__button md-icon">

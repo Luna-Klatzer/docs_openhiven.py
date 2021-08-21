@@ -20,7 +20,7 @@
     
     
       
-        <title>Events and Event Handling - OpenHiven.py Docs</title>
+        <title>HivenEventHandler and Listeners - OpenHiven.py Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#events-and-event-handling" class="md-skip">
+        <a href="#hiveneventhandler-and-listeners" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Events and Event Handling
+              HivenEventHandler and Listeners
             
           </span>
         </div>
@@ -559,7 +559,7 @@
   
     <li class="md-nav__item">
       <a href="hivenclient.html" class="md-nav__link">
-        HivenClient
+        WebSocket Clients
       </a>
     </li>
   
@@ -571,7 +571,7 @@
   
     <li class="md-nav__item">
       <a href="http.html" class="md-nav__link">
-        HTTP
+        HTTP Client
       </a>
     </li>
   
@@ -583,7 +583,7 @@
   
     <li class="md-nav__item">
       <a href="cache.html" class="md-nav__link">
-        Cache
+        Client Cache
       </a>
     </li>
   
@@ -603,12 +603,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Events and Event Handling
+          HivenEventHandler and Listeners
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="events.html" class="md-nav__link md-nav__link--active">
-        Events and Event Handling
+        HivenEventHandler and Listeners
       </a>
       
         
@@ -625,26 +625,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#openhivenpy.events" class="md-nav__link">
-    openhivenpy.events
-  </a>
-  
-    <nav class="md-nav" aria-label="openhivenpy.events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openhivenpy.events--module-that-stores-the-eventlisteners-methods-and-classes-for-listening-to-websocket-events" class="md-nav__link">
-    Module that stores the EventListeners Methods and Classes for listening to WebSocket Events
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#openhivenpy.events.DispatchEventListener" class="md-nav__link">
     DispatchEventListener
   </a>
@@ -653,8 +633,65 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.awaitable" class="md-nav__link">
+    awaitable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.client" class="md-nav__link">
+    client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.event_name" class="md-nav__link">
+    event_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.events.DispatchEventListener.__call__" class="md-nav__link">
     __call__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.__repr__" class="md-nav__link">
+    __repr__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.__str__" class="md-nav__link">
+    __str__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.dispatch" class="md-nav__link">
+    dispatch()
   </a>
   
 </li>
@@ -670,6 +707,112 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openhivenpy.events.MultiDispatchEventListener" class="md-nav__link">
+    MultiDispatchEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="MultiDispatchEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.MultiDispatchEventListener-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.MultiDispatchEventListener.dispatch" class="md-nav__link">
+    dispatch()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener" class="md-nav__link">
+    SingleDispatchEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="SingleDispatchEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.args" class="md-nav__link">
+    args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.dispatched" class="md-nav__link">
+    dispatched
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.kwargs" class="md-nav__link">
+    kwargs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.__repr__" class="md-nav__link">
+    __repr__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.dispatch" class="md-nav__link">
+    dispatch()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#openhivenpy.events.HivenEventHandler" class="md-nav__link">
@@ -678,6 +821,42 @@
   
     <nav class="md-nav" aria-label="HivenEventHandler">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.active_listeners" class="md-nav__link">
+    active_listeners
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.available_events" class="md-nav__link">
+    available_events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.non_buffer_events" class="md-nav__link">
+    non_buffer_events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#openhivenpy.events.HivenEventHandler.add_listener" class="md-nav__link">
@@ -746,41 +925,6 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#openhivenpy.events.MultiDispatchEventListener" class="md-nav__link">
-    MultiDispatchEventListener
-  </a>
-  
-    <nav class="md-nav" aria-label="MultiDispatchEventListener">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openhivenpy.events.MultiDispatchEventListener.dispatch" class="md-nav__link">
-    dispatch()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#openhivenpy.events.SingleDispatchEventListener" class="md-nav__link">
-    SingleDispatchEventListener
-  </a>
-  
-    <nav class="md-nav" aria-label="SingleDispatchEventListener">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openhivenpy.events.SingleDispatchEventListener.dispatch" class="md-nav__link">
-    dispatch()
-  </a>
-  
-</li>
         
       </ul>
     </nav>
@@ -801,7 +945,7 @@
   
     <li class="md-nav__item">
       <a href="types.html" class="md-nav__link">
-        Hiven Type Objects
+        Hiven Types
       </a>
     </li>
   
@@ -1069,26 +1213,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#openhivenpy.events" class="md-nav__link">
-    openhivenpy.events
-  </a>
-  
-    <nav class="md-nav" aria-label="openhivenpy.events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openhivenpy.events--module-that-stores-the-eventlisteners-methods-and-classes-for-listening-to-websocket-events" class="md-nav__link">
-    Module that stores the EventListeners Methods and Classes for listening to WebSocket Events
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#openhivenpy.events.DispatchEventListener" class="md-nav__link">
     DispatchEventListener
   </a>
@@ -1097,8 +1221,65 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.awaitable" class="md-nav__link">
+    awaitable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.client" class="md-nav__link">
+    client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.event_name" class="md-nav__link">
+    event_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#openhivenpy.events.DispatchEventListener.__call__" class="md-nav__link">
     __call__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.__repr__" class="md-nav__link">
+    __repr__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.__str__" class="md-nav__link">
+    __str__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.DispatchEventListener.dispatch" class="md-nav__link">
+    dispatch()
   </a>
   
 </li>
@@ -1114,6 +1295,112 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openhivenpy.events.MultiDispatchEventListener" class="md-nav__link">
+    MultiDispatchEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="MultiDispatchEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.MultiDispatchEventListener-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.MultiDispatchEventListener.dispatch" class="md-nav__link">
+    dispatch()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener" class="md-nav__link">
+    SingleDispatchEventListener
+  </a>
+  
+    <nav class="md-nav" aria-label="SingleDispatchEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.args" class="md-nav__link">
+    args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.dispatched" class="md-nav__link">
+    dispatched
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.kwargs" class="md-nav__link">
+    kwargs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.__repr__" class="md-nav__link">
+    __repr__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.SingleDispatchEventListener.dispatch" class="md-nav__link">
+    dispatch()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#openhivenpy.events.HivenEventHandler" class="md-nav__link">
@@ -1122,6 +1409,42 @@
   
     <nav class="md-nav" aria-label="HivenEventHandler">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.active_listeners" class="md-nav__link">
+    active_listeners
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.available_events" class="md-nav__link">
+    available_events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.non_buffer_events" class="md-nav__link">
+    non_buffer_events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openhivenpy.events.HivenEventHandler.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#openhivenpy.events.HivenEventHandler.add_listener" class="md-nav__link">
@@ -1190,41 +1513,6 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#openhivenpy.events.MultiDispatchEventListener" class="md-nav__link">
-    MultiDispatchEventListener
-  </a>
-  
-    <nav class="md-nav" aria-label="MultiDispatchEventListener">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openhivenpy.events.MultiDispatchEventListener.dispatch" class="md-nav__link">
-    dispatch()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#openhivenpy.events.SingleDispatchEventListener" class="md-nav__link">
-    SingleDispatchEventListener
-  </a>
-  
-    <nav class="md-nav" aria-label="SingleDispatchEventListener">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openhivenpy.events.SingleDispatchEventListener.dispatch" class="md-nav__link">
-    dispatch()
-  </a>
-  
-</li>
         
       </ul>
     </nav>
@@ -1248,46 +1536,13 @@
                   </a>
                 
                 
-                <h1 id="events-and-event-handling">Events and Event Handling<a class="headerlink" href="#events-and-event-handling" title="Permanent link">&para;</a></h1>
+                <h1 id="hiveneventhandler-and-listeners">HivenEventHandler and Listeners<a class="headerlink" href="#hiveneventhandler-and-listeners" title="Permanent link">&para;</a></h1>
 <hr />
-
-
-  <div class="doc doc-object doc-module">
-
-<a id="openhivenpy.events"></a>
-    <div class="doc doc-contents first">
-
-      <h3 id="openhivenpy.events--module-that-stores-the-eventlisteners-methods-and-classes-for-listening-to-websocket-events">Module that stores the EventListeners Methods and Classes for listening to WebSocket Events<a class="headerlink" href="#openhivenpy.events--module-that-stores-the-eventlisteners-methods-and-classes-for-listening-to-websocket-events" title="Permanent link">&para;</a></h3>
-<p>Under MIT License</p>
-<p>Copyright © 2020 - 2021 Luna Klatzer</p>
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</p>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>DispatchEventListener is the base Class for <a href="#openhivenpy.events.SingleDispatchEventListener">SingleDispatchEventListener</a> 
+and <a href="#openhivenpy.events.MultiDispatchEventListener">MultiDispatchEventListener</a>, which should not be used</p>
+</div>
 
 
   <div class="doc doc-object doc-class">
@@ -1295,13 +1550,13 @@ SOFTWARE.</p>
 
 
 <h2 id="openhivenpy.events.DispatchEventListener" class="doc doc-heading">
-        <code>DispatchEventListener</code>
+        <code>openhivenpy.events.DispatchEventListener</code>
 
 
 
 <a href="#openhivenpy.events.DispatchEventListener" class="headerlink" title="Permanent link">&para;</a></h2>
 
-    <div class="doc doc-contents ">
+    <div class="doc doc-contents first">
 
       <p>Base Class for all DispatchEventListeners</p>
 
@@ -1315,24 +1570,87 @@ SOFTWARE.</p>
 
 
 
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.awaitable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">awaitable</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Awaitable</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.awaitable" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.client" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">client</span><span class="p">:</span> <span class="n">HivenClient</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.client" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.event_name" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">event_name</span><span class="p">:</span> <span class="nb">str</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.event_name" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
 
 
 
 
-
+<h3 id="openhivenpy.events.DispatchEventListener-methods">Methods<a href="#openhivenpy.events.DispatchEventListener-methods" class="headerlink" title="Permanent link">&para;</a></h3>
 
   <div class="doc doc-object doc-method">
 
 
 
-<h3 id="openhivenpy.events.DispatchEventListener.__call__" class="doc doc-heading">
+<h4 id="openhivenpy.events.DispatchEventListener.__call__" class="doc doc-heading">
 <code class="highlight language-python"><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
   </span>
 
-<a href="#openhivenpy.events.DispatchEventListener.__call__" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.DispatchEventListener.__call__" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1367,7 +1685,40 @@ SOFTWARE.</p>
 
 
 
+  <div class="doc doc-object doc-method">
 
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">client</span><span class="p">:</span> <span class="n">HivenClient</span><span class="p">,</span>
+        <span class="n">event_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">awaitable</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Awaitable</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]</span>
+<span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_client</span> <span class="o">=</span> <span class="n">client</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_event_name</span> <span class="o">=</span> <span class="n">event_name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_awaitable</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Awaitable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_awaitable</span><span class="p">(</span><span class="n">awaitable</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">add_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
 
 
 
@@ -1375,11 +1726,101 @@ SOFTWARE.</p>
 
 
 
-<h3 id="openhivenpy.events.DispatchEventListener.set_awaitable" class="doc doc-heading">
+<h4 id="openhivenpy.events.DispatchEventListener.__repr__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.__repr__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;event_name&#39;</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;event_name&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)),</span>
+        <span class="p">(</span><span class="s1">&#39;awaitable&#39;</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;awaitable&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+    <span class="p">]</span>
+    <span class="k">return</span> <span class="s1">&#39;&lt;MultiDispatchEventListener </span><span class="si">{}</span><span class="s1">&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">=</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">info</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.__str__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.__str__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;&lt;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> for event </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">event_name</span><span class="si">}</span><span class="s2">&gt;&quot;</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.dispatch" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-async"><code>async</code></small>
+  </span>
+
+<a href="#openhivenpy.events.DispatchEventListener.dispatch" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="o">...</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.DispatchEventListener.set_awaitable" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">set_awaitable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.DispatchEventListener.set_awaitable" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.DispatchEventListener.set_awaitable" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1428,6 +1869,325 @@ ws-events are received</p>
 
   </div>
 
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Usage classes, which represent <a href="#openhivenpy.events.DispatchEventListener">DispatchEventListener</a></p>
+</div>
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="openhivenpy.events.MultiDispatchEventListener" class="doc doc-heading">
+        <code>openhivenpy.events.MultiDispatchEventListener</code>
+
+
+
+<a href="#openhivenpy.events.MultiDispatchEventListener" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents first">
+
+      <p>EventListener Class that is used primarily for EventListeners that will
+be called multiple times</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<h3 id="openhivenpy.events.MultiDispatchEventListener-methods">Methods<a href="#openhivenpy.events.MultiDispatchEventListener-methods" class="headerlink" title="Permanent link">&para;</a></h3>
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.MultiDispatchEventListener.dispatch" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-async"><code>async</code></small>
+  </span>
+
+<a href="#openhivenpy.events.MultiDispatchEventListener.dispatch" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Dispatches the EventListener and calls a coroutine if one was passed.
+Does not raise exceptions but silences them!</p>
+<p>:param args: Args that will be passed to the coroutine
+:param kwargs: Kwargs that will be passed to the coroutine</p>
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Dispatches the EventListener and calls a coroutine if one was passed.</span>
+<span class="sd">    Does not raise exceptions but silences them!</span>
+
+<span class="sd">    :param args: Args that will be passed to the coroutine</span>
+<span class="sd">    :param kwargs: Kwargs that will be passed to the coroutine</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">utils</span><span class="o">.</span><span class="n">log_traceback</span><span class="p">(</span>
+            <span class="n">brief</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;[EVENTS] Ignoring exception in </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">,</span>
+            <span class="n">exc_info</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Failed to execute assigned coroutine &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
+        <span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="openhivenpy.events.SingleDispatchEventListener" class="doc doc-heading">
+        <code>openhivenpy.events.SingleDispatchEventListener</code>
+
+
+
+<a href="#openhivenpy.events.SingleDispatchEventListener" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents first">
+
+      <p>EventListener Class that will be called only once and will store the
+events data, args and kwargs</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.SingleDispatchEventListener.args" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">args</span><span class="p">:</span> <span class="nb">tuple</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.SingleDispatchEventListener.args" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.SingleDispatchEventListener.dispatched" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">dispatched</span><span class="p">:</span> <span class="nb">bool</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.SingleDispatchEventListener.dispatched" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.SingleDispatchEventListener.kwargs" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.SingleDispatchEventListener.kwargs" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+
+<h3 id="openhivenpy.events.SingleDispatchEventListener-methods">Methods<a href="#openhivenpy.events.SingleDispatchEventListener-methods" class="headerlink" title="Permanent link">&para;</a></h3>
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.SingleDispatchEventListener.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.events.SingleDispatchEventListener.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">:</span> <span class="n">HivenClient</span><span class="p">,</span> <span class="n">event_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+             <span class="n">awaitable</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Awaitable</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_dispatched</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_event_data</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_args</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_kwargs</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.SingleDispatchEventListener.__repr__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.events.SingleDispatchEventListener.__repr__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;event_name&#39;</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;event_name&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)),</span>
+        <span class="p">(</span><span class="s1">&#39;dispatched&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dispatched</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;awaitable&#39;</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;awaitable&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+    <span class="p">]</span>
+    <span class="k">return</span> <span class="s1">&#39;&lt;SingleDispatchEventListener </span><span class="si">{}</span><span class="s1">&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">=</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">info</span><span class="p">))</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.SingleDispatchEventListener.dispatch" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-async"><code>async</code></small>
+  </span>
+
+<a href="#openhivenpy.events.SingleDispatchEventListener.dispatch" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Dispatches the EventListener and calls a coroutine if one was passed</p>
+<p>:param args: Args that will be passed to the coroutine
+:param kwargs: Kwargs that will be passed to the coroutine
+:return: Returns the passed event_data</p>
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Dispatches the EventListener and calls a coroutine if one was passed</span>
+
+<span class="sd">    :param args: Args that will be passed to the coroutine</span>
+<span class="sd">    :param kwargs: Kwargs that will be passed to the coroutine</span>
+<span class="sd">    :return: Returns the passed event_data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_args</span> <span class="o">=</span> <span class="n">args</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_kwargs</span> <span class="o">=</span> <span class="n">kwargs</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">utils</span><span class="o">.</span><span class="n">log_traceback</span><span class="p">(</span>
+            <span class="n">brief</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;[EVENTS] Ignoring exception in </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">,</span>
+            <span class="n">exc_info</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to execute assigned coroutine &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_dispatched</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">remove_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <code>HivenEventHandler</code> is already inherited in the standard client (<a href="./hivenclient.html">HivenClient</a>),
+so all properties and methods can be used there as well.</p>
+</div>
 
 
   <div class="doc doc-object doc-class">
@@ -1435,13 +2195,13 @@ ws-events are received</p>
 
 
 <h2 id="openhivenpy.events.HivenEventHandler" class="doc doc-heading">
-        <code>HivenEventHandler</code>
+        <code>openhivenpy.events.HivenEventHandler</code>
 
 
 
 <a href="#openhivenpy.events.HivenEventHandler" class="headerlink" title="Permanent link">&para;</a></h2>
 
-    <div class="doc doc-contents ">
+    <div class="doc doc-contents first">
 
       <p>Events class used to register the main event listeners.
 Is inherited by the HivenClient for easier access.</p>
@@ -1456,10 +2216,117 @@ Is inherited by the HivenClient for easier access.</p>
 
 
 
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.HivenEventHandler.active_listeners" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">active_listeners</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">DispatchEventListener</span><span class="p">]]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.HivenEventHandler.active_listeners" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.HivenEventHandler.available_events" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">available_events</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.HivenEventHandler.available_events" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="openhivenpy.events.HivenEventHandler.non_buffer_events" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">non_buffer_events</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+<a href="#openhivenpy.events.HivenEventHandler.non_buffer_events" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+  </div>
 
 
 
 
+<h3 id="openhivenpy.events.HivenEventHandler-methods">Methods<a href="#openhivenpy.events.HivenEventHandler-methods" class="headerlink" title="Permanent link">&para;</a></h3>
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="openhivenpy.events.HivenEventHandler.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">parsers</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#openhivenpy.events.HivenEventHandler.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+        <details class="quote">
+          <summary>Source code in <code>openhivenpy\events.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">:</span> <span class="n">HivenClient</span><span class="p">,</span> <span class="n">parsers</span><span class="p">:</span> <span class="n">HivenParsers</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">parsers</span> <span class="o">=</span> <span class="n">parsers</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_client</span> <span class="o">=</span> <span class="n">client</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_active_listeners</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_available_events</span> <span class="o">=</span> <span class="n">EVENTS</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_non_buffer_events</span> <span class="o">=</span> <span class="n">NON_BUFFER_EVENTS</span>
+
+    <span class="c1"># Searching through the HivenClient to find all async functions that</span>
+    <span class="c1"># were registered for event_listening Regular functions will NOT be</span>
+    <span class="c1"># registered and only if they are async! This will avoid that errors</span>
+    <span class="c1"># are thrown when trying to call the functions using &#39;await&#39;</span>
+    <span class="k">for</span> <span class="n">listener</span> <span class="ow">in</span> <span class="n">inspect</span><span class="o">.</span><span class="n">getmembers</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">predicate</span><span class="o">=</span><span class="n">inspect</span><span class="o">.</span><span class="n">iscoroutinefunction</span>
+    <span class="p">):</span>
+        <span class="n">func_name</span> <span class="o">=</span> <span class="n">listener</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;on_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">awaitable</span> <span class="o">=</span> <span class="n">listener</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">func_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_available_events</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_multi_listener</span><span class="p">(</span><span class="n">func_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[EVENTS] Event </span><span class="si">{</span><span class="n">listener</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> registered&quot;</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
 
 
 
@@ -1467,11 +2334,11 @@ Is inherited by the HivenClient for easier access.</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.add_listener" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.add_listener" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">add_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">listener</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.add_listener" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.add_listener" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1504,11 +2371,11 @@ Is inherited by the HivenClient for easier access.</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.add_multi_listener" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.add_multi_listener" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">add_multi_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.add_multi_listener" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.add_multi_listener" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1557,11 +2424,11 @@ Is inherited by the HivenClient for easier access.</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.add_single_listener" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.add_single_listener" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">add_single_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.add_single_listener" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.add_single_listener" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1612,14 +2479,14 @@ listeners</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.call_listeners" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.call_listeners" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">call_listeners</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.events.HivenEventHandler.call_listeners" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.call_listeners" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1670,11 +2537,11 @@ args, kwargs passed</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.cleanup_listeners" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.cleanup_listeners" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">cleanup_listeners</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.cleanup_listeners" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.cleanup_listeners" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1697,11 +2564,11 @@ args, kwargs passed</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.dispatch_event" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.dispatch_event" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">dispatch_event</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.dispatch_event" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.dispatch_event" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1756,11 +2623,11 @@ pass the args and kwargs to the functions!</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.event" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.event" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">event</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">awaitable</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.event" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.event" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1808,11 +2675,11 @@ pass the args and kwargs to the functions!</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.remove_listener" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.remove_listener" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">remove_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">listener</span><span class="p">)</span></code>
 
 
-<a href="#openhivenpy.events.HivenEventHandler.remove_listener" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.remove_listener" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1845,14 +2712,14 @@ pass the args and kwargs to the functions!</p>
 
 
 
-<h3 id="openhivenpy.events.HivenEventHandler.wait_for" class="doc doc-heading">
+<h4 id="openhivenpy.events.HivenEventHandler.wait_for" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">wait_for</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">awaitable</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-async"><code>async</code></small>
   </span>
 
-<a href="#openhivenpy.events.HivenEventHandler.wait_for" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#openhivenpy.events.HivenEventHandler.wait_for" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
 
@@ -1907,201 +2774,6 @@ pass the args and kwargs to the functions!</p>
     </div>
 
   </div>
-
-
-
-  <div class="doc doc-object doc-class">
-
-
-
-<h2 id="openhivenpy.events.MultiDispatchEventListener" class="doc doc-heading">
-        <code>MultiDispatchEventListener</code>
-
-
-
-<a href="#openhivenpy.events.MultiDispatchEventListener" class="headerlink" title="Permanent link">&para;</a></h2>
-
-    <div class="doc doc-contents ">
-
-      <p>EventListener Class that is used primarily for EventListeners that will
-be called multiple times</p>
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="openhivenpy.events.MultiDispatchEventListener.dispatch" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-async"><code>async</code></small>
-  </span>
-
-<a href="#openhivenpy.events.MultiDispatchEventListener.dispatch" class="headerlink" title="Permanent link">&para;</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Dispatches the EventListener and calls a coroutine if one was passed.
-Does not raise exceptions but silences them!</p>
-<p>:param args: Args that will be passed to the coroutine
-:param kwargs: Kwargs that will be passed to the coroutine</p>
-
-        <details class="quote">
-          <summary>Source code in <code>openhivenpy\events.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Dispatches the EventListener and calls a coroutine if one was passed.</span>
-<span class="sd">    Does not raise exceptions but silences them!</span>
-
-<span class="sd">    :param args: Args that will be passed to the coroutine</span>
-<span class="sd">    :param kwargs: Kwargs that will be passed to the coroutine</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-        <span class="n">utils</span><span class="o">.</span><span class="n">log_traceback</span><span class="p">(</span>
-            <span class="n">brief</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;[EVENTS] Ignoring exception in </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">,</span>
-            <span class="n">exc_info</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
-        <span class="p">)</span>
-        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;Failed to execute assigned coroutine &quot;</span>
-            <span class="sa">f</span><span class="s2">&quot;&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
-        <span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-
-
-  </div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="doc doc-object doc-class">
-
-
-
-<h2 id="openhivenpy.events.SingleDispatchEventListener" class="doc doc-heading">
-        <code>SingleDispatchEventListener</code>
-
-
-
-<a href="#openhivenpy.events.SingleDispatchEventListener" class="headerlink" title="Permanent link">&para;</a></h2>
-
-    <div class="doc doc-contents ">
-
-      <p>EventListener Class that will be called only once and will store the
-events data, args and kwargs</p>
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="openhivenpy.events.SingleDispatchEventListener.dispatch" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-async"><code>async</code></small>
-  </span>
-
-<a href="#openhivenpy.events.SingleDispatchEventListener.dispatch" class="headerlink" title="Permanent link">&para;</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Dispatches the EventListener and calls a coroutine if one was passed</p>
-<p>:param args: Args that will be passed to the coroutine
-:param kwargs: Kwargs that will be passed to the coroutine
-:return: Returns the passed event_data</p>
-
-        <details class="quote">
-          <summary>Source code in <code>openhivenpy\events.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Dispatches the EventListener and calls a coroutine if one was passed</span>
-
-<span class="sd">    :param args: Args that will be passed to the coroutine</span>
-<span class="sd">    :param kwargs: Kwargs that will be passed to the coroutine</span>
-<span class="sd">    :return: Returns the passed event_data</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_args</span> <span class="o">=</span> <span class="n">args</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_kwargs</span> <span class="o">=</span> <span class="n">kwargs</span>
-        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-        <span class="n">utils</span><span class="o">.</span><span class="n">log_traceback</span><span class="p">(</span>
-            <span class="n">brief</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;[EVENTS] Ignoring exception in </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">,</span>
-            <span class="n">exc_info</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
-        <span class="p">)</span>
-        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to execute assigned coroutine &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">awaitable</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_dispatched</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">remove_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-
-
-  </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-  </div>
                 
                   
                     
@@ -2110,7 +2782,7 @@ events data, args and kwargs</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-04-10
+      Last update: 2021-08-21
     
   </small>
 </div>
@@ -2141,7 +2813,7 @@ events data, args and kwargs</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Cache
+              Client Cache
             </div>
           </div>
         </a>
@@ -2153,7 +2825,7 @@ events data, args and kwargs</p>
               <span class="md-footer__direction">
                 Next
               </span>
-              Hiven Type Objects
+              Hiven Types
             </div>
           </div>
           <div class="md-footer__button md-icon">
