@@ -3,5 +3,4 @@
 ---
 
 ::: openhivenpy.gateway.HTTP
-    :docstring:
-    :members:
+

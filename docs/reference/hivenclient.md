@@ -3,5 +3,7 @@
 ---
 
 ::: openhivenpy.HivenClient
-    :docstring:
-    :members:
+
+::: openhivenpy.UserClient
+
+::: openhivenpy.BotClient

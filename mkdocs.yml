@@ -24,15 +24,11 @@ nav:
   - Setup:
       - setup/index.md
   - Library Reference:
-      - Core:
-          - reference/hivenclient.md
-          - reference/botclient.md
-          - reference/userclient.md
-          - reference/http.md
-          - reference/cache.md
-          - reference/events.md
-      - Types:
-          - reference/types.md
+      - reference/hivenclient.md
+      - reference/http.md
+      - reference/cache.md
+      - reference/events.md
+      - reference/types.md
   - Hiven API Reference:
       - Hiven REST API:
         - api_reference/hiven_restapi.md
@@ -75,12 +71,18 @@ theme:
     - navigation.tabs
     - navigation.expand
     - navigation.sections
-    - toc.integrate
+    - navigation.instant
 
 # Plugins
 plugins:
   - git-revision-date
-  - mkdocstrings # code-gen
+  - mkdocstrings: # code-gen
+    handlers:
+      python:
+        selection:
+          docstring_style: restructured-text
+        rendering:
+          show_root_heading: true
   - autorefs
   - search:
       lang: en
@@ -94,7 +96,7 @@ google_analytics:
 markdown_extensions:
   - toc:
       permalink: true
-      toc_depth: 5
+      toc_depth: 3
   - pymdownx.tabbed # Nice tabs
   - pymdownx.superfences # Very cool embed objects
   - pymdownx.critic
@@ -110,7 +112,8 @@ markdown_extensions:
   - admonition
   - meta
   - admonition # code-gen
-  - codehilite # code-gen
+  - codehilite # code-gen\
+  - toc
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
