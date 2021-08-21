@@ -1,4 +1,4 @@
-# HivenClient
+# WebSocket Clients
 
 ---
 
